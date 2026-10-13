@@ -16,17 +16,17 @@
 *Assistant Professor, Department of Computer Science & Engineering*
 
 **Submitted by (Team of 5):**
-1. **Aryan Kumar Singh** (Team Leader & Core RAG Architect)
-2. **Awantika Jaiswal** (Data Pipeline Engineer)
-3. **Devansh Maini** (Database & Security Architect)
-4. **Aviral Joshi** (Frontend & Desktop Lead)
-5. **Akshita Mawaliya** (QA & Evaluation Lead)
+1. **Shaurya Dixit** (Team Leader & Core RAG Architect)
+2. **Yashvardhan Singh Chauhan** (Data Pipeline Engineer & Kaggle Ingestion Lead)
+3. **Vaibhav Tank** (Database & Security Architect)
+4. **Rajveer Singh Ranawat** (Frontend & Desktop Lead)
+5. **Yashpal Singh Bhati** (QA & Evaluation Lead)
 
 ---
 
 ## CERTIFICATE
 
-This is to certify that the project entitled **"DocuQuery AI: Enterprise Retrieval-Augmented Generation Platform"** is a bonafide record of work carried out by **Aryan Kumar Singh, Awantika Jaiswal, Devansh Maini, Aviral Joshi, and Akshita Mawaliya** in partial fulfillment of the requirements for the award of the degree of **Bachelor of Technology in Computer Science & Engineering** from **Arya College of Engineering & I.T., Jaipur** affiliated to Rajasthan Technical University, Kota during the academic year 2026–2027.
+This is to certify that the project entitled **"DocuQuery AI: Enterprise Retrieval-Augmented Generation Platform"** is a bonafide record of work carried out by **Shaurya Dixit, Yashvardhan Singh Chauhan, Vaibhav Tank, Rajveer Singh Ranawat, and Yashpal Singh Bhati** in partial fulfillment of the requirements for the award of the degree of **Bachelor of Technology in Computer Science & Engineering** from **Arya College of Engineering & I.T., Jaipur** affiliated to Rajasthan Technical University, Kota during the academic year 2026–2027.
 
 The project work has been completed under my supervision and guidance and meets the standard requirements for 5th Semester Java Project Based Learning (PBL).
 
@@ -47,11 +47,11 @@ The software code, documentation, and research findings reported herein have not
 *Date: October 2026*  
 *Place: Jaipur, Rajasthan*
 
-1. Aryan Kumar Singh
-2. Awantika Jaiswal
-3. Devansh Maini
-4. Aviral Joshi
-5. Akshita Mawaliya
+1. Shaurya Dixit
+2. Yashvardhan Singh Chauhan
+3. Vaibhav Tank
+4. Rajveer Singh Ranawat
+5. Yashpal Singh Bhati
 
 ---
 
@@ -145,37 +145,37 @@ LIMIT 4;
 ### CHAPTER 5: DETAILED IMPLEMENTATION (THE 5 MODULES)
 
 #### Module 1: Core RAG Engine & LLM Orchestration
-* **Lead Engineer**: Aryan Kumar Singh (Team Leader)
+* **Lead Engineer**: Shaurya Dixit (Team Leader)
 * **Branch**: `feature/member1-rag-engine`
 * Implemented `RagOrchestrationService.java` coordinating query embedding generation, similarity retrieval, and prompt synthesis.
 * Constructed prompt guardrails: *"Answer solely using the provided context chunks. If the answer is not present, respond: 'The uploaded knowledge base does not contain sufficient information.'"*
 * Implemented Server-Sent Events (SSE) streaming API via `/api/rag/chat`.
 
-#### Module 2: Document Ingestion, Parsing & Chunking
-* **Lead Engineer**: Awantika Jaiswal
+#### Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+* **Lead Engineer**: Yashvardhan Singh Chauhan
 * **Branch**: `feature/member2-doc-ingestion`
-* Configured Apache Tika and PDFBox 3 to extract clean text and metadata across multi-page PDFs, Word documents, and text files.
+* Curated Kaggle Academic Research Paper Corpus and configured Apache Tika and PDFBox 3 to extract clean text and metadata across multi-page PDFs, Word documents, and text files.
 * Implemented `recursiveSplitText` with a 500-token window and 50-token overlap, using Java's `BreakIterator` to prevent breaking sentences across chunk boundaries.
 * Handled async background indexing via Spring's `@Async ThreadPoolTaskExecutor`.
 
 #### Module 3: Neon PostgreSQL Vector Store & Security
-* **Lead Engineer**: Devansh Maini
+* **Lead Engineer**: Vaibhav Tank
 * **Branch**: `feature/member3-database-security`
 * Configured Neon serverless PostgreSQL connection pooler (PgBouncer) and created tables for users, roles, documents, and `document_chunks`.
 * Implemented `pgvector` HNSW index on `document_chunks(embedding vector_cosine_ops)`.
 * Built Spring Security 6 stateless filter chain with HMAC-SHA256 JWT tokens and Bucket4j token bucket rate limiting (30 requests/minute).
 
 #### Module 4: React TypeScript UI & Electron Desktop Integration
-* **Lead Engineer**: Aviral Joshi
+* **Lead Engineer**: Rajveer Singh Ranawat
 * **Branch**: `feature/member4-ui-electron`
 * Packaged React 18 SPA into Electron 30 with secure `contextIsolation` and preload IPC bridge.
 * Built responsive chat canvas rendering markdown, tables, and code blocks in real time.
 * Designed interactive Citation Badges; clicking an inline badge opens an excerpt modal revealing the source document, page number, and similarity score.
 
 #### Module 5: RAG Triad Evaluation & Admin Telemetry
-* **Lead Engineer**: Akshita Mawaliya
+* **Lead Engineer**: Yashpal Singh Bhati
 * **Branch**: `feature/member5-analytics-evaluation`
-* Implemented automated scoring engine measuring Context Relevance, Groundedness (Faithfulness), and Answer Relevance.
+* Implemented automated scoring engine measuring Context Relevance, Groundedness (Faithfulness), and Answer Relevance against the Kaggle evaluation benchmark.
 * Built Admin Telemetry Dashboard rendering live query latency, token usage, and index volume counters.
 * Authored JUnit 5 and Mockito test suites achieving **84.6% branch coverage** across backend classes.
 

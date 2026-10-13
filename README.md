@@ -31,11 +31,11 @@ In accordance with Arya College PBL guidelines, the repository is split into 5 d
 
 | Member Name | Role | Module Name | Git Branch | Core Tech Stack |
 | :--- | :--- | :--- | :--- | :--- |
-| **Aryan Kumar Singh** | **Team Leader & Core RAG Architect** | **Module 1: Core RAG Engine & LLM Orchestration** | `feature/member1-rag-engine` | Java 21, Spring Boot 3, Spring AI, WebFlux SSE |
-| **Awantika Jaiswal** | **Data Pipeline Engineer** | **Module 2: Document Ingestion, Parsing & Chunking** | `feature/member2-doc-ingestion` | Apache Tika 2.9, Apache PDFBox 3, JTokkit |
-| **Devansh Maini** | **Database & Security Architect** | **Module 3: Neon PostgreSQL Vector Store & Security** | `feature/member3-database-security` | Neon PostgreSQL, `pgvector` HNSW, Spring Security 6, JWT |
-| **Aviral Joshi** | **Frontend & Desktop Lead** | **Module 4: React TypeScript UI & Electron Integration** | `feature/member4-ui-electron` | Electron 30, React 18, TypeScript, Tailwind CSS, Vite |
-| **Akshita Mawaliya** | **QA & Evaluation Lead** | **Module 5: RAG Triad Evaluation & Admin Telemetry** | `feature/member5-analytics-evaluation` | JUnit 5, Mockito, Apache JMeter, Recharts |
+| **Shaurya Dixit** | **Team Leader & Core RAG Architect** | **Module 1: Core RAG Engine & LLM Orchestration** | `feature/member1-rag-engine` | Java 21, Spring Boot 3, Spring AI, WebFlux SSE |
+| **Yashvardhan Singh Chauhan** | **Data Pipeline Engineer & Kaggle Lead** | **Module 2: Document Ingestion, Parsing & Chunking** | `feature/member2-doc-ingestion` | Apache Tika 2.9, Apache PDFBox 3, JTokkit, Kaggle Corpus |
+| **Vaibhav Tank** | **Database & Security Architect** | **Module 3: Neon PostgreSQL Vector Store & Security** | `feature/member3-database-security` | Neon PostgreSQL, `pgvector` HNSW, Spring Security 6, JWT |
+| **Rajveer Singh Ranawat** | **Frontend & Desktop Lead** | **Module 4: React TypeScript UI & Electron Integration** | `feature/member4-ui-electron` | Electron 30, React 18, TypeScript, Tailwind CSS, Vite |
+| **Yashpal Singh Bhati** | **QA & Evaluation Lead** | **Module 5: RAG Triad Evaluation & Admin Telemetry** | `feature/member5-analytics-evaluation` | JUnit 5, Mockito, Apache JMeter, Recharts, Kaggle Benchmark |
 
 ---
 

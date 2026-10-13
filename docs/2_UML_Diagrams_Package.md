@@ -4,6 +4,8 @@
 **Course:** Java Project Based Learning (PBL) — 5th Semester  
 **Institution:** Arya College of Engineering & I.T., Jaipur (Dept. of CSE)  
 **Mentor:** Er. Ram Babu Buri  
+**Team Members:** Shaurya Dixit, Yashvardhan Singh Chauhan, Vaibhav Tank, Rajveer Singh Ranawat, Yashpal Singh Bhati  
+**Data Corpus:** Kaggle Academic Research Paper Corpus  
 
 ---
 

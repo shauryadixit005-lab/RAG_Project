@@ -1,8 +1,9 @@
 # Optimizing Enterprise Retrieval-Augmented Generation using Hybrid Search and pgvector in Cloud-Native Architecture
 
-**Aryan Kumar Singh, Awantika Jaiswal, Devansh Maini, Aviral Joshi, Akshita Mawaliya**  
+**Shaurya Dixit, Yashvardhan Singh Chauhan, Vaibhav Tank, Rajveer Singh Ranawat, Yashpal Singh Bhati**  
 *Department of Computer Science & Engineering, Arya College of Engineering & I.T., Jaipur, India*  
 *Mentor: Er. Ram Babu Buri (Assistant Professor)*  
+*Data Benchmark: Kaggle Academic Research Paper Corpus*  
 
 ---
 

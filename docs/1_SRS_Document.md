@@ -6,6 +6,13 @@
 **Course:** Java Project Based Learning (PBL) — 5th Semester, Dept. of CSE  
 **Institution:** Arya College of Engineering & I.T., Jaipur  
 **Mentor:** Er. Ram Babu Buri (Assistant Professor)  
+**Team Members:**  
+1. Shaurya Dixit (Team Leader & Core RAG Architect)  
+2. Yashvardhan Singh Chauhan (Data Pipeline Engineer & Kaggle Ingestion Lead)  
+3. Vaibhav Tank (Database & Security Architect)  
+4. Rajveer Singh Ranawat (Frontend & Desktop Lead)  
+5. Yashpal Singh Bhati (QA & Evaluation Lead)  
+**Data Corpus:** Kaggle Academic Research Paper Dataset  
 **Standard Compliance:** IEEE Std 830-1998  
 
 ---

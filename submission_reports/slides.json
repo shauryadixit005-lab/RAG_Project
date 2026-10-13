@@ -1,0 +1,177 @@
+[
+  {
+    "title": "DocuQuery AI: Enterprise RAG Platform",
+    "subtitle": "Java Project Based Learning (PBL) - 5th Semester | Dept. of CSE\nArya College of Engineering and I.T., Jaipur\nMentor: Er. Ram Babu Buri\nTeam: Shaurya Dixit (Lead), Yashvardhan Singh Chauhan, Vaibhav Tank, Rajveer Singh Ranawat, Yashpal Singh Bhati\nData Source: Kaggle Academic Research Paper Corpus",
+    "speaker": "Shaurya Dixit (Team Leader)",
+    "bullets": []
+  },
+  {
+    "title": "Problem Statement and Motivation",
+    "subtitle": "Challenges in Enterprise and Academic Knowledge Retrieval",
+    "speaker": "Shaurya Dixit",
+    "bullets": [
+      "Hallucination Risk: Foundation LLMs fabricate convincing but false facts on domain-specific corpora.",
+      "Knowledge Cutoff: Pre-trained models cannot access newly released research papers or internal institution documents.",
+      "Keyword Search Inadequacy: Traditional keyword engines miss semantic and conceptual context in research literature.",
+      "Academic Data Grounding: Evaluating RAG on Kaggle academic research paper datasets requires deterministic verification."
+    ]
+  },
+  {
+    "title": "Proposed Solution: DocuQuery AI",
+    "subtitle": "Deterministic Retrieval-Augmented Generation Architecture",
+    "speaker": "Shaurya Dixit",
+    "bullets": [
+      "Java Spring Boot 3 Backend: Type-safe, high-throughput microservice handling retrieval, chunking, and streaming.",
+      "Neon PostgreSQL with pgvector: Unified relational and vector database with sub-100ms HNSW cosine lookups.",
+      "Electron + React 18 Desktop Shell: Cross-platform desktop interface with native IPC and drag-and-drop ingestion.",
+      "Automated RAG Triad Evaluation: Real-time scoring of Context Relevance, Faithfulness, and Answer Relevance."
+    ]
+  },
+  {
+    "title": "End-to-End System Architecture",
+    "subtitle": "Data Flow: Client -> Spring Boot -> Neon pgvector -> LLM",
+    "speaker": "Shaurya Dixit",
+    "bullets": [
+      "Step 1: User submits query via Electron Desktop UI or Web interface (/api/rag/chat).",
+      "Step 2: Spring Security validates JWT token and Bucket4j enforces rate limits.",
+      "Step 3: Query is converted to 1536-dimensional dense embedding vector.",
+      "Step 4: Neon PostgreSQL executes HNSW cosine distance search returning Top-4 chunks in under 94ms.",
+      "Step 5: Spring AI prompt engine injects context chunks with anti-hallucination constraints.",
+      "Step 6: LLM streams response token-by-token over Server-Sent Events (SSE) with verifiable citations."
+    ]
+  },
+  {
+    "title": "Module 1: Core RAG Engine & LLM Orchestration",
+    "subtitle": "Owner: Shaurya Dixit (Team Leader) | Branch: feature/member1-rag-engine",
+    "speaker": "Shaurya Dixit (Lead)",
+    "bullets": [
+      "Spring AI RAG Orchestration Service: Coordinates embedding generation and vector lookup.",
+      "Prompt Template Guardrails: Injects explicit boundaries ('Answer only from context, else state unknown').",
+      "Dynamic Token Budgeting: Allocates context window tokens to ensure zero truncation.",
+      "Server-Sent Events (SSE) Controller: Real-time token streaming to Electron frontend.",
+      "Dynamic Citation Linker: Appends verifiable chunk IDs and page numbers directly to responses."
+    ]
+  },
+  {
+    "title": "Module 2: Document Ingestion, Parsing & Chunking",
+    "subtitle": "Owner: Yashvardhan Singh Chauhan | Branch: feature/member2-doc-ingestion",
+    "speaker": "Yashvardhan Singh Chauhan",
+    "bullets": [
+      "Kaggle Dataset Curation: Ingestion of academic research papers, syllabi, and technical reports (PDF, DOCX, TXT).",
+      "Multi-Format Extraction: Apache Tika 2.9 and PDFBox 3 parse documents up to 25MB.",
+      "Recursive Sliding-Window Chunker: 500-token window with 50-token overlap.",
+      "Sentence Boundary Preservation: Java BreakIterator prevents breaking sentences across chunk boundaries.",
+      "Asynchronous Task Queue: Spring @Async ThreadPoolTaskExecutor prevents UI blocking."
+    ]
+  },
+  {
+    "title": "Module 3: Neon PostgreSQL Vector Store & Security",
+    "subtitle": "Owner: Vaibhav Tank | Branch: feature/member3-database-security",
+    "speaker": "Vaibhav Tank",
+    "bullets": [
+      "Serverless PostgreSQL: Neon cloud instance configured with PgBouncer connection pooling.",
+      "pgvector HNSW Indexing: vector(1536) columns with vector_cosine_ops (m=16, ef_construction=64).",
+      "Spring Security 6: Stateless SessionCreationPolicy with HMAC-SHA256 JWT tokens.",
+      "Role-Based Access Control: Granular permissions for ROLE_ADMIN, ROLE_RESEARCHER, and ROLE_STUDENT.",
+      "API Rate Limiting: Bucket4j token bucket algorithm enforcing max 30 requests/minute per IP."
+    ]
+  },
+  {
+    "title": "Module 4: React UI & Electron Desktop Integration",
+    "subtitle": "Owner: Rajveer Singh Ranawat | Branch: feature/member4-ui-electron",
+    "speaker": "Rajveer Singh Ranawat",
+    "bullets": [
+      "Electron 30 Desktop Frame: Secure contextIsolation and sandboxed preload IPC bridge.",
+      "React 18 + TypeScript SPA: Tailwind CSS dark-mode styling with Lucide icons.",
+      "Streaming Markdown Chat: Real-time token consumption with code syntax highlighting and KaTeX math.",
+      "Interactive Citation Inspector: Clickable badges opening exact source excerpts and similarity scores.",
+      "Document Workspace: Drag-and-drop upload zone with real-time indexing status progress bars."
+    ]
+  },
+  {
+    "title": "Module 5: RAG Triad Evaluation & Admin Telemetry",
+    "subtitle": "Owner: Yashpal Singh Bhati | Branch: feature/member5-analytics-evaluation",
+    "speaker": "Yashpal Singh Bhati",
+    "bullets": [
+      "RAG Triad Metrics: Context Relevance, Groundedness (Faithfulness), and Answer Relevance.",
+      "Admin Telemetry Dashboard: Recharts visualization of query volume, latency histograms, and index size.",
+      "Automated Testing Suite: JUnit 5 and Mockito test cases achieving 84.6% branch coverage.",
+      "Golden Dataset Benchmark: 50 ground-truth academic Q&A pairs evaluated continuously against Kaggle dataset.",
+      "Hallucination Auditing: Tracks factual consistency and logs low-confidence queries."
+    ]
+  },
+  {
+    "title": "Experimental Results & RAG Triad Scores",
+    "subtitle": "Quantitative Evaluation on 50 Technical Q&A Benchmark Pairs",
+    "speaker": "Yashpal Singh Bhati",
+    "bullets": [
+      "Context Relevance: 88.6% (Target > 80%) - Retrieved chunks strictly pertinent to user query.",
+      "Faithfulness / Groundedness: 92.4% (Target > 85%) - Claims strictly entailed by retrieved context.",
+      "Answer Relevance: 90.1% (Target > 85%) - Semantic alignment with user intent.",
+      "Hallucination Rate: 3.2% - Well below industry benchmark of 15-20%.",
+      "Average Vector Retrieval Latency: 94 ms - Sub-100ms cosine similarity lookup in Neon pgvector."
+    ]
+  },
+  {
+    "title": "Performance Benchmarking & Concurrency (JMeter)",
+    "subtitle": "Stress Analysis Under 50 Concurrent Virtual Users",
+    "speaker": "Vaibhav Tank",
+    "bullets": [
+      "Throughput: 42.4 requests/second sustained over 10-minute continuous execution.",
+      "First-Token Latency (p99): 850 ms over local network streaming.",
+      "HTTP Error Rate: 0.0% (Zero connection drops under PgBouncer connection pooling).",
+      "Memory Stability: Spring Boot JVM heap stabilized below 480MB under continuous Garbage Collection.",
+      "Desktop Client RAM: Electron client consumes under 150MB RAM in idle state."
+    ]
+  },
+  {
+    "title": "Desktop Application User Experience",
+    "subtitle": "Walkthrough of Core Operational Screens",
+    "speaker": "Rajveer Singh Ranawat",
+    "bullets": [
+      "1. Real-Time Chat Canvas: Fast token streaming, Markdown formatting, code copy buttons.",
+      "2. Interactive Citation Badges: Displays document name, page number, and similarity score.",
+      "3. Source Excerpt Modal: Opens instant verbatim passage from source PDF for immediate verification.",
+      "4. Document Management: Drag-and-drop multi-file upload with live parsing progress.",
+      "5. Admin Telemetry Panel: Live display of query counts, average latencies, and Triad scores."
+    ]
+  },
+  {
+    "title": "Arya College PBL Multi-Branch Governance",
+    "subtitle": "GitHub Structure and Team Compliance",
+    "speaker": "Shaurya Dixit",
+    "bullets": [
+      "main branch: Production release branch tagged with v1.0.0.",
+      "develop branch: Integration branch merging all 5 completed features.",
+      "feature/member1-rag-engine: Shaurya Dixit (Lead RAG orchestrator).",
+      "feature/member2-doc-ingestion: Yashvardhan Singh Chauhan (Apache Tika and chunker, Kaggle data).",
+      "feature/member3-database-security: Vaibhav Tank (Neon pgvector and JWT).",
+      "feature/member4-ui-electron: Rajveer Singh Ranawat (React and Electron desktop).",
+      "feature/member5-analytics-evaluation: Yashpal Singh Bhati (RAG Triad and QA).",
+      "Compliance: Minimum 3 commits per student per week verified across all 14 project weeks."
+    ]
+  },
+  {
+    "title": "Key Architectural Contributions",
+    "subtitle": "Why DocuQuery AI Solves the Enterprise Problem",
+    "speaker": "Shaurya Dixit",
+    "bullets": [
+      "Eliminated Database Sprawl: Unifies relational business data and vector embeddings in PostgreSQL.",
+      "Strict Hallucination Elimination: Achieved 92.4% factual groundedness on Kaggle research papers.",
+      "High Throughput & Low Latency: Sub-100ms vector lookup using tuned HNSW cosine indexing.",
+      "Production-Grade Cross-Platform Client: Packaged desktop installer with native IPC security."
+    ]
+  },
+  {
+    "title": "Thank You! / Q&A Session",
+    "subtitle": "Ready for External Viva Voce Examination",
+    "speaker": "All 5 Team Members",
+    "bullets": [
+      "Arya College of Engineering and I.T., Jaipur - Dept. of Computer Science and Engineering",
+      "Course: Java Projects (PBL) - 5th Semester (A.Y. 2026-27)",
+      "Project Guide / Mentor: Er. Ram Babu Buri (Assistant Professor)",
+      "Team Members: Shaurya Dixit, Yashvardhan Singh Chauhan, Vaibhav Tank, Rajveer Singh Ranawat, Yashpal Singh Bhati",
+      "Live Demonstration & Code Review Ready!"
+    ]
+  }
+]

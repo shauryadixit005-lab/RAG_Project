@@ -17,34 +17,34 @@
 ---
 
 ### [0:00 – 1:30] Introduction & Problem Framing
-**Speaker:** Aryan Kumar Singh (Team Leader)  
+**Speaker:** Shaurya Dixit (Team Leader)  
 **Visual on Screen:** Title Slide / DocuQuery AI desktop landing screen.  
 **Spoken Script:**
-> *"Good morning respected evaluators, external examiner, and our project guide, Er. Ram Babu Buri sir. I am Aryan Kumar Singh, Team Leader for Project DocuQuery AI, along with my team members Awantika, Devansh, Aviral, and Akshita from 5th Semester Computer Science and Engineering at Arya College of Engineering & I.T., Jaipur.*  
+> *"Good morning respected evaluators, external examiner, and our project guide, Er. Ram Babu Buri sir. I am Shaurya Dixit, Team Leader for Project DocuQuery AI, along with my team members Yashvardhan, Vaibhav, Rajveer, and Yashpal from 5th Semester Computer Science and Engineering at Arya College of Engineering & I.T., Jaipur.*  
 >  
-> *When organizations use standard AI models like ChatGPT on private research papers or university syllabi, the models hallucinate—inventing facts and fabricating citations. To solve this, we built **DocuQuery AI**, an enterprise Retrieval-Augmented Generation platform built entirely on a **Java 21 Spring Boot 3** backend, **Neon Serverless PostgreSQL with pgvector**, and an **Electron cross-platform desktop frontend**.*  
+> *When organizations use standard AI models like ChatGPT on private research papers or university syllabi, the models hallucinate—inventing facts and fabricating citations. To solve this, we built **DocuQuery AI**, an enterprise Retrieval-Augmented Generation platform built entirely on a **Java 21 Spring Boot 3** backend, **Neon Serverless PostgreSQL with pgvector**, and an **Electron cross-platform desktop frontend**, evaluating on the **Kaggle Academic Research Paper Corpus**.*  
 >  
 > *Our project is structured into 5 independent architectural modules. Let us demonstrate how a document moves through our pipeline in real time."*
 
 ---
 
 ### [1:30 – 3:15] Module 2: Document Ingestion & Chunking Demo
-**Speaker:** Awantika Jaiswal  
-**Visual on Screen:** Click on the **Document Ingestion** tab in the desktop application. Drag and drop a multi-page PDF (`Cloud_Computing_Architecture.pdf`).  
+**Speaker:** Yashvardhan Singh Chauhan  
+**Visual on Screen:** Click on the **Document Ingestion** tab in the desktop application. Drag and drop a multi-page PDF (`Cloud_Computing_Architecture.pdf` from Kaggle dataset).  
 **Spoken Script:**
-> *"I am Awantika Jaiswal, responsible for Module 2: Document Ingestion and Chunking.*  
+> *"I am Yashvardhan Singh Chauhan, responsible for Module 2: Document Ingestion and Chunking.*  
 >  
-> *Here on the screen, I am uploading a complex 14-page PDF. As soon as I drop this file, our Spring Boot backend triggers an asynchronous worker powered by Apache Tika and PDFBox.*  
+> *Here on the screen, I am uploading a complex 14-page PDF from our Kaggle academic corpus. As soon as I drop this file, our Spring Boot backend triggers an asynchronous worker powered by Apache Tika and PDFBox.*  
 >  
 > *Notice what happens: rather than splitting text blindly by character count, our recursive sliding-window chunker segments the document into 500-token chunks with a 50-token overlap, using Java's `BreakIterator` to preserve complete sentence boundaries. This PDF is parsed into exactly 42 semantic chunks, tagged with metadata, and prepared for vector indexing without blocking the user interface."*
 
 ---
 
 ### [3:15 – 5:00] Module 3: Neon PostgreSQL Vector Storage & Security Demo
-**Speaker:** Devansh Maini  
+**Speaker:** Vaibhav Tank  
 **Visual on Screen:** Switch to the database terminal or Neon cloud console showing the `document_chunks` table and SQL query.  
 **Spoken Script:**
-> *"I am Devansh Maini, responsible for Module 3: Database Architecture and Security.*  
+> *"I am Vaibhav Tank, responsible for Module 3: Database Architecture and Security.*  
 >  
 > *Instead of fragmenting our system with a separate external vector database, we utilize Neon Serverless PostgreSQL with the `pgvector` extension. Here in our database, each chunk is stored alongside its 1536-dimensional dense embedding vector.*  
 >  
@@ -53,24 +53,24 @@
 ---
 
 ### [5:00 – 7:00] Module 1 & 4: Live RAG Chat, Streaming & Citations Demo
-**Speaker:** Aviral Joshi (supported by Aryan Kumar Singh)  
+**Speaker:** Rajveer Singh Ranawat (supported by Shaurya Dixit)  
 **Visual on Screen:** Switch back to the **RAG Chat** tab. Type a natural language question: *"What is the core architecture for cloud service orchestration?"* Click **Ask RAG**.  
 **Spoken Script:**
-> *"I am Aviral Joshi, responsible for Module 4: React UI and Electron Desktop Shell. Now let us ask a technical question based on our uploaded document.*  
+> *"I am Rajveer Singh Ranawat, responsible for Module 4: React UI and Electron Desktop Shell. Now let us ask a technical question based on our uploaded document.*  
 >  
-> *Notice how the answer streams token-by-token using Server-Sent Events (SSE). Aryan's Module 1 orchestrator retrieved the Top-4 chunks from Neon, assembled a strict hallucination-resistant prompt, and synthesized this grounded response.*  
+> *Notice how the answer streams token-by-token using Server-Sent Events (SSE). Shaurya's Module 1 orchestrator retrieved the Top-4 chunks from Neon, assembled a strict hallucination-resistant prompt, and synthesized this grounded response.*  
 >  
 > *Most importantly, notice these blue **Citation Badges** at the bottom. When I click on `[Cloud_Computing_Architecture.pdf (p. 4)]`, an excerpt inspector modal opens immediately, showing the exact source sentence and similarity score. This provides 100% verifiable factual grounding."*
 
 ---
 
 ### [7:00 – 8:45] Module 5: RAG Triad Evaluation & Admin Telemetry Demo
-**Speaker:** Akshita Mawaliya  
+**Speaker:** Yashpal Singh Bhati  
 **Visual on Screen:** Switch to the **RAG Triad & Telemetry** tab.  
 **Spoken Script:**
-> *"I am Akshita Mawaliya, responsible for Module 5: RAG Triad Evaluation and Testing.*  
+> *"I am Yashpal Singh Bhati, responsible for Module 5: RAG Triad Evaluation and Testing.*  
 >  
-> *To objectively verify that our system eliminates hallucinations, we benchmarked the pipeline across 50 ground-truth query sets using the RAG Triad framework. Here on our live telemetry dashboard, you can see:*  
+> *To objectively verify that our system eliminates hallucinations, we benchmarked the pipeline across 50 ground-truth query sets from the Kaggle dataset using the RAG Triad framework. Here on our live telemetry dashboard, you can see:*  
 > *1. **Context Relevance**: 88.6% of retrieved passages strictly match the query.*  
 > *2. **Faithfulness (Groundedness)**: 92.4% of generated statements are directly entailed by retrieved excerpts.*  
 > *3. **Average Retrieval Latency**: 94 milliseconds under our Apache JMeter load tests with 50 concurrent virtual users.*  
@@ -80,7 +80,7 @@
 ---
 
 ### [8:45 – 10:00] Conclusion & Project Wrap-Up
-**Speaker:** Aryan Kumar Singh (Lead)  
+**Speaker:** Shaurya Dixit (Lead)  
 **Visual on Screen:** Show the GitHub repository with all 5 feature branches, commit history, and the tagged release `v1.0.0`.  
 **Spoken Script:**
 > *"In conclusion, DocuQuery AI satisfies all Java PBL objectives by providing an end-to-end, high-performance RAG platform in Java Spring Boot, eliminating database sprawl through Neon `pgvector`, and delivering an intuitive desktop client with verifiable citations.*  

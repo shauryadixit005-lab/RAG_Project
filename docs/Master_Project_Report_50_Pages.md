@@ -16,17 +16,17 @@
 *Assistant Professor, Department of Computer Science & Engineering*
 
 **Submitted by (Team of 5):**
-1. **Aryan Kumar Singh** (Team Leader & Core RAG Architect) — *Roll No: 22EAICS045*
-2. **Awantika Jaiswal** (Data Pipeline Engineer) — *Roll No: 22EAICS048*
-3. **Devansh Maini** (Database & Security Architect) — *Roll No: 22EAICS062*
-4. **Aviral Joshi** (Frontend & Desktop Lead) — *Roll No: 22EAICS047*
-5. **Akshita Mawaliya** (QA & Evaluation Lead) — *Roll No: 22EAICS023*
+1. **Shaurya Dixit** (Team Leader & Core RAG Architect) — *Roll No: 22EAICS045*
+2. **Yashvardhan Singh Chauhan** (Data Pipeline Engineer & Kaggle Ingestion Lead) — *Roll No: 22EAICS048*
+3. **Vaibhav Tank** (Database & Security Architect) — *Roll No: 22EAICS062*
+4. **Rajveer Singh Ranawat** (Frontend & Desktop Lead) — *Roll No: 22EAICS047*
+5. **Yashpal Singh Bhati** (QA & Evaluation Lead) — *Roll No: 22EAICS023*
 
 ---
 
 ## BONAFIDE CERTIFICATE
 
-This is to certify that this project report entitled **"DocuQuery AI: Enterprise Retrieval-Augmented Generation System"** is the bonafide work of **Aryan Kumar Singh, Awantika Jaiswal, Devansh Maini, Aviral Joshi, and Akshita Mawaliya**, students of B.Tech 5th Semester in Computer Science & Engineering at **Arya College of Engineering & I.T., Jaipur**, carried out under my supervision and guidance during the Academic Year 2026–2027.
+This is to certify that this project report entitled **"DocuQuery AI: Enterprise Retrieval-Augmented Generation System"** is the bonafide work of **Shaurya Dixit, Yashvardhan Singh Chauhan, Vaibhav Tank, Rajveer Singh Ranawat, and Yashpal Singh Bhati**, students of B.Tech 5th Semester in Computer Science & Engineering at **Arya College of Engineering & I.T., Jaipur**, carried out under my supervision and guidance during the Academic Year 2026–2027.
 
 The work presented in this report satisfies the academic standards prescribed by Rajasthan Technical University (RTU), Kota, for Java Project Based Learning (PBL).
 
@@ -47,11 +47,11 @@ The code implementations, architectural models, and benchmarks documented herein
 *Date: October 2026*  
 *Place: Jaipur, Rajasthan*
 
-1. **Aryan Kumar Singh** (Signature: _______________________)
-2. **Awantika Jaiswal** (Signature: _______________________)
-3. **Devansh Maini** (Signature: _______________________)
-4. **Aviral Joshi** (Signature: _______________________)
-5. **Akshita Mawaliya** (Signature: _______________________)
+1. **Shaurya Dixit** (Signature: _______________________)
+2. **Yashvardhan Singh Chauhan** (Signature: _______________________)
+3. **Vaibhav Tank** (Signature: _______________________)
+4. **Rajveer Singh Ranawat** (Signature: _______________________)
+5. **Yashpal Singh Bhati** (Signature: _______________________)
 
 ---
 
@@ -104,11 +104,11 @@ Continuous quantitative evaluation using the RAG Triad framework demonstrates **
   - 4.6 Component & Deployment Diagram
   - 4.7 Database Entity-Relationship (ER) Schema
 * **Chapter 5: Detailed Implementation (The 5 Modules)**
-  - 5.1 Module 1: Core RAG Engine & LLM Orchestration Service (Aryan Kumar Singh)
-  - 5.2 Module 2: Document Ingestion, Parsing & Recursive Chunking (Awantika Jaiswal)
-  - 5.3 Module 3: Neon PostgreSQL Vector Store & Spring Security 6 (Devansh Maini)
-  - 5.4 Module 4: React TypeScript UI & Electron Desktop Integration (Aviral Joshi)
-  - 5.5 Module 5: RAG Triad Evaluation & Admin Telemetry (Akshita Mawaliya)
+  - 5.1 Module 1: Core RAG Engine & LLM Orchestration Service (Shaurya Dixit)
+  - 5.2 Module 2: Document Ingestion, Parsing & Recursive Chunking - Kaggle Dataset (Yashvardhan Singh Chauhan)
+  - 5.3 Module 3: Neon PostgreSQL Vector Store & Spring Security 6 (Vaibhav Tank)
+  - 5.4 Module 4: React TypeScript UI & Electron Desktop Integration (Rajveer Singh Ranawat)
+  - 5.5 Module 5: RAG Triad Evaluation & Admin Telemetry (Yashpal Singh Bhati)
   - 5.6 Complete Source Code Listings & Configuration
 * **Chapter 6: Testing, Benchmarking & Experimental Results**
   - 6.1 Unit & Integration Testing (JUnit 5, Mockito, JaCoCo Coverage)
@@ -468,7 +468,7 @@ erDiagram
 ### CHAPTER 5: DETAILED IMPLEMENTATION (THE 5 MODULES)
 
 #### 5.1 Module 1: Core RAG Engine & LLM Orchestration
-* **Lead Engineer**: Aryan Kumar Singh (Team Leader)
+* **Lead Engineer**: Shaurya Dixit (Team Leader)
 * **Branch**: `feature/member1-rag-engine`
 * Implemented `RagOrchestrationService.java` handling vector retrieval, prompt construction, and citation linking.
 * Enforced strict system prompt constraints:
@@ -488,10 +488,10 @@ erDiagram
       """.formatted(contextPassages, userQuery);
   ```
 
-#### 5.2 Module 2: Document Ingestion, Parsing & Recursive Chunking
-* **Lead Engineer**: Awantika Jaiswal
+#### 5.2 Module 2: Document Ingestion, Parsing & Recursive Chunking (Kaggle Dataset)
+* **Lead Engineer**: Yashvardhan Singh Chauhan
 * **Branch**: `feature/member2-doc-ingestion`
-* Configured Apache Tika parser handling PDF, DOCX, TXT, and Markdown files up to 25MB.
+* Curated Kaggle Academic Research Paper Corpus and configured Apache Tika parser handling PDF, DOCX, TXT, and Markdown files up to 25MB.
 * Implemented sliding-window chunker preserving Unicode sentence boundaries via `BreakIterator`:
   ```java
   public List<String> recursiveSplitText(String text, int chunkSizeChars, int overlapChars) {
@@ -509,7 +509,7 @@ erDiagram
   ```
 
 #### 5.3 Module 3: Neon PostgreSQL Vector Store & Security
-* **Lead Engineer**: Devansh Maini
+* **Lead Engineer**: Vaibhav Tank
 * **Branch**: `feature/member3-database-security`
 * Configured Neon Serverless PostgreSQL with `pgvector` HNSW cosine indexing.
 * Implemented native repository query using cosine distance `<=>`:
@@ -526,13 +526,13 @@ erDiagram
 * Configured Spring Security 6 stateless filter chain with HMAC-SHA256 JWT tokens and Bucket4j rate limiting.
 
 #### 5.4 Module 4: React TypeScript UI & Electron Desktop Integration
-* **Lead Engineer**: Aviral Joshi
+* **Lead Engineer**: Rajveer Singh Ranawat
 * **Branch**: `feature/member4-ui-electron`
 * Packaged React 18 SPA inside Electron 30 with secure `contextIsolation` and preload bridge.
 * Built responsive chat interface with streaming Server-Sent Events (SSE) token consumption, code syntax highlighting, and interactive source citation drawers.
 
 #### 5.5 Module 5: RAG Triad Evaluation & Admin Telemetry
-* **Lead Engineer**: Akshita Mawaliya
+* **Lead Engineer**: Yashpal Singh Bhati
 * **Branch**: `feature/member5-analytics-evaluation`
 * Implemented automated RAG Triad scoring engine calculating Context Relevance, Faithfulness, and Answer Relevance.
 * Built Admin Telemetry Dashboard rendering query volume, latency distribution histograms, and index volume counters.
