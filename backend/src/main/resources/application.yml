@@ -1,0 +1,40 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: docuquery-rag
+  datasource:
+    url: jdbc:postgresql://${NEON_HOST:ep-bold-glade-a5p6yv7l.us-east-2.aws.neon.tech}/${NEON_DB:docuquery_db}?sslmode=require
+    username: ${NEON_USER:neondb_owner}
+    password: ${NEON_PASS:npg_secret_placeholder}
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      idle-timeout: 30000
+      max-lifetime: 1800000
+      connection-timeout: 20000
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: false
+  servlet:
+    multipart:
+      max-file-size: 25MB
+      max-request-size: 30MB
+
+app:
+  jwt:
+    secret: 404E635266556A586E3272357538782F413F4428472B4B6250645367566B5970
+    expiration-ms: 86400000 # 24 hours
+  rag:
+    top-k: 4
+    similarity-threshold: 0.65
+    chunk-size: 500
+    chunk-overlap: 50
+    embedding-dimension: 1536
