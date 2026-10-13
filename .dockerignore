@@ -1,0 +1,12 @@
+.git
+.github
+node_modules
+frontend/node_modules
+backend/target
+target
+*.pdf
+submission_reports/*.xlsx
+submission_reports/*.csv
+tools/apache-maven*
+.DS_Store
+Thumbs.db

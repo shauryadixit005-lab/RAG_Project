@@ -1,0 +1,51 @@
+# ==============================================================================
+# Render Infrastructure Blueprint Configuration (render.yaml)
+# DocuQuery AI - ARYA AI&DS PBL RAG System
+# Repository: https://github.com/shauryadixit005-lab/RAG_Project
+# ==============================================================================
+
+services:
+  # ----------------------------------------------------------------------------
+  # 1. Unified Full-Stack Web Service (Single-URL Deployment: React + Spring Boot)
+  # ----------------------------------------------------------------------------
+  - type: web
+    name: docuquery-rag-app
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free
+    region: ohio
+    branch: main
+    autoDeploy: true
+    healthCheckPath: /actuator/health
+    envVars:
+      - key: SPRING_PROFILES_ACTIVE
+        value: prod
+      - key: NEON_HOST
+        value: ep-bold-glade-a5p6yv7l.us-east-2.aws.neon.tech
+      - key: NEON_DB
+        value: docuquery_db
+      - key: NEON_USER
+        value: neondb_owner
+      - key: NEON_PASS
+        sync: false # Set in Render Dashboard or leave blank for offline mock engine
+      - key: JAVA_OPTS
+        value: -Xms256m -Xmx512m -XX:+UseG1GC
+
+  # ----------------------------------------------------------------------------
+  # 2. Standalone Frontend (Optional Static Site on Render Global CDN)
+  # ----------------------------------------------------------------------------
+  - type: web
+    name: docuquery-rag-web
+    runtime: static
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: frontend/dist
+    plan: free
+    branch: main
+    autoDeploy: true
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
+    envVars:
+      - key: VITE_API_BASE_URL
+        sync: false

@@ -515,7 +515,9 @@ export default function App() {
     setLoading(true);
 
     try {
-      const response = await fetch('http://localhost:8080/api/rag/chat', {
+      const apiBase = (import.meta as any).env?.VITE_API_BASE_URL || '';
+      const chatEndpoint = apiBase ? `${apiBase}/api/rag/chat` : '/api/rag/chat';
+      const response = await fetch(chatEndpoint, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ query: textToSend, topK })
