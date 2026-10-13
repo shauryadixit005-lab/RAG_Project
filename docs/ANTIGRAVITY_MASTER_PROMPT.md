@@ -13,11 +13,12 @@ You are an expert Principal AI Software Architect and Full-Stack Engineering Age
 - **Course**: Java Project Based Learning (PBL) — 5th Semester (Academic Year 2026–27)
 - **Project Guide / Mentor**: Er. Ram Babu Buri (Assistant Professor, Dept. of CSE)
 - **Team Composition**: Exactly 5 Members with a designated Team Leader:
-  1. Aryan Kumar Singh (Team Leader & Core RAG Architect) — Branch: `feature/member1-rag-engine`
-  2. Awantika Jaiswal (Data Pipeline Engineer) — Branch: `feature/member2-doc-ingestion`
-  3. Devansh Maini (Database & Security Architect) — Branch: `feature/member3-database-security`
-  4. Aviral Joshi (Frontend & Desktop Lead) — Branch: `feature/member4-ui-electron`
-  5. Akshita Mawaliya (QA & Evaluation Lead) — Branch: `feature/member5-analytics-evaluation`
+  1. Shaurya Dixit (Team Leader & Core RAG Architect) — Branch: `feature/member1-rag-engine`
+  2. Yashvardhan Singh Chauhan (Data Pipeline Engineer & Kaggle Ingestion Lead) — Branch: `feature/member2-doc-ingestion`
+  3. Vaibhav Tank (Database & Security Architect) — Branch: `feature/member3-database-security`
+  4. Rajveer Singh Ranawat (Frontend & Desktop Lead) — Branch: `feature/member4-ui-electron`
+  5. Yashpal Singh Bhati (QA & Evaluation Lead) — Branch: `feature/member5-analytics-evaluation`
+- **Data Source**: Kaggle Academic Research Paper Corpus (Multi-domain CS, AI/ML arXiv papers, DOCX, TXT, MD up to 25MB)
 - **PBL Compliance Requirements**:
   * Mandatory Language for Backend: Java (Spring Boot 3.3.x, Java 21 LTS).
   * Minimum 3 commits per student per week across 5 separate feature branches.
@@ -28,7 +29,7 @@ You are an expert Principal AI Software Architect and Full-Stack Engineering Age
 ### 2. FULLSTACK TECHNICAL SPECIFICATION
 - **Backend Service**:
   * Java 21 LTS, Spring Boot 3.3.x, Spring AI milestone dependencies, Spring WebFlux for Server-Sent Events (SSE).
-  * Apache Tika 2.9 & PDFBox 3 for parsing multi-format documents (PDF, DOCX, TXT, MD up to 25MB).
+  * Apache Tika 2.9 & PDFBox 3 for parsing multi-format documents from the Kaggle dataset (PDF, DOCX, TXT, MD up to 25MB).
   * Recursive sliding-window chunker (500 tokens / 50 overlap) with Unicode sentence boundary preservation using Java `BreakIterator`.
   * Spring Security 6 stateless filter chain with HMAC-SHA256 JWT tokens and BCrypt password encryption.
   * API Rate Limiting using Bucket4j token bucket algorithm (30 req/min per IP).
@@ -43,7 +44,7 @@ You are an expert Principal AI Software Architect and Full-Stack Engineering Age
   * Interactive citation badges opening an excerpt inspector modal displaying source document, page number, and similarity score.
   * Document workspace with drag-and-drop ingestion, progress bars, and indexed repository list.
 - **Evaluation & QA**:
-  * Automated RAG Triad scoring: Context Relevance (>80%), Faithfulness (>85%), Answer Relevance (>85%).
+  * Automated RAG Triad scoring on Kaggle benchmark: Context Relevance (>80%), Faithfulness (>85%), Answer Relevance (>85%).
   * Admin Telemetry Dashboard rendering live query volume, latency distribution histograms, and index volume counters.
   * JUnit 5, Mockito, and JaCoCo test suites achieving >80% branch coverage.
 
@@ -84,18 +85,18 @@ Create the cross-platform client under `frontend/`:
 #### PHASE 4: PORTAL WORK LOGS & EXCEL WORKBOOK GENERATION
 Generate the complete 14-week PBL log dataset under `submission_reports/`:
 - `Java_PBL_RAG_Work_Logs.xlsx`: Multi-sheet styled Excel workbook containing:
-  * Sheet 1 (Daily Work Log): 420 daily entries (July 6 to October 10, 2026, Mon-Sat) for all 5 students with Date, Hours (1.5–2.5h), Status (Completed), and realistic module-specific work descriptions.
+  * Sheet 1 (Daily Work Log): 420 daily entries (July 6 to October 10, 2026, Mon-Sat) for all 5 students with Date, Hours (1.5–2.5h), Status (Completed), and realistic module-specific work descriptions for Kaggle data processing and RAG.
   * Sheet 2 (Weekly Project Reports): 14 weekly entries matching screenshot fields (*Week*, *Date Range*, *Submitted By*, *GitHub Link*, *Work Completed This Week*, *Problems Faced*, *Plan for Next Week*).
   * Sheet 3 (Team & 5-Module Mapping): Comprehensive matrix of member names, roles, assigned modules, Git branches, and tech stacks.
 - `Daily_Work_Logs.csv` & `Weekly_Project_Reports.csv`: Plaintext CSV exports for direct portal copy-pasting.
 
 #### PHASE 5: MULTI-BRANCH GIT ORCHESTRATION
 Automate individual commit attribution satisfying the 3 commits/student/week requirement:
-- Create `feature/member1-rag-engine` and commit Module 1 code authored by Aryan Kumar Singh.
-- Create `feature/member2-doc-ingestion` and commit Module 2 code authored by Awantika Jaiswal.
-- Create `feature/member3-database-security` and commit Module 3 code authored by Devansh Maini.
-- Create `feature/member4-ui-electron` and commit Module 4 code authored by Aviral Joshi.
-- Create `feature/member5-analytics-evaluation` and commit Module 5 code authored by Akshita Mawaliya.
+- Create `feature/member1-rag-engine` and commit Module 1 code authored by Shaurya Dixit.
+- Create `feature/member2-doc-ingestion` and commit Module 2 code authored by Yashvardhan Singh Chauhan.
+- Create `feature/member3-database-security` and commit Module 3 code authored by Vaibhav Tank.
+- Create `feature/member4-ui-electron` and commit Module 4 code authored by Rajveer Singh Ranawat.
+- Create `feature/member5-analytics-evaluation` and commit Module 5 code authored by Yashpal Singh Bhati.
 - Merge all 5 feature branches into `develop`. Merge `develop` into `main` and tag release `v1.0.0`.
 
 #### PHASE 6: MASTER SUBMISSION DELIVERABLES SUITE
@@ -103,11 +104,11 @@ Generate complete academic documentation under `docs/`:
 1. `IEEE_Two_Column_Paper.html`: Authentic two-column IEEE format research paper (*Times New Roman*, column rule, abstract, equations 1–5, Table I, and 10+ Google Scholar citations).
 2. `Master_Project_Report_50_Pages.md`: Comprehensive 50-page Master Project Report containing Guide Certificate (Er. Ram Babu Buri), Declaration, Acknowledgements, Abstract, Chapters 1 to 8, full code listings, and UML diagrams.
 3. 5 Individual 20-Page Member Reports:
-   * `Member1_Aryan_Core_RAG_Engine_Report.md`
-   * `Member2_Awantika_Document_Ingestion_Report.md`
-   * `Member3_Devansh_Database_Security_Report.md`
-   * `Member4_Aviral_Frontend_Electron_Report.md`
-   * `Member5_Akshita_Evaluation_Testing_Report.md`
+   * `Member1_Shaurya_Core_RAG_Engine_Report.md`
+   * `Member2_Yashvardhan_Document_Ingestion_Report.md`
+   * `Member3_Vaibhav_Database_Security_Report.md`
+   * `Member4_Rajveer_Frontend_Electron_Report.md`
+   * `Member5_Yashpal_Evaluation_Testing_Report.md`
 4. `submission_reports/DocuQuery_AI_Presentation.pptx`: Genuine 15-slide Microsoft PowerPoint `.pptx` deck with styled layouts, speaker notes, and member assignments.
 5. `1_SRS_Document.md`: IEEE Std 830-1998 Software Requirements Specification.
 6. `2_UML_Diagrams_Package.md`: Use Case, Class, Sequence, Activity, Component, and ER diagrams.

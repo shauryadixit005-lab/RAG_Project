@@ -1,0 +1,122 @@
+[
+  {
+    "id": "cbse-001",
+    "board": "CBSE",
+    "category": "Examination Bylaws & Passing Criteria",
+    "document": "CBSE_Exam_Bylaws_2026.pdf",
+    "page": 12,
+    "similarity": 0.94,
+    "query_tags": ["passing marks", "passing criteria", "theory practical passing", "pass percentage", "class 12 passing rule", "33 percent rule"],
+    "question": "What is the passing criteria for CBSE Class 10 and Class 12 board examinations?",
+    "answer": "According to the official CBSE Examination Bylaws (Rule 40.1):\n1. For Class 12: A candidate must secure a minimum of 33% marks separately in THEORY and 33% marks separately in PRACTICAL/Project/Internal Assessment, along with an aggregate of 33% in each subject to be declared as PASSED.\n2. For Class 10: Students must obtain an overall aggregate of 33% marks (combining Theory and Internal Assessment together) in each of the five subjects.\n3. Grace Marks: CBSE grants up to 5 grace marks in total to pass a borderline student failing in a single subject.",
+    "snippet": "Rule 40.1: In order to be declared to have passed the Class XII examination, a candidate must obtain at least 33% marks in theory and 33% marks in practical/project separately, besides 33% marks in aggregate in each subject."
+  },
+  {
+    "id": "cbse-002",
+    "board": "CBSE",
+    "category": "Class 12 Computer Science",
+    "document": "CBSE_Class12_Computer_Science_Curriculum.pdf",
+    "page": 4,
+    "similarity": 0.93,
+    "query_tags": ["computer science", "python", "sql", "file handling", "stack", "class 12 cs", "data structures", "marking scheme"],
+    "question": "What is the CBSE Class 12 Computer Science syllabus and question paper design?",
+    "answer": "CBSE Class 12 Computer Science (Subject Code 083) comprises 70 Marks Theory and 30 Marks Practical:\n• Unit 1: Computational Thinking and Programming - 2 (Python, Functions, Text/Binary/CSV File Handling, Data Structures like Linear List Stacks via push/pop) - 40 Marks.\n• Unit 2: Computer Networks (Network topologies, transmission media, OSI vs TCP/IP, protocols HTTP/FTP/DNS, cybersecurity) - 10 Marks.\n• Unit 3: Database Management (SQL DDL/DML, Primary/Foreign keys, Aggregate functions SUM/AVG/COUNT, GROUP BY, HAVING, Joins) - 20 Marks.\n• Practical Component (30 Marks): Python program (8 marks), SQL queries (4 marks), Project report (8 marks), Viva voce (5 marks), Practical file (5 marks).",
+    "snippet": "Unit 1: Computational Thinking and Programming - 2 covers 40 marks including recursion, text and binary files (pickle module), and stacks using Python lists with push and pop operations."
+  },
+  {
+    "id": "cbse-003",
+    "board": "CBSE",
+    "category": "Class 12 Physics",
+    "document": "CBSE_Class12_Physics_Handbook.pdf",
+    "page": 9,
+    "similarity": 0.91,
+    "query_tags": ["physics", "gauss law", "optics", "semiconductor", "electrostatics", "class 12 physics", "kirchhoff law", "derivation"],
+    "question": "What are the most frequent 5-mark derivations in CBSE Class 12 Physics?",
+    "answer": "Analysis of CBSE 10-year question papers identifies the following core 5-mark derivations:\n1. Gauss's Law Applications: Electric field due to an infinitely long straight wire ($E = \\frac{\\lambda}{2\\pi \\varepsilon_0 r}$) and uniformly charged thin spherical shell.\n2. Current Electricity: Kirchhoff's Laws and Wheatstone Bridge balanced condition derivation ($\\frac{P}{Q} = \\frac{R}{S}$).\n3. Wave Optics: Huygens' Wave Theory for laws of Reflection and Refraction ($n_1 \\sin i = n_2 \\sin r$).\n4. Ray Optics: Lens Maker's Formula ($\\frac{1}{f} = (\\mu - 1)(\\frac{1}{R_1} - \\frac{1}{R_2})$) and Refraction at spherical surfaces.\n5. Semiconductor Electronics: V-I characteristics of p-n junction diode in forward and reverse bias, and half-wave/full-wave rectifier circuits.",
+    "snippet": "Section E contains three 5-mark questions with internal choice focusing on fundamental physical derivations including Lens Maker's Formula and Gauss's Law applications."
+  },
+  {
+    "id": "cbse-004",
+    "board": "CBSE",
+    "category": "Class 12 Mathematics",
+    "document": "CBSE_Class12_Mathematics_Blueprint.pdf",
+    "page": 15,
+    "similarity": 0.92,
+    "query_tags": ["math", "mathematics", "calculus", "integration", "matrices", "vectors", "probability", "bayes theorem", "class 12 math"],
+    "question": "What is the weightage distribution and core formulas for CBSE Class 12 Mathematics?",
+    "answer": "CBSE Class 12 Mathematics (Code 041) carries 80 Marks Theory + 20 Marks Internal Assessment:\n• Calculus (35 Marks): Continuity & Differentiability, Applications of Derivatives (Maxima/Minima), Integrals (Integration by parts: $\\int u v dx = u \\int v dx - \\int (u' \\int v dx) dx$), Definite Integral Properties, and Differential Equations.\n• Vectors and 3D Geometry (14 Marks): Dot product, Cross product, Shortest distance between skew lines: $d = \\frac{|(\\mathbf{b}_1 \\times \\mathbf{b}_2) \\cdot (\\mathbf{a}_2 - \\mathbf{a}_1)|}{|\\mathbf{b}_1 \\times \\mathbf{b}_2|}$.\n• Matrices and Determinants (10 Marks): Matrix inversion ($A^{-1} = \\frac{1}{|A|} \\text{adj}(A)$) and solving system of linear equations using matrix method.\n• Probability (8 Marks): Conditional probability, Multiplication theorem, and Bayes' Theorem: $P(E_i|A) = \\frac{P(E_i)P(A|E_i)}{\\sum P(E_k)P(A|E_k)}$.",
+    "snippet": "Calculus dominates the blueprint with 35 marks out of 80. Mandatory 6-mark/case-study questions appear regularly on Maxima-Minima and Bayes' Theorem."
+  },
+  {
+    "id": "cbse-005",
+    "board": "CBSE",
+    "category": "Attendance & Re-evaluation Rules",
+    "document": "CBSE_Examination_Bylaws_2026.pdf",
+    "page": 18,
+    "similarity": 0.90,
+    "query_tags": ["attendance", "75 percent", "shortage", "condonation", "re-evaluation", "verification", "rechecking", "cbse rules"],
+    "question": "What are the CBSE attendance rules and mark re-evaluation procedure?",
+    "answer": "1. Attendance Requirement (Rule 13): A candidate must have minimum 75% attendance during the academic session to appear in board examinations. Shortage up to 15% can be condoned by the CBSE Chairman only on valid medical grounds or national sports participation.\n2. Re-evaluation Process: Follows a strict 3-stage protocol:\n   - Step 1: Verification of Marks (checking totaling errors, Rs 500/subject).\n   - Step 2: Obtaining Scanned Photocopy of Evaluated Answer Book (Rs 700/subject).\n   - Step 3: Re-evaluation of specific questions with textbook reference (Rs 100/question).",
+    "snippet": "Rule 13.1 requires 75% minimum physical attendance. Rule 61 specifies the three-tier challenge mechanism: Verification -> Photocopy -> Re-evaluation."
+  },
+  {
+    "id": "rtu-001",
+    "board": "RTU",
+    "category": "B.Tech Curriculum & Credit Scheme",
+    "document": "RTU_BTech_CSE_Curriculum_2026.pdf",
+    "page": 3,
+    "similarity": 0.95,
+    "query_tags": ["rtu", "rajasthan technical university", "btech", "credits", "cbcs", "passing marks", "credit system", "grading"],
+    "question": "What is the Choice Based Credit System (CBCS) and passing criteria in RTU Kota B.Tech?",
+    "answer": "Under Rajasthan Technical University (RTU) Choice Based Credit System (CBCS):\n1. Total Credits: 160 credits required over 8 semesters for awarding B.Tech degree (approx. 20-22 credits per semester).\n2. Theory Passing Standard: Minimum 36% marks in End-Term Examination (29 out of 80 marks) and an aggregate of 40% combining Internal (Mid-Term) and External marks.\n3. Practical Passing Standard: Minimum 40% in internal and external practical assessments.\n4. CGPA Formula: $\\text{CGPA} = \\frac{\\sum_{i} (C_i \\times G_i)}{\\sum_{i} C_i}$, where $C_i$ is course credit and $G_i$ is grade point (S=10, A+=9, A=8.5, B+=7.5, B=6.5, C=5.5, F=0/Fail).",
+    "snippet": "RTU Ordinance 10.2: Minimum passing marks in End-Term theory examination is 36%. Total minimum aggregate in theory course is 40% of maximum marks."
+  },
+  {
+    "id": "rtu-002",
+    "board": "RTU",
+    "category": "5th Semester Java PBL",
+    "document": "RTU_Java_PBL_Syllabus_2026.docx",
+    "page": 2,
+    "similarity": 0.96,
+    "query_tags": ["java pbl", "5th sem", "pbl guidelines", "arya college", "mentor", "ram babu buri", "viva", "commits"],
+    "question": "What are the RTU 5th Semester Java Project Based Learning (PBL) guidelines and evaluation criteria at Arya College?",
+    "answer": "The RTU Java PBL Course (5th Sem, Dept. of CSE, Mentor: Er. Ram Babu Buri) requires:\n1. Tech Stack Mandate: Enterprise Java backend (Spring Boot 3, Java 21 LTS) coupled with relational/vector databases and modern client architecture.\n2. Team Governance: Exactly 5 students per team with an appointed Team Leader, working across 5 dedicated Git feature branches.\n3. Version Control Rule: Minimum 3 commits per student per week over 14 project weeks (verified via commit hash logs).\n4. Evaluation Schema (100 Marks): Weekly work log submissions (20 marks), Mid-term SRS & UML review (20 marks), Final project working code & live demo (40 marks), and External Viva Voce examination (20 marks).\n5. Portal Submission: Mandatory weekly report and daily work logs synced with javapbl5thsem.netlify.app.",
+    "snippet": "Arya College Java PBL guidelines mandate 5 members, 5 feature branches, 3 commits/student/week, and full 14-week daily logs matching the departmental portal."
+  },
+  {
+    "id": "rtu-003",
+    "board": "RTU",
+    "category": "5th Sem CSE Core Subjects",
+    "document": "RTU_BTech_CSE_Curriculum_2026.pdf",
+    "page": 8,
+    "similarity": 0.92,
+    "query_tags": ["5th sem subjects", "compiler design", "operating systems", "dbms", "daa", "algorithms", "rtu syllabus"],
+    "question": "What are the core theory subjects and syllabus outline for RTU B.Tech CSE 5th Semester?",
+    "answer": "RTU B.Tech 5th Semester Computer Science curriculum covers 5 core theory subjects:\n1. 5CS4-01: Compiler Design (Lexical Analysis, Finite Automata, Parsing LL(1), LR(0), SLR, LALR, CLR, Intermediate code generation, Three Address Code).\n2. 5CS4-02: Operating Systems (CPU Scheduling FCFS/SJF/Round Robin, Synchronization Semaphores, Deadlock prevention/avoidance Banker's Algorithm, Paging & Segmentation).\n3. 5CS4-03: Database Management Systems (Relational Algebra, SQL, Normalization 1NF to BCNF, Concurrency Control 2PL, ACID Transactions).\n4. 5CS4-04: Analysis & Design of Algorithms (Asymptotic notations $O, \\Omega, \\Theta$, Divide & Conquer Merge/QuickSort, Dynamic Programming 0/1 Knapsack, Bellman-Ford, Dijkstra).\n5. 5CS4-05: Software Engineering & PBL (Agile, Scrum, SRS IEEE Std 830, UML diagrams, Java enterprise development).",
+    "snippet": "Semester V theory subjects include 5CS4-01 Compiler Design, 5CS4-02 Operating Systems, 5CS4-03 Database Management Systems, 5CS4-04 Analysis of Algorithms, and Java PBL."
+  },
+  {
+    "id": "rtu-004",
+    "board": "RTU",
+    "category": "Grace Marks & Back Paper Rules",
+    "document": "RTU_Ordinances_and_Grading_Rules.pdf",
+    "page": 14,
+    "similarity": 0.93,
+    "query_tags": ["grace marks", "back paper", "mercy chance", "re-back", "revaluation", "rtu grace rule", "maximum duration"],
+    "question": "What is the RTU Kota grace marks rule and back paper policy for engineering students?",
+    "answer": "According to RTU Examination Ordinances:\n1. Grace Marks Rule: Maximum of 1% of the total aggregate marks of the semester can be awarded as grace marks to pass an examination. Grace marks can be distributed across a maximum of 2 subjects, provided the student clears all remaining subjects.\n2. Back Paper Policy: If a student scores less than 36% in external theory or less than 40% aggregate, they are awarded an 'F' grade and must appear in the Back Paper Examination.\n3. Maximum Course Duration: A student admitted to 4-year B.Tech must complete the degree within $N + 3$ years, i.e., maximum 7 academic years from initial admission.\n4. Revaluation: Students can apply for copy inspection and answer book revaluation within 15 days of result declaration.",
+    "snippet": "RTU Ordinance 15: Grace marks up to 1% of total aggregate marks of the examination may be awarded to a candidate failing in not more than two theory papers."
+  },
+  {
+    "id": "rtu-005",
+    "board": "RTU",
+    "category": "Exam Pattern & Marking Blueprint",
+    "document": "RTU_Ordinances_and_Grading_Rules.pdf",
+    "page": 6,
+    "similarity": 0.91,
+    "query_tags": ["exam pattern", "question paper format", "section a b c", "mid term marks", "internal marks", "rtu paper design"],
+    "question": "What is the RTU End-Term question paper pattern and internal marks distribution?",
+    "answer": "For an 80-mark End-Term Theory Exam (3 Hours Duration), RTU follows a three-section blueprint:\n• Section A (10 Questions x 2 Marks = 20 Marks): Compulsory short conceptual questions covering all 5 syllabus units.\n• Section B (5 Questions x 4 Marks = 20 Marks): Medium analytical questions with internal choices between units.\n• Section C (4 Questions x 10 Marks = 40 Marks, attempt any 4 out of 5): Long comprehensive derivations, design algorithms, and numerical problems.\n• Internal Marks (20 Marks Total): 2 Mid-Term tests of 20 marks each averaged to 10 marks, plus 10 marks for assignments, attendance, and continuous tutorial assessment.",
+    "snippet": "RTU end-semester question paper consists of three parts: Part A (20 marks short compulsory), Part B (20 marks analytical), and Part C (40 marks descriptive/numerical)."
+  }
+]
