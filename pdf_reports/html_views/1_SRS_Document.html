@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Software Requirements Specification (IEEE Std 830-1998)</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 15mm 20mm 15mm;
+            @bottom-right {
+                content: counter(page);
+            }
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #1e293b;
+            background: #fff;
+            margin: 0;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 20pt;
+            color: #0f172a;
+            border-bottom: 2pt solid #0284c7;
+            padding-bottom: 4pt;
+            margin-top: 18pt;
+            margin-bottom: 10pt;
+            page-break-after: avoid;
+        }
+        h2 {
+            font-size: 14pt;
+            color: #0369a1;
+            border-bottom: 1pt solid #cbd5e1;
+            padding-bottom: 3pt;
+            margin-top: 14pt;
+            margin-bottom: 8pt;
+            page-break-after: avoid;
+        }
+        h3 {
+            font-size: 11pt;
+            color: #334155;
+            margin-top: 10pt;
+            margin-bottom: 4pt;
+            page-break-after: avoid;
+        }
+        h4 {
+            font-size: 10pt;
+            color: #475569;
+            margin-top: 8pt;
+            margin-bottom: 3pt;
+        }
+        p {
+            margin: 4pt 0 6pt 0;
+            text-align: justify;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10pt 0;
+            font-size: 8.5pt;
+            page-break-inside: avoid;
+        }
+        th, td {
+            border: 0.5pt solid #cbd5e1;
+            padding: 5pt 6pt;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: 700;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        pre, code {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 8pt;
+        }
+        pre {
+            background: #f8fafc;
+            border: 0.5pt solid #cbd5e1;
+            border-left: 3pt solid #0284c7;
+            padding: 8pt 10pt;
+            border-radius: 4px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            page-break-inside: avoid;
+            margin: 8pt 0;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 1pt 3pt;
+            border-radius: 3px;
+            color: #0369a1;
+        }
+        blockquote {
+            border-left: 3pt solid #38bdf8;
+            margin: 8pt 0;
+            padding: 6pt 12pt;
+            background: #f0f9ff;
+            color: #0369a1;
+            font-style: italic;
+        }
+        ul, ol {
+            margin: 4pt 0 6pt 16pt;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 3pt;
+        }
+        hr {
+            border: none;
+            border-top: 1pt solid #e2e8f0;
+            margin: 12pt 0;
+        }
+        a {
+            color: #0284c7;
+            text-decoration: none;
+        }
+        .header-box {
+            text-align: center;
+            border: 1pt solid #cbd5e1;
+            padding: 14pt;
+            border-radius: 6px;
+            background-color: #f8fafc;
+            margin-bottom: 16pt;
+        }
+        .header-box h2 {
+            border: none;
+            margin: 0;
+            color: #0284c7;
+        }
+        @media print {
+            body { padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>SOFTWARE REQUIREMENTS SPECIFICATION (SRS)</h1>
+<h2>DocuQuery AI: Enterprise Retrieval-Augmented Generation Platform</h2>
+<p><strong>Document Version:</strong> 1.0.0<br><strong>Date:</strong> October 2026<br><strong>Course:</strong> Java Project Based Learning (PBL) — 5th Semester, Dept. of AI&amp;DS (Artificial Intelligence &amp; Data Science)<br><strong>Institution:</strong> Arya College of Engineering &amp; I.T., Jaipur<br><strong>Mentor:</strong> Er. Ram Babu Buri (Assistant Professor)<br><strong>Team Members:</strong>  </p>
+<ol>
+<li>Shaurya Dixit (Team Leader &amp; Core RAG Architect)  </li>
+<li>Yashvardhan Singh Chauhan (Data Pipeline Engineer &amp; Kaggle Ingestion Lead)  </li>
+<li>Vaibhav Tank (Database &amp; Security Architect)  </li>
+<li>Rajveer Singh Ranawat (Frontend &amp; Desktop Lead)  </li>
+<li>Yashpal Singh Bhati (QA &amp; Evaluation Lead)<br><strong>Data Corpus:</strong> Kaggle Academic Research Paper Dataset<br><strong>Standard Compliance:</strong> IEEE Std 830-1998</li>
+</ol>
+<hr>
+<h3>TABLE OF CONTENTS</h3>
+<ol>
+<li><a href="#1-introduction">Introduction</a><ul>
+<li>1.1 Purpose</li>
+<li>1.2 Scope</li>
+<li>1.3 Definitions, Acronyms, and Abbreviations</li>
+<li>1.4 References</li>
+<li>1.5 Overview</li>
+</ul>
+</li>
+<li><a href="#2-overall-description">Overall Description</a><ul>
+<li>2.1 Product Perspective</li>
+<li>2.2 Product Functions</li>
+<li>2.3 User Classes and Characteristics</li>
+<li>2.4 Operating Environment</li>
+<li>2.5 Design and Implementation Constraints</li>
+<li>2.6 Assumptions and Dependencies</li>
+</ul>
+</li>
+<li><a href="#3-system-features--functional-requirements">System Features &amp; Functional Requirements</a></li>
+<li><a href="#4-external-interface-requirements">External Interface Requirements</a></li>
+<li><a href="#5-non-functional-requirements-nfr">Non-Functional Requirements (NFR)</a></li>
+<li><a href="#6-other-requirements--compliance">Other Requirements &amp; Compliance</a></li>
+</ol>
+<hr>
+<h3>1. INTRODUCTION</h3>
+<h4>1.1 Purpose</h4>
+<p>This Software Requirements Specification (SRS) establishes the complete functional and non-functional requirements for the <strong>DocuQuery AI</strong> system. It serves as the baseline contract between the development team and academic evaluators for verification, validation, and grading.</p>
+<h4>1.2 Scope</h4>
+<p>DocuQuery AI is a cross-platform desktop and web enterprise application designed to eliminate Large Language Model (LLM) hallucinations through Retrieval-Augmented Generation (RAG). The system accepts unstructured academic and enterprise text corpora (PDF, DOCX, TXT, MD), generates dense vector embeddings, indexes them into a serverless PostgreSQL database using <code>pgvector</code> HNSW indexing, and streams grounded, citation-verified natural language answers to users.</p>
+<h4>1.3 Definitions, Acronyms, and Abbreviations</h4>
+<ul>
+<li><strong>RAG</strong>: Retrieval-Augmented Generation</li>
+<li><strong>LLM</strong>: Large Language Model</li>
+<li><strong>HNSW</strong>: Hierarchical Navigable Small World (graph-based vector search)</li>
+<li><strong>Cosine Similarity</strong>: Metric evaluating angular distance between normalized vector spaces</li>
+<li><strong>JWT</strong>: JSON Web Token</li>
+<li><strong>RBAC</strong>: Role-Based Access Control</li>
+<li><strong>SSE</strong>: Server-Sent Events</li>
+<li><strong>IPC</strong>: Inter-Process Communication (Electron)</li>
+</ul>
+<h4>1.4 References</h4>
+<ul>
+<li>IEEE Std 830-1998: Recommended Practice for Software Requirements Specifications.</li>
+<li>RTU Kota &amp; Arya College 5th Semester PBL Guidelines (Academic Year 2026–27).</li>
+<li>Spring AI Reference Documentation (Spring Boot 3.3.x).</li>
+<li>PostgreSQL <code>pgvector</code> Extension Documentation.</li>
+</ul>
+<hr>
+<h3>2. OVERALL DESCRIPTION</h3>
+<h4>2.1 Product Perspective</h4>
+<p>DocuQuery AI is an independent, modular system bridging local desktop user workstations with cloud-hosted transactional and vector databases. The architecture decouples the resource-intensive document chunking and vector similarity retrieval into a robust Spring Boot microservice, exposing Server-Sent Events (SSE) to an Electron-wrapped React 18 client.</p>
+<h4>2.2 Product Functions</h4>
+<ol>
+<li>User registration, authentication, and session handling via stateless JWT tokens.</li>
+<li>Drag-and-drop document ingestion supporting PDF, DOCX, TXT, and Markdown files up to 25MB.</li>
+<li>Recursive sliding-window chunking (500 tokens / 50-token overlap) preserving paragraph integrity.</li>
+<li>Vector embedding generation and storage in Neon PostgreSQL with HNSW cosine distance indexing.</li>
+<li>Contextual prompt assembly injecting retrieved source passages with strict anti-hallucination guardrails.</li>
+<li>Real-time token streaming to the desktop client.</li>
+<li>Clickable citation badges opening the exact source document and page excerpt.</li>
+<li>Admin telemetry dashboard rendering RAG Triad evaluation metrics (Faithfulness, Relevance, Groundedness).</li>
+</ol>
+<h4>2.3 User Classes and Characteristics</h4>
+<ul>
+<li><strong>Student / General User</strong>: Queries the repository, inspects source citations, and reviews chat history.</li>
+<li><strong>Researcher / Faculty</strong>: Uploads academic papers, creates topic workspaces, and reviews similarity metrics.</li>
+<li><strong>Administrator</strong>: Re-indexes vector tables, purges corrupt files, and monitors latency and token costs.</li>
+</ul>
+<h4>2.4 Operating Environment</h4>
+<ul>
+<li><strong>Server</strong>: Java 21 LTS Runtime, Spring Boot 3.3.4, Neon PostgreSQL 16 with <code>pgvector</code> 0.7+.</li>
+<li><strong>Client</strong>: Windows 10/11, macOS, Linux (Electron 30 runtime, minimum 4GB RAM, 500MB free disk space).</li>
+</ul>
+<h4>2.5 Design Constraints</h4>
+<ul>
+<li>Primary backend programming language must strictly be <strong>Java</strong> (PBL requirement).</li>
+<li>Vector search latency must remain under 150ms for sub-second first-token response times.</li>
+<li>All cloud database transmissions must enforce TLS 1.3 encryption.</li>
+</ul>
+<hr>
+<h3>3. FUNCTIONAL REQUIREMENTS (FR)</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Req ID</th>
+<th align="left">Module</th>
+<th align="left">Title</th>
+<th align="left">Description</th>
+<th align="left">Priority</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>FR-01</strong></td>
+<td align="left">Ingestion</td>
+<td align="left">File Upload</td>
+<td align="left">System shall accept PDF, DOCX, TXT, and MD files up to 25MB via multipart POST.</td>
+<td align="left">High</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-02</strong></td>
+<td align="left">Ingestion</td>
+<td align="left">Text Parsing</td>
+<td align="left">Apache Tika shall extract raw text and metadata (page numbers, author, creation timestamp).</td>
+<td align="left">High</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-03</strong></td>
+<td align="left">Ingestion</td>
+<td align="left">Recursive Chunking</td>
+<td align="left">Text shall be partitioned into 500-token chunks with 50-token sliding overlap.</td>
+<td align="left">High</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-04</strong></td>
+<td align="left">Ingestion</td>
+<td align="left">Async Status</td>
+<td align="left">Upload API shall return HTTP 202 Accepted with a job UUID to track pipeline progression.</td>
+<td align="left">Medium</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-05</strong></td>
+<td align="left">Database</td>
+<td align="left">Vector Storage</td>
+<td align="left">System shall persist 1536-dimensional float vectors in <code>pgvector</code> columns.</td>
+<td align="left">High</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-06</strong></td>
+<td align="left">Database</td>
+<td align="left">HNSW Indexing</td>
+<td align="left">Vector table shall maintain an HNSW index using <code>vector_cosine_ops</code> ($m=16, ef=64$).</td>
+<td align="left">High</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-07</strong></td>
+<td align="left">Security</td>
+<td align="left">JWT Auth</td>
+<td align="left">System shall issue HMAC-SHA256 tokens valid for 24 hours on <code>/api/auth/login</code>.</td>
+<td align="left">High</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-08</strong></td>
+<td align="left">Security</td>
+<td align="left">RBAC</td>
+<td align="left">Endpoints shall restrict admin actions (<code>ROLE_ADMIN</code>) from student users.</td>
+<td align="left">High</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-09</strong></td>
+<td align="left">Security</td>
+<td align="left">Rate Limiting</td>
+<td align="left">Bucket4j shall reject client requests exceeding 30 req/min with HTTP 429.</td>
+<td align="left">Medium</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-10</strong></td>
+<td align="left">RAG Engine</td>
+<td align="left">Prompt Assembly</td>
+<td align="left">System prompt shall command model to answer exclusively from retrieved context passages.</td>
+<td align="left">High</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-11</strong></td>
+<td align="left">RAG Engine</td>
+<td align="left">Token Streaming</td>
+<td align="left">Responses shall stream token-by-token using Spring WebFlux Server-Sent Events (SSE).</td>
+<td align="left">High</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-12</strong></td>
+<td align="left">RAG Engine</td>
+<td align="left">Dynamic Citations</td>
+<td align="left">Each generated claim shall link to verified source document chunks <code>[Doc: X, Page: Y]</code>.</td>
+<td align="left">High</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-13</strong></td>
+<td align="left">Frontend</td>
+<td align="left">Desktop Shell</td>
+<td align="left">Electron shall provide native window controls and OS-level file drag-and-drop.</td>
+<td align="left">Medium</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-14</strong></td>
+<td align="left">Frontend</td>
+<td align="left">Markdown Render</td>
+<td align="left">Chat canvas shall format markdown, code syntax highlighting, and KaTeX math.</td>
+<td align="left">Medium</td>
+</tr>
+<tr>
+<td align="left"><strong>FR-15</strong></td>
+<td align="left">Evaluation</td>
+<td align="left">Telemetry Metrics</td>
+<td align="left">System shall compute and display Context Relevance, Faithfulness, and Retrieval Latency.</td>
+<td align="left">Medium</td>
+</tr>
+</tbody></table>
+<hr>
+<h3>4. EXTERNAL INTERFACE REQUIREMENTS</h3>
+<h4>4.1 User Interfaces</h4>
+<ul>
+<li>Modern, responsive dark-mode interface built with Tailwind CSS.</li>
+<li>Split-pane workspace: Navigation sidebar, central chat canvas, citation inspector drawer, and admin dashboard.</li>
+</ul>
+<h4>4.2 Software Interfaces</h4>
+<ul>
+<li><strong>Neon PostgreSQL Database API</strong>: JDBC connection string over TLS with HikariCP connection pooling.</li>
+<li><strong>LLM Embedding Interface</strong>: HTTP REST client connecting to vector generation models (<code>text-embedding-3-small</code>).</li>
+</ul>
+<hr>
+<h3>5. NON-FUNCTIONAL REQUIREMENTS (NFR)</h3>
+<ul>
+<li><strong>NFR-01 (Performance)</strong>: Neon vector cosine search shall return Top-4 chunks within 120ms. Total first-token arrival shall remain under 1,000ms.</li>
+<li><strong>NFR-02 (Reliability)</strong>: The system shall maintain 99.5% uptime during evaluation testing with zero JVM memory leak crashes.</li>
+<li><strong>NFR-03 (Security)</strong>: User passwords must be salted and hashed with BCrypt (strength 12).</li>
+<li><strong>NFR-04 (Portability)</strong>: The Electron desktop build shall execute identically across Windows 10/11 x64 systems without requiring manual JDK configuration.</li>
+</ul>
+<hr>
+<h3>6. VERIFICATION MATRIX</h3>
+<p>Every requirement in this specification is mapped to automated JUnit 5 tests, integration tests, and manual acceptance checklists satisfying Arya College&#39;s PBL evaluation criteria.</p>
+
+</body>
+</html>

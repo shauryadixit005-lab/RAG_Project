@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Demo Video Script & Comprehensive Viva Voce Cheat Sheet</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 15mm 20mm 15mm;
+            @bottom-right {
+                content: counter(page);
+            }
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #1e293b;
+            background: #fff;
+            margin: 0;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 20pt;
+            color: #0f172a;
+            border-bottom: 2pt solid #0284c7;
+            padding-bottom: 4pt;
+            margin-top: 18pt;
+            margin-bottom: 10pt;
+            page-break-after: avoid;
+        }
+        h2 {
+            font-size: 14pt;
+            color: #0369a1;
+            border-bottom: 1pt solid #cbd5e1;
+            padding-bottom: 3pt;
+            margin-top: 14pt;
+            margin-bottom: 8pt;
+            page-break-after: avoid;
+        }
+        h3 {
+            font-size: 11pt;
+            color: #334155;
+            margin-top: 10pt;
+            margin-bottom: 4pt;
+            page-break-after: avoid;
+        }
+        h4 {
+            font-size: 10pt;
+            color: #475569;
+            margin-top: 8pt;
+            margin-bottom: 3pt;
+        }
+        p {
+            margin: 4pt 0 6pt 0;
+            text-align: justify;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10pt 0;
+            font-size: 8.5pt;
+            page-break-inside: avoid;
+        }
+        th, td {
+            border: 0.5pt solid #cbd5e1;
+            padding: 5pt 6pt;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: 700;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        pre, code {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 8pt;
+        }
+        pre {
+            background: #f8fafc;
+            border: 0.5pt solid #cbd5e1;
+            border-left: 3pt solid #0284c7;
+            padding: 8pt 10pt;
+            border-radius: 4px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            page-break-inside: avoid;
+            margin: 8pt 0;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 1pt 3pt;
+            border-radius: 3px;
+            color: #0369a1;
+        }
+        blockquote {
+            border-left: 3pt solid #38bdf8;
+            margin: 8pt 0;
+            padding: 6pt 12pt;
+            background: #f0f9ff;
+            color: #0369a1;
+            font-style: italic;
+        }
+        ul, ol {
+            margin: 4pt 0 6pt 16pt;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 3pt;
+        }
+        hr {
+            border: none;
+            border-top: 1pt solid #e2e8f0;
+            margin: 12pt 0;
+        }
+        a {
+            color: #0284c7;
+            text-decoration: none;
+        }
+        .header-box {
+            text-align: center;
+            border: 1pt solid #cbd5e1;
+            padding: 14pt;
+            border-radius: 6px;
+            background-color: #f8fafc;
+            margin-bottom: 16pt;
+        }
+        .header-box h2 {
+            border: none;
+            margin: 0;
+            color: #0284c7;
+        }
+        @media print {
+            body { padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>DEMO VIDEO SCRIPT &amp; VIVA VOCE CHEAT SHEET</h1>
+<h2>DocuQuery AI: Enterprise Retrieval-Augmented Generation Platform</h2>
+<p><strong>Course:</strong> Java Project Based Learning (PBL) — 5th Semester<br><strong>Institution:</strong> Arya College of Engineering &amp; I.T., Jaipur (Dept. of AI&amp;DS - Artificial Intelligence &amp; Data Science)<br><strong>Mentor:</strong> Er. Ram Babu Buri  </p>
+<hr>
+<h2>PART 1: 10-MINUTE DEMO VIDEO RECORDING SCRIPT</h2>
+<h3>Recording Setup</h3>
+<ul>
+<li><strong>Screen resolution</strong>: 1080p (1920x1080).</li>
+<li><strong>Software</strong>: OBS Studio or Windows Game Bar (<code>Win + Alt + R</code>).</li>
+<li><strong>Visuals</strong>: Split between the <strong>DocuQuery AI Desktop App</strong> (<code>demo_app.html</code> or Electron client), the <strong>Neon Cloud PostgreSQL console</strong>, and the <strong>Spring Boot terminal</strong>.</li>
+</ul>
+<hr>
+<h3>[0:00 – 1:30] Introduction &amp; Problem Framing</h3>
+<p><strong>Speaker:</strong> Shaurya Dixit (Team Leader)<br><strong>Visual on Screen:</strong> Title Slide / DocuQuery AI desktop landing screen.<br><strong>Spoken Script:</strong></p>
+<blockquote>
+<p><em>&quot;Good morning respected evaluators, external examiner, and our project guide, Er. Ram Babu Buri sir. I am Shaurya Dixit, Team Leader for Project DocuQuery AI, along with my team members Yashvardhan, Vaibhav, Rajveer, and Yashpal from 5th Semester Artificial Intelligence &amp; Data Science at Arya College of Engineering &amp; I.T., Jaipur.</em>  </p>
+<p><em>When organizations use standard AI models like ChatGPT on private research papers or university syllabi, the models hallucinate—inventing facts and fabricating citations. To solve this, we built <strong>DocuQuery AI</strong>, an enterprise Retrieval-Augmented Generation platform built entirely on a <strong>Java 21 Spring Boot 3</strong> backend, <strong>Neon Serverless PostgreSQL with pgvector</strong>, and an <strong>Electron cross-platform desktop frontend</strong>, evaluating on the <strong>Kaggle Academic Research Paper Corpus</strong>.</em>  </p>
+<p><em>Our project is structured into 5 independent architectural modules. Let us demonstrate how a document moves through our pipeline in real time.&quot;</em></p>
+</blockquote>
+<hr>
+<h3>[1:30 – 3:15] Module 2: Document Ingestion &amp; Chunking Demo</h3>
+<p><strong>Speaker:</strong> Yashvardhan Singh Chauhan<br><strong>Visual on Screen:</strong> Click on the <strong>Document Ingestion</strong> tab in the desktop application. Drag and drop a multi-page PDF (<code>Cloud_Computing_Architecture.pdf</code> from Kaggle dataset).<br><strong>Spoken Script:</strong></p>
+<blockquote>
+<p><em>&quot;I am Yashvardhan Singh Chauhan, responsible for Module 2: Document Ingestion and Chunking.</em>  </p>
+<p><em>Here on the screen, I am uploading a complex 14-page PDF from our Kaggle academic corpus. As soon as I drop this file, our Spring Boot backend triggers an asynchronous worker powered by Apache Tika and PDFBox.</em>  </p>
+<p><em>Notice what happens: rather than splitting text blindly by character count, our recursive sliding-window chunker segments the document into 500-token chunks with a 50-token overlap, using Java&#39;s <code>BreakIterator</code> to preserve complete sentence boundaries. This PDF is parsed into exactly 42 semantic chunks, tagged with metadata, and prepared for vector indexing without blocking the user interface.&quot;</em></p>
+</blockquote>
+<hr>
+<h3>[3:15 – 5:00] Module 3: Neon PostgreSQL Vector Storage &amp; Security Demo</h3>
+<p><strong>Speaker:</strong> Vaibhav Tank<br><strong>Visual on Screen:</strong> Switch to the database terminal or Neon cloud console showing the <code>document_chunks</code> table and SQL query.<br><strong>Spoken Script:</strong></p>
+<blockquote>
+<p><em>&quot;I am Vaibhav Tank, responsible for Module 3: Database Architecture and Security.</em>  </p>
+<p><em>Instead of fragmenting our system with a separate external vector database, we utilize Neon Serverless PostgreSQL with the <code>pgvector</code> extension. Here in our database, each chunk is stored alongside its 1536-dimensional dense embedding vector.</em>  </p>
+<p><em>We have tuned a Hierarchical Navigable Small World (HNSW) index on <code>vector_cosine_ops</code>. When a query arrives, Neon executes an approximate nearest neighbor search using the cosine distance operator <code>&lt;=&gt;</code>, returning the Top-4 closest passages in under 94 milliseconds. Furthermore, all endpoints are secured with Spring Security 6 stateless JWT tokens and Bucket4j rate limiting to defend against denial-of-service attempts.&quot;</em></p>
+</blockquote>
+<hr>
+<h3>[5:00 – 7:00] Module 1 &amp; 4: Live RAG Chat, Streaming &amp; Citations Demo</h3>
+<p><strong>Speaker:</strong> Rajveer Singh Ranawat (supported by Shaurya Dixit)<br><strong>Visual on Screen:</strong> Switch back to the <strong>RAG Chat</strong> tab. Type a natural language question: <em>&quot;What is the core architecture for cloud service orchestration?&quot;</em> Click <strong>Ask RAG</strong>.<br><strong>Spoken Script:</strong></p>
+<blockquote>
+<p><em>&quot;I am Rajveer Singh Ranawat, responsible for Module 4: React UI and Electron Desktop Shell. Now let us ask a technical question based on our uploaded document.</em>  </p>
+<p><em>Notice how the answer streams token-by-token using Server-Sent Events (SSE). Shaurya&#39;s Module 1 orchestrator retrieved the Top-4 chunks from Neon, assembled a strict hallucination-resistant prompt, and synthesized this grounded response.</em>  </p>
+<p><em>Most importantly, notice these blue <strong>Citation Badges</strong> at the bottom. When I click on <code>[Cloud_Computing_Architecture.pdf (p. 4)]</code>, an excerpt inspector modal opens immediately, showing the exact source sentence and similarity score. This provides 100% verifiable factual grounding.&quot;</em></p>
+</blockquote>
+<hr>
+<h3>[7:00 – 8:45] Module 5: RAG Triad Evaluation &amp; Admin Telemetry Demo</h3>
+<p><strong>Speaker:</strong> Yashpal Singh Bhati<br><strong>Visual on Screen:</strong> Switch to the <strong>RAG Triad &amp; Telemetry</strong> tab.<br><strong>Spoken Script:</strong></p>
+<blockquote>
+<p><em>&quot;I am Yashpal Singh Bhati, responsible for Module 5: RAG Triad Evaluation and Testing.</em>  </p>
+<p><em>To objectively verify that our system eliminates hallucinations, we benchmarked the pipeline across 50 ground-truth query sets from the Kaggle dataset using the RAG Triad framework. Here on our live telemetry dashboard, you can see:</em><br><em>1. <strong>Context Relevance</strong>: 88.6% of retrieved passages strictly match the query.</em><br>*2. <strong>Faithfulness (Groundedness)</strong>: 92.4% of generated statements are directly entailed by retrieved excerpts.*<br><em>3. <strong>Average Retrieval Latency</strong>: 94 milliseconds under our Apache JMeter load tests with 50 concurrent virtual users.</em>  </p>
+<p><em>Our backend test suite achieves 84.6% branch coverage using JUnit 5 and Mockito.&quot;</em></p>
+</blockquote>
+<hr>
+<h3>[8:45 – 10:00] Conclusion &amp; Project Wrap-Up</h3>
+<p><strong>Speaker:</strong> Shaurya Dixit (Lead)<br><strong>Visual on Screen:</strong> Show the GitHub repository with all 5 feature branches, commit history, and the tagged release <code>v1.0.0</code>.<br><strong>Spoken Script:</strong></p>
+<blockquote>
+<p><em>&quot;In conclusion, DocuQuery AI satisfies all Java PBL objectives by providing an end-to-end, high-performance RAG platform in Java Spring Boot, eliminating database sprawl through Neon <code>pgvector</code>, and delivering an intuitive desktop client with verifiable citations.</em>  </p>
+<p><em>All 5 team members have version-controlled their independent modules across our 5 GitHub feature branches with minimum 3 commits per student per week. We thank our guide Er. Ram Babu Buri sir and our department faculty. We are now open for your viva voce questions. Thank you!&quot;</em></p>
+</blockquote>
+<hr>
+<h2>PART 2: EXTERNAL VIVA VOCE Q&amp;A CHEAT SHEET</h2>
+<h4>Q1: What is the difference between Naive RAG and Modular RAG, and which one did you implement?</h4>
+<blockquote>
+<p><strong>Answer</strong>:<br><em>Naive RAG</em> follows a rigid Retrieve-Read pipeline: blindly slicing text by character count, embedding, retrieving Top-K, and passing everything into the prompt. This causes the &quot;lost in the middle&quot; problem and high hallucination.<br><em>Modular RAG</em> (which our project implements) introduces intermediate optimization components:  </p>
+<ol>
+<li>Token-aware recursive chunking with sentence boundary preservation (<code>BreakIterator</code>).  </li>
+<li>Similarity threshold filtering (discarding chunks below 0.65 cosine similarity).  </li>
+<li>Dynamic context budgeting and structured prompt guardrails.  </li>
+<li>Real-time RAG Triad evaluation metrics.</li>
+</ol>
+</blockquote>
+<h4>Q2: Why did you use Neon PostgreSQL with <code>pgvector</code> instead of Pinecone, Chroma, or Milvus?</h4>
+<blockquote>
+<p><strong>Answer</strong>:<br>Specialized vector databases cause <strong>architectural fragmentation</strong>—forcing the engineering team to maintain two separate databases: a relational database for user authentication, roles, and audit logs, and an external vector store for embeddings.<br>Neon PostgreSQL with <code>pgvector</code> provides <strong>unified ACID transactions</strong>, relational foreign key joins (<code>ON DELETE CASCADE</code> between documents and chunks), zero synchronization lag, and sub-100ms retrieval speed—all within an industry-standard relational database engine.</p>
+</blockquote>
+<h4>Q3: Explain how HNSW indexing works in <code>pgvector</code> and why it is superior to IVFFlat.</h4>
+<blockquote>
+<p><strong>Answer</strong>:<br><strong>HNSW (Hierarchical Navigable Small World)</strong> is a multi-layer graph-based Approximate Nearest Neighbor (ANN) index. Sparse upper layers provide long-range skip connections for coarse navigation, while dense lower layers provide fine-grained local clustering.<br>Unlike <strong>IVFFlat</strong>, which clusters vectors into static Voronoi centroids and requires retraining whenever new documents are inserted, HNSW supports dynamic real-time inserts without retraining and maintains $O(\log N)$ search complexity with $&gt;95%$ recall.</p>
+</blockquote>
+<h4>Q4: What is the mathematical definition of Cosine Similarity and how does PostgreSQL compute it?</h4>
+<blockquote>
+<p><strong>Answer</strong>:<br>Cosine similarity measures the cosine of the angle between two multi-dimensional vectors:
+$$\text{Cosine Similarity} = \frac{\mathbf{u} \cdot \mathbf{v}}{|\mathbf{u}|_2 |\mathbf{v}|_2}$$
+In PostgreSQL with <code>pgvector</code>, the <code>&lt;=&gt;</code> operator computes <strong>Cosine Distance</strong> ($1 - \text{Cosine Similarity}$). When vectors are normalized to unit length ($|\mathbf{u}| = 1$), the calculation reduces to simple dot products, which the CPU vectorizes efficiently using AVX-512 hardware acceleration.</p>
+</blockquote>
+<h4>Q5: How do you prevent and measure hallucinations in your project?</h4>
+<blockquote>
+<p><strong>Answer</strong>:<br>We enforce a three-tier defense:  </p>
+<ol>
+<li><strong>Prompt Guardrails</strong>: The system prompt explicitly commands the model: <em>&quot;Answer strictly and solely using the provided context chunks. If the answer is not contained in the context, respond: &#39;The uploaded knowledge base does not contain sufficient information.&#39; Never extrapolate.&quot;</em>  </li>
+<li><strong>Similarity Threshold</strong>: If retrieved vector similarity is below 0.65, we reject speculative generation.  </li>
+<li><strong>RAG Triad Faithfulness Metric</strong>: We measure the ratio of generated claims that are logically entailed by retrieved source passages, achieving a verified <strong>92.4% Faithfulness score</strong> with a negligible 3.2% hallucination rate.</li>
+</ol>
+</blockquote>
+<h4>Q6: Why did you choose Electron with React instead of Java Swing or JavaFX?</h4>
+<blockquote>
+<p><strong>Answer</strong>:<br>While Java Swing and JavaFX are traditional GUI toolkits, they lack native streaming markdown renderers, syntax-highlighted code formatters, and responsive dark-mode styling frameworks like Tailwind CSS.<br>By pairing a <strong>Java Spring Boot backend</strong> with an <strong>Electron desktop wrapper</strong>, we get the best of both worlds: enterprise Java compile-time performance and multithreading on the server, paired with modern desktop UX, native OS notifications, and streaming Server-Sent Events (SSE) in the client.</p>
+</blockquote>
+<h4>Q7: What happens if an uploaded PDF is password-protected or corrupted?</h4>
+<blockquote>
+<p><strong>Answer</strong>:<br>In Module 2 (<code>DocumentIngestionService</code>), Apache Tika detects encryption headers during MIME type analysis. If a file is password-protected or has malformed PDF streams, the asynchronous pipeline catches the <code>EncryptedDocumentException</code>, sets the document database status to <code>FAILED</code>, and logs the error in the audit log without crashing the Spring Boot thread pool or affecting active chat sessions.</p>
+</blockquote>
+
+</body>
+</html>

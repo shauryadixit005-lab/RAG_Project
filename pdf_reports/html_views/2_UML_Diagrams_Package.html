@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UML Design & Architectural Modeling Package</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 15mm 20mm 15mm;
+            @bottom-right {
+                content: counter(page);
+            }
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #1e293b;
+            background: #fff;
+            margin: 0;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 20pt;
+            color: #0f172a;
+            border-bottom: 2pt solid #0284c7;
+            padding-bottom: 4pt;
+            margin-top: 18pt;
+            margin-bottom: 10pt;
+            page-break-after: avoid;
+        }
+        h2 {
+            font-size: 14pt;
+            color: #0369a1;
+            border-bottom: 1pt solid #cbd5e1;
+            padding-bottom: 3pt;
+            margin-top: 14pt;
+            margin-bottom: 8pt;
+            page-break-after: avoid;
+        }
+        h3 {
+            font-size: 11pt;
+            color: #334155;
+            margin-top: 10pt;
+            margin-bottom: 4pt;
+            page-break-after: avoid;
+        }
+        h4 {
+            font-size: 10pt;
+            color: #475569;
+            margin-top: 8pt;
+            margin-bottom: 3pt;
+        }
+        p {
+            margin: 4pt 0 6pt 0;
+            text-align: justify;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10pt 0;
+            font-size: 8.5pt;
+            page-break-inside: avoid;
+        }
+        th, td {
+            border: 0.5pt solid #cbd5e1;
+            padding: 5pt 6pt;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: 700;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        pre, code {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 8pt;
+        }
+        pre {
+            background: #f8fafc;
+            border: 0.5pt solid #cbd5e1;
+            border-left: 3pt solid #0284c7;
+            padding: 8pt 10pt;
+            border-radius: 4px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            page-break-inside: avoid;
+            margin: 8pt 0;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 1pt 3pt;
+            border-radius: 3px;
+            color: #0369a1;
+        }
+        blockquote {
+            border-left: 3pt solid #38bdf8;
+            margin: 8pt 0;
+            padding: 6pt 12pt;
+            background: #f0f9ff;
+            color: #0369a1;
+            font-style: italic;
+        }
+        ul, ol {
+            margin: 4pt 0 6pt 16pt;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 3pt;
+        }
+        hr {
+            border: none;
+            border-top: 1pt solid #e2e8f0;
+            margin: 12pt 0;
+        }
+        a {
+            color: #0284c7;
+            text-decoration: none;
+        }
+        .header-box {
+            text-align: center;
+            border: 1pt solid #cbd5e1;
+            padding: 14pt;
+            border-radius: 6px;
+            background-color: #f8fafc;
+            margin-bottom: 16pt;
+        }
+        .header-box h2 {
+            border: none;
+            margin: 0;
+            color: #0284c7;
+        }
+        @media print {
+            body { padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    <h1>UML DESIGN &amp; MODELING PACKAGE</h1>
+<h2>DocuQuery AI: Enterprise Retrieval-Augmented Generation Platform</h2>
+<p><strong>Course:</strong> Java Project Based Learning (PBL) — 5th Semester<br><strong>Institution:</strong> Arya College of Engineering &amp; I.T., Jaipur (Dept. of AI&amp;DS - Artificial Intelligence &amp; Data Science)<br><strong>Mentor:</strong> Er. Ram Babu Buri<br><strong>Team Members:</strong> Shaurya Dixit, Yashvardhan Singh Chauhan, Vaibhav Tank, Rajveer Singh Ranawat, Yashpal Singh Bhati<br><strong>Data Corpus:</strong> Kaggle Academic Research Paper Corpus  </p>
+<hr>
+<h3>TABLE OF CONTENTS</h3>
+<ol>
+<li><a href="#1-use-case-diagram">Use Case Diagram &amp; Actor Descriptions</a></li>
+<li><a href="#2-class-diagram">Class Diagram (Domain Models &amp; Services)</a></li>
+<li><a href="#3-sequence-diagram">Sequence Diagram (End-to-End RAG Query Flow)</a></li>
+<li><a href="#4-activity-diagram">Activity Diagram (Document Ingestion &amp; Chunking Pipeline)</a></li>
+<li><a href="#5-component--deployment-diagram">Component &amp; Deployment Diagram</a></li>
+<li><a href="#6-entity-relationship-er-diagram">Entity-Relationship (ER) Diagram (Neon PostgreSQL Database)</a></li>
+</ol>
+<hr>
+<h3>1. USE CASE DIAGRAM</h3>
+<pre><code class="language-mermaid">flowchart LR
+    Student((&quot;Student / User&quot;))
+    Researcher((&quot;Researcher&quot;))
+    Admin((&quot;Administrator&quot;))
+
+    subgraph DocuQueryAI[&quot;DocuQuery AI System Boundary&quot;]
+        UC1[&quot;Register &amp; Authenticate (JWT)&quot;]
+        UC2[&quot;Upload Documents (PDF, DOCX)&quot;]
+        UC3[&quot;Ask Natural Language Questions&quot;]
+        UC4[&quot;View Streaming Answer &amp; Citations&quot;]
+        UC5[&quot;Inspect Source Documents &amp; Excerpts&quot;]
+        UC6[&quot;Export Conversation History&quot;]
+        UC7[&quot;Manage Knowledge Base (Re-index/Delete)&quot;]
+        UC8[&quot;View RAG Triad &amp; System Metrics&quot;]
+        UC9[&quot;Configure LLM &amp; Vector Parameters&quot;]
+    end
+
+    Student --&gt; UC1
+    Student --&gt; UC3
+    Student --&gt; UC4
+    Student --&gt; UC5
+    Student --&gt; UC6
+
+    Researcher --&gt; UC1
+    Researcher --&gt; UC2
+    Researcher --&gt; UC3
+    Researcher --&gt; UC4
+    Researcher --&gt; UC5
+    Researcher --&gt; UC6
+
+    Admin --&gt; UC1
+    Admin --&gt; UC2
+    Admin --&gt; UC7
+    Admin --&gt; UC8
+    Admin --&gt; UC9
+</code></pre>
+<h4>Actor Roles:</h4>
+<ul>
+<li><strong>Student</strong>: General user who authenticates, asks natural-language questions, inspects source citation badges, and downloads chat histories.</li>
+<li><strong>Researcher</strong>: Contributor who uploads research papers, books, and curriculum notes into the shared workspace.</li>
+<li><strong>Administrator</strong>: System administrator with privileges to monitor vector capacity, view RAG Triad telemetry, and purge documents.</li>
+</ul>
+<hr>
+<h3>2. CLASS DIAGRAM</h3>
+<pre><code class="language-mermaid">classDiagram
+    class UserEntity {
+        -UUID id
+        -String username
+        -String email
+        -String password
+        -String role
+        -Instant createdAt
+        +getId() UUID
+        +getUsername() String
+        +getRole() String
+    }
+
+    class DocumentEntity {
+        -UUID id
+        -String filename
+        -String contentType
+        -Long fileSize
+        -Integer totalPages
+        -Integer totalChunks
+        -DocumentStatus status
+        -Instant createdAt
+        +getId() UUID
+        +getStatus() DocumentStatus
+    }
+
+    class DocumentChunkEntity {
+        -UUID id
+        -Integer chunkIndex
+        -Integer pageNumber
+        -String content
+        -String embedding
+        -Integer tokenCount
+        -Instant createdAt
+        +getId() UUID
+        +getContent() String
+        +getEmbedding() String
+    }
+
+    class RagOrchestrationService {
+        -DocumentChunkRepository chunkRepository
+        -int defaultTopK
+        -double similarityThreshold
+        +processQuery(ChatRequest request) ChatResponse
+        -generateMockVectorString(int dim) String
+    }
+
+    class DocumentIngestionService {
+        -DocumentRepository documentRepository
+        -DocumentChunkRepository chunkRepository
+        -Tika tika
+        +ingestDocumentAsync(MultipartFile file) CompletableFuture
+        -recursiveSplitText(String text, int size, int overlap) List
+    }
+
+    class EvaluationService {
+        +getSystemMetrics() Map
+    }
+
+    DocumentEntity &quot;1&quot; *-- &quot;many&quot; DocumentChunkEntity : owns
+    DocumentIngestionService ..&gt; DocumentEntity : manages
+    RagOrchestrationService ..&gt; DocumentChunkEntity : queries
+    EvaluationService ..&gt; RagOrchestrationService : monitors
+</code></pre>
+<hr>
+<h3>3. SEQUENCE DIAGRAM (RAG Query Execution)</h3>
+<pre><code class="language-mermaid">sequenceDiagram
+    autonumber
+    actor User as User (Desktop App)
+    participant Electron as Electron / React UI
+    participant Gateway as Spring Security (JWT)
+    participant RAG as RagOrchestrationService
+    participant Neon as Neon PostgreSQL (pgvector)
+    participant LLM as LLM Inference Service
+
+    User-&gt;&gt;Electron: Types natural language question
+    Electron-&gt;&gt;Gateway: POST /api/rag/chat (Bearer Token + JSON)
+    Gateway-&gt;&gt;Gateway: Validate JWT &amp; Enforce Rate Limit (Bucket4j)
+    Gateway-&gt;&gt;RAG: Forward authorized query
+    RAG-&gt;&gt;RAG: Generate query vector embedding (1536 float dimensions)
+    RAG-&gt;&gt;Neon: SELECT * FROM document_chunks ORDER BY embedding &lt;=&gt; :vec LIMIT 4
+    Neon--&gt;&gt;RAG: Returns Top-4 Chunks + Metadata (Page, Source)
+    RAG-&gt;&gt;RAG: Assemble System Prompt + Inject Context + Constraints
+    RAG-&gt;&gt;LLM: Send Grounded Prompt (Context + Question)
+    
+    loop Streaming Server-Sent Events
+        LLM--&gt;&gt;RAG: Emits token chunk
+        RAG--&gt;&gt;Electron: SSE event: data: {&quot;token&quot;: &quot;The&quot;, &quot;citations&quot;: []}
+        Electron--&gt;&gt;User: Render token in chat bubble
+    end
+    
+    RAG--&gt;&gt;Electron: SSE event: data: {&quot;done&quot;: true, &quot;citations&quot;: [{&quot;docId&quot;: &quot;...&quot;, &quot;page&quot;: 4}]}
+    Electron--&gt;&gt;User: Render interactive Citation Badge
+</code></pre>
+<hr>
+<h3>4. ACTIVITY DIAGRAM (Document Chunking Pipeline)</h3>
+<pre><code class="language-mermaid">flowchart TD
+    Start([User uploads Document]) --&gt; ValidateFormat{Is format PDF, DOCX, TXT?}
+    ValidateFormat -- No --&gt; Reject([Reject with HTTP 400 Bad Request])
+    ValidateFormat -- Yes --&gt; CheckSize{Is file &lt;= 25MB?}
+    CheckSize -- No --&gt; RejectSize([Reject with HTTP 413 Payload Too Large])
+    CheckSize -- Yes --&gt; AsyncQueue[Dispatch Async Processing Task]
+    AsyncQueue --&gt; TikaParse[Extract Raw Text via Apache Tika]
+    TikaParse --&gt; SentenceSplit[Parse Sentence Boundaries with BreakIterator]
+    SentenceSplit --&gt; ChunkLoop[Slice into 500-token chunks with 50-token overlap]
+    ChunkLoop --&gt; Embeddings[Generate 1536-dim Vector Embeddings]
+    Embeddings --&gt; NeonInsert[Batch INSERT into document_chunks table]
+    NeonInsert --&gt; HNSWBuild[Update HNSW Vector Index]
+    HNSWBuild --&gt; Notify[Emit Desktop Notification: &#39;Document Indexed&#39;]
+    Notify --&gt; End([Indexing Completed])
+</code></pre>
+<hr>
+<h3>5. COMPONENT &amp; DEPLOYMENT DIAGRAM</h3>
+<pre><code class="language-mermaid">flowchart TB
+    subgraph ClientMachine[&quot;Client Machine (Windows 10/11)&quot;]
+        subgraph ElectronDesktop[&quot;Electron 30 Runtime&quot;]
+            Main[&quot;Electron Main Process (IPC &amp; Window Lifecycle)&quot;]
+            Preload[&quot;Sandboxed Preload Script&quot;]
+            ReactUI[&quot;React 18 SPA (TypeScript + Tailwind CSS)&quot;]
+        end
+    end
+
+    subgraph ServerCloud[&quot;Backend Application Server&quot;]
+        subgraph SpringMicroservice[&quot;Java 21 / Spring Boot 3.3&quot;]
+            SecFilter[&quot;Spring Security 6 (JWT + BCrypt)&quot;]
+            RateLimit[&quot;Bucket4j Token Bucket&quot;]
+            IngestEng[&quot;Document Ingestion Engine (Apache Tika)&quot;]
+            RAGEng[&quot;RAG Orchestration Service (Spring AI)&quot;]
+            TelemetryEng[&quot;RAG Triad Evaluator &amp; Telemetry&quot;]
+            HikariPool[&quot;HikariCP Connection Pool&quot;]
+        end
+    end
+
+    subgraph NeonCloud[&quot;Neon Serverless PostgreSQL Cloud&quot;]
+        PgBouncer[&quot;PgBouncer Transaction Pooler&quot;]
+        PostgresCore[(&quot;PostgreSQL 16 Database Engine&quot;)]
+        HNSWIndex[(&quot;pgvector HNSW Cosine Index&quot;)]
+    end
+
+    ReactUI --&gt; Preload --&gt; Main
+    ReactUI -- &quot;HTTPS / REST &amp; SSE&quot; --&gt; SecFilter
+    SecFilter --&gt; RateLimit --&gt; IngestEng &amp; RAGEng &amp; TelemetryEng
+    IngestEng --&gt; HikariPool
+    RAGEng --&gt; HikariPool
+    TelemetryEng --&gt; HikariPool
+    HikariPool -- &quot;TLS 1.3&quot; --&gt; PgBouncer --&gt; PostgresCore
+    PostgresCore --- HNSWIndex
+</code></pre>
+<hr>
+<h3>6. ENTITY-RELATIONSHIP (ER) DIAGRAM</h3>
+<pre><code class="language-mermaid">erDiagram
+    USERS ||--o{ DOCUMENTS : &quot;owns&quot;
+    DOCUMENTS ||--|{ DOCUMENT_CHUNKS : &quot;contains&quot;
+    USERS ||--o{ AUDIT_LOGS : &quot;generates&quot;
+
+    USERS {
+        uuid id PK
+        string username UK
+        string email UK
+        string password
+        string role
+        timestamp created_at
+    }
+
+    DOCUMENTS {
+        uuid id PK
+        uuid user_id FK
+        string filename
+        string content_type
+        bigint file_size
+        integer total_pages
+        integer total_chunks
+        string status
+        timestamp created_at
+    }
+
+    DOCUMENT_CHUNKS {
+        uuid id PK
+        uuid document_id FK
+        integer chunk_index
+        integer page_number
+        text content
+        integer token_count
+        vector_1536 embedding
+        timestamp created_at
+    }
+
+    AUDIT_LOGS {
+        uuid id PK
+        uuid user_id FK
+        string query_text
+        integer tokens_used
+        float latency_ms
+        timestamp created_at
+    }
+</code></pre>
+
+</body>
+</html>

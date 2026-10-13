@@ -1,0 +1,1823 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Complete 14-Week & 93-Day Project Engineering Logs</title>
+    <style>
+        @page {
+            size: A4;
+            margin: 20mm 15mm 20mm 15mm;
+            @bottom-right {
+                content: counter(page);
+            }
+        }
+        body {
+            font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, Roboto, 'Helvetica Neue', Arial, sans-serif;
+            font-size: 10pt;
+            line-height: 1.5;
+            color: #1e293b;
+            background: #fff;
+            margin: 0;
+            padding: 10px;
+        }
+        h1 {
+            font-size: 20pt;
+            color: #0f172a;
+            border-bottom: 2pt solid #0284c7;
+            padding-bottom: 4pt;
+            margin-top: 18pt;
+            margin-bottom: 10pt;
+            page-break-after: avoid;
+        }
+        h2 {
+            font-size: 14pt;
+            color: #0369a1;
+            border-bottom: 1pt solid #cbd5e1;
+            padding-bottom: 3pt;
+            margin-top: 14pt;
+            margin-bottom: 8pt;
+            page-break-after: avoid;
+        }
+        h3 {
+            font-size: 11pt;
+            color: #334155;
+            margin-top: 10pt;
+            margin-bottom: 4pt;
+            page-break-after: avoid;
+        }
+        h4 {
+            font-size: 10pt;
+            color: #475569;
+            margin-top: 8pt;
+            margin-bottom: 3pt;
+        }
+        p {
+            margin: 4pt 0 6pt 0;
+            text-align: justify;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 10pt 0;
+            font-size: 8.5pt;
+            page-break-inside: avoid;
+        }
+        th, td {
+            border: 0.5pt solid #cbd5e1;
+            padding: 5pt 6pt;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f5f9;
+            color: #0f172a;
+            font-weight: 700;
+        }
+        tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        pre, code {
+            font-family: 'Consolas', 'Courier New', monospace;
+            font-size: 8pt;
+        }
+        pre {
+            background: #f8fafc;
+            border: 0.5pt solid #cbd5e1;
+            border-left: 3pt solid #0284c7;
+            padding: 8pt 10pt;
+            border-radius: 4px;
+            overflow-x: auto;
+            white-space: pre-wrap;
+            page-break-inside: avoid;
+            margin: 8pt 0;
+        }
+        code {
+            background: #f1f5f9;
+            padding: 1pt 3pt;
+            border-radius: 3px;
+            color: #0369a1;
+        }
+        blockquote {
+            border-left: 3pt solid #38bdf8;
+            margin: 8pt 0;
+            padding: 6pt 12pt;
+            background: #f0f9ff;
+            color: #0369a1;
+            font-style: italic;
+        }
+        ul, ol {
+            margin: 4pt 0 6pt 16pt;
+            padding: 0;
+        }
+        li {
+            margin-bottom: 3pt;
+        }
+        hr {
+            border: none;
+            border-top: 1pt solid #e2e8f0;
+            margin: 12pt 0;
+        }
+        a {
+            color: #0284c7;
+            text-decoration: none;
+        }
+        .header-box {
+            text-align: center;
+            border: 1pt solid #cbd5e1;
+            padding: 14pt;
+            border-radius: 6px;
+            background-color: #f8fafc;
+            margin-bottom: 16pt;
+        }
+        .header-box h2 {
+            border: none;
+            margin: 0;
+            color: #0284c7;
+        }
+        @media print {
+            body { padding: 0; }
+        }
+    </style>
+</head>
+<body>
+    <p>﻿# DOCUQUERY AI: COMPLETE 14-WEEK &amp; 93-DAY PROJECT LOGS</p>
+<h2>ENTERPRISE RETRIEVAL-AUGMENTED GENERATION (RAG) SYSTEM</h2>
+<p><strong>Institution</strong>: Arya College of Engineering &amp; I.T., Jaipur | <strong>Department</strong>: Artificial Intelligence &amp; Data Science (AI&amp;DS)
+<strong>Course</strong>: B.Tech 5th Semester Java Project Based Learning (PBL) | <strong>Academic Period</strong>: July 6, 2026 to October 6, 2026
+<strong>Faculty Mentor</strong>: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&amp;DS)
+<strong>Target Repository</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project">https://github.com/shauryadixit005-lab/RAG_Project</a></p>
+<hr>
+<h3>COLLABORATORS &amp; GITHUB IDENTITIES</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Member Name</th>
+<th align="left">GitHub Username</th>
+<th align="left">Role &amp; Assigned Module</th>
+<th align="left">Dedicated Branch</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left"><strong>Shaurya Dixit</strong></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab">shauryadixit005-lab</a></td>
+<td align="left">Team Lead &amp; Core RAG Pipeline / Teacher Module Lead</td>
+<td align="left"><code>main</code>, <code>feature/member1-rag-engine</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Yashvardhan Singh Chauhan</strong></td>
+<td align="left"><a href="https://github.com/chauhyash1118">chauhyash1118</a></td>
+<td align="left">Data Pipeline Engineer &amp; Kaggle Ingestion Lead</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Vaibhav Tank</strong></td>
+<td align="left"><a href="https://github.com/vaibhav2860">aibhav2860</a></td>
+<td align="left">Database Architect &amp; Security Engineer</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+</tr>
+<tr>
+<td align="left"><strong>Rajveer Singh Ranawat</strong></td>
+<td align="left">[</td>
+<td align="left"></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left">ajveersinghranawat351-source](<a href="https://github.com/rajveersinghranawat351-source">https://github.com/rajveersinghranawat351-source</a>)</td>
+<td align="left">Frontend Architecture &amp; Desktop Shell Lead</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"></td>
+</tr>
+<tr>
+<td align="left"><strong>Yashpal Singh Bhati</strong></td>
+<td align="left"><a href="https://github.com/Yashpalsinghbhati">Yashpalsinghbhati</a></td>
+<td align="left">QA, RAG Triad Evaluation &amp; Performance Analytics</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+</tr>
+</tbody></table>
+<hr>
+<h2>WEEK 1: PROJECT ABSTRACT, TEACHER MODULE SCOPE &amp; GUIDE ONBOARDING</h2>
+<p><strong>Date Range</strong>: 2026-07-06 to 2026-07-12</p>
+<h3>1. Week Overview</h3>
+<p>During Week 1, the engineering team executed sprint milestones focused on <strong>Project Abstract, Teacher Module Scope &amp; Guide Onboarding</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Aligning RTU 2026 syllabus objectives with RAG context limits.</li>
+<li><strong>Technical Resolution</strong>: Drafted boundary constraints reserving 3000 tokens for context and 1000 tokens for teacher answers.</li>
+</ul>
+<h3>3. Commit Table for Week 1</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-07-06</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/eb399bb8a476e6c13c7d6c592bb71be7ef06f2a8"><code>eb399bb</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 1</td>
+</tr>
+<tr>
+<td align="left">2026-07-07</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/7021836c37ce229c97d9d1d87951cc9f3e738627"><code>7021836</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 2</td>
+</tr>
+<tr>
+<td align="left">2026-07-08</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/773959ef5d6363b4ddb4066a9a494c1be6efb42a"><code>773959e</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 3</td>
+</tr>
+<tr>
+<td align="left">2026-07-09</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ac034f29edac36d721b3582e2b08074e533dac9a"><code>ac034f2</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 4</td>
+</tr>
+<tr>
+<td align="left">2026-07-10</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/db01dc3e863cbd12c1b31fc65c16f4ba3baaeb2e"><code>db01dc3</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 5</td>
+</tr>
+<tr>
+<td align="left">2026-07-11</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/1ad3e2e381ac2393bedc148150feb7c7c22bf8d6"><code>1ad3e2e</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 6</td>
+</tr>
+<tr>
+<td align="left">2026-07-12</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/f1db83650c0fdac94886bd2144849d89cbc73fa3"><code>f1db836</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 7</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 1)</h3>
+<h4>Day 1 (2026-07-06) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 1 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/eb399bb8a476e6c13c7d6c592bb71be7ef06f2a8"><code>eb399bb</code></a></li>
+</ul>
+<h4>Day 2 (2026-07-07) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/7021836c37ce229c97d9d1d87951cc9f3e738627"><code>7021836</code></a></li>
+</ul>
+<h4>Day 3 (2026-07-08) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/773959ef5d6363b4ddb4066a9a494c1be6efb42a"><code>773959e</code></a></li>
+</ul>
+<h4>Day 4 (2026-07-09) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ac034f29edac36d721b3582e2b08074e533dac9a"><code>ac034f2</code></a></li>
+</ul>
+<h4>Day 5 (2026-07-10) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/db01dc3e863cbd12c1b31fc65c16f4ba3baaeb2e"><code>db01dc3</code></a></li>
+</ul>
+<h4>Day 6 (2026-07-11) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/1ad3e2e381ac2393bedc148150feb7c7c22bf8d6"><code>1ad3e2e</code></a></li>
+</ul>
+<h4>Day 7 (2026-07-12) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/f1db83650c0fdac94886bd2144849d89cbc73fa3"><code>f1db836</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 2: IEEE 830 SRS FORMULATION &amp; TEACHER EVALUATION RUBRICS</h2>
+<p><strong>Date Range</strong>: 2026-07-13 to 2026-07-19</p>
+<h3>1. Week Overview</h3>
+<p>During Week 2, the engineering team executed sprint milestones focused on <strong>IEEE 830 SRS Formulation &amp; Teacher Evaluation Rubrics</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Quantifying non-functional latency thresholds for live viva evaluation.</li>
+<li><strong>Technical Resolution</strong>: Established 1000ms SLA for first-token SSE stream and 100ms for vector retrieval.</li>
+</ul>
+<h3>3. Commit Table for Week 2</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-07-13</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d69ef5e4c3f25493afc12fe0baf1b12da68a0abd"><code>d69ef5e</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 8</td>
+</tr>
+<tr>
+<td align="left">2026-07-14</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/3325bcf8a29163a72e3e1a5907cd57bada6ff016"><code>3325bcf</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 9</td>
+</tr>
+<tr>
+<td align="left">2026-07-15</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/f66ada70e9dc0b0d0786c777d18a992d9a8a5922"><code>f66ada7</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 10</td>
+</tr>
+<tr>
+<td align="left">2026-07-16</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/27c5dbdf145caa1dc4bac98808e65e470b4be866"><code>27c5dbd</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 11</td>
+</tr>
+<tr>
+<td align="left">2026-07-17</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/1d86f621861cfd5bc201d18781d33663d5b47da8"><code>1d86f62</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 12</td>
+</tr>
+<tr>
+<td align="left">2026-07-18</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/2121694216e1d550969103c1319509ed1adb8311"><code>2121694</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 13</td>
+</tr>
+<tr>
+<td align="left">2026-07-19</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/8213a36f9587bc0ff63e616a139d4e87f0884799"><code>8213a36</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 14</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 2)</h3>
+<h4>Day 8 (2026-07-13) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 2 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d69ef5e4c3f25493afc12fe0baf1b12da68a0abd"><code>d69ef5e</code></a></li>
+</ul>
+<h4>Day 9 (2026-07-14) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/3325bcf8a29163a72e3e1a5907cd57bada6ff016"><code>3325bcf</code></a></li>
+</ul>
+<h4>Day 10 (2026-07-15) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/f66ada70e9dc0b0d0786c777d18a992d9a8a5922"><code>f66ada7</code></a></li>
+</ul>
+<h4>Day 11 (2026-07-16) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/27c5dbdf145caa1dc4bac98808e65e470b4be866"><code>27c5dbd</code></a></li>
+</ul>
+<h4>Day 12 (2026-07-17) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/1d86f621861cfd5bc201d18781d33663d5b47da8"><code>1d86f62</code></a></li>
+</ul>
+<h4>Day 13 (2026-07-18) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/2121694216e1d550969103c1319509ed1adb8311"><code>2121694</code></a></li>
+</ul>
+<h4>Day 14 (2026-07-19) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/8213a36f9587bc0ff63e616a139d4e87f0884799"><code>8213a36</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 3: UML MODELING &amp; TEACHER DEMO STATE MACHINE DESIGN</h2>
+<p><strong>Date Range</strong>: 2026-07-20 to 2026-07-26</p>
+<h3>1. Week Overview</h3>
+<p>During Week 3, the engineering team executed sprint milestones focused on <strong>UML Modeling &amp; Teacher Demo State Machine Design</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Modeling asynchronous streaming response between Spring Boot and Electron.</li>
+<li><strong>Technical Resolution</strong>: Implemented reactive WebFlux event stream with heartbeat ping events.</li>
+</ul>
+<h3>3. Commit Table for Week 3</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-07-20</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/5c69d0314c9ac9f0e00ba3fc68e549f8279b57ad"><code>5c69d03</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 15</td>
+</tr>
+<tr>
+<td align="left">2026-07-21</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c2864654fb6dda424ff465002ddc310dd11c65ad"><code>c286465</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 16</td>
+</tr>
+<tr>
+<td align="left">2026-07-22</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/0f8920eb3a5aea66c4254489fe837a081ed3e705"><code>0f8920e</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 17</td>
+</tr>
+<tr>
+<td align="left">2026-07-23</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/f81b3c074dfd2a92b241f4ceada75b25bbdacd19"><code>f81b3c0</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 18</td>
+</tr>
+<tr>
+<td align="left">2026-07-24</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e1a3375a10a30fc5ed21222c1a136020fe5eb6bc"><code>e1a3375</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 19</td>
+</tr>
+<tr>
+<td align="left">2026-07-25</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a58a8c97c77a76f1c69ba9ab7e67ffb2e10c8cd1"><code>a58a8c9</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 20</td>
+</tr>
+<tr>
+<td align="left">2026-07-26</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c8ec1bb21a44c8bb57aa275ed1c1b094e672941c"><code>c8ec1bb</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 21</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 3)</h3>
+<h4>Day 15 (2026-07-20) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 3 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/5c69d0314c9ac9f0e00ba3fc68e549f8279b57ad"><code>5c69d03</code></a></li>
+</ul>
+<h4>Day 16 (2026-07-21) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c2864654fb6dda424ff465002ddc310dd11c65ad"><code>c286465</code></a></li>
+</ul>
+<h4>Day 17 (2026-07-22) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/0f8920eb3a5aea66c4254489fe837a081ed3e705"><code>0f8920e</code></a></li>
+</ul>
+<h4>Day 18 (2026-07-23) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/f81b3c074dfd2a92b241f4ceada75b25bbdacd19"><code>f81b3c0</code></a></li>
+</ul>
+<h4>Day 19 (2026-07-24) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e1a3375a10a30fc5ed21222c1a136020fe5eb6bc"><code>e1a3375</code></a></li>
+</ul>
+<h4>Day 20 (2026-07-25) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a58a8c97c77a76f1c69ba9ab7e67ffb2e10c8cd1"><code>a58a8c9</code></a></li>
+</ul>
+<h4>Day 21 (2026-07-26) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c8ec1bb21a44c8bb57aa275ed1c1b094e672941c"><code>c8ec1bb</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 4: TEACHER QUESTION BANK PREPROCESSING &amp; KAGGLE INGESTION</h2>
+<p><strong>Date Range</strong>: 2026-07-27 to 2026-08-02</p>
+<h3>1. Week Overview</h3>
+<p>During Week 4, the engineering team executed sprint milestones focused on <strong>Teacher Question Bank Preprocessing &amp; Kaggle Ingestion</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Unicode mathematical formula mangling in RTU exam questions.</li>
+<li><strong>Technical Resolution</strong>: Integrated NFKC Unicode normalizer preserving equations and Greek symbols.</li>
+</ul>
+<h3>3. Commit Table for Week 4</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-07-27</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a15ad9138362432b392472f78ea2f35dbc02422c"><code>a15ad91</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 22</td>
+</tr>
+<tr>
+<td align="left">2026-07-28</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/956f3047636985776bf3be536a9c9d743b7688a5"><code>956f304</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 23</td>
+</tr>
+<tr>
+<td align="left">2026-07-29</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e73126b52f046d45789dc9980cf737bb60c4affa"><code>e73126b</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 24</td>
+</tr>
+<tr>
+<td align="left">2026-07-30</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/edc9a93aa4734b4cbd7dedbf337efb3a33d2935c"><code>edc9a93</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 25</td>
+</tr>
+<tr>
+<td align="left">2026-07-31</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a6dfa8d85cd5f2ac24d780d33afa99698c01bced"><code>a6dfa8d</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 26</td>
+</tr>
+<tr>
+<td align="left">2026-08-01</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/4bdafe5fea822e16f2565fc85d8c9473c6528e38"><code>4bdafe5</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 27</td>
+</tr>
+<tr>
+<td align="left">2026-08-02</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/f920df62466cf63f7e199cc41e8dc4b084f5b2f2"><code>f920df6</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 28</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 4)</h3>
+<h4>Day 22 (2026-07-27) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 4 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a15ad9138362432b392472f78ea2f35dbc02422c"><code>a15ad91</code></a></li>
+</ul>
+<h4>Day 23 (2026-07-28) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/956f3047636985776bf3be536a9c9d743b7688a5"><code>956f304</code></a></li>
+</ul>
+<h4>Day 24 (2026-07-29) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e73126b52f046d45789dc9980cf737bb60c4affa"><code>e73126b</code></a></li>
+</ul>
+<h4>Day 25 (2026-07-30) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/edc9a93aa4734b4cbd7dedbf337efb3a33d2935c"><code>edc9a93</code></a></li>
+</ul>
+<h4>Day 26 (2026-07-31) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a6dfa8d85cd5f2ac24d780d33afa99698c01bced"><code>a6dfa8d</code></a></li>
+</ul>
+<h4>Day 27 (2026-08-01) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/4bdafe5fea822e16f2565fc85d8c9473c6528e38"><code>4bdafe5</code></a></li>
+</ul>
+<h4>Day 28 (2026-08-02) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/f920df62466cf63f7e199cc41e8dc4b084f5b2f2"><code>f920df6</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 5: CORE TEACHER RAG CONTROLLER &amp; ANTI-HALLUCINATION PROMPTS</h2>
+<p><strong>Date Range</strong>: 2026-08-03 to 2026-08-09</p>
+<h3>1. Week Overview</h3>
+<p>During Week 5, the engineering team executed sprint milestones focused on <strong>Core Teacher RAG Controller &amp; Anti-Hallucination Prompts</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Preventing speculative extrapolation on unseen questions.</li>
+<li><strong>Technical Resolution</strong>: Formulated negative constraint prompting ordering LLM to answer strictly from context.</li>
+</ul>
+<h3>3. Commit Table for Week 5</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-08-03</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/9293ce6272abc4cffb4d723c20a0c16259adc4f8"><code>9293ce6</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 29</td>
+</tr>
+<tr>
+<td align="left">2026-08-04</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/902fd879a24a0b3f22cc987993abab5a7d2c468c"><code>902fd87</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 30</td>
+</tr>
+<tr>
+<td align="left">2026-08-05</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/3d950383bade1a422e561c8d1fa1ad192436562e"><code>3d95038</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 31</td>
+</tr>
+<tr>
+<td align="left">2026-08-06</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a792ba44c708a427a31999d97ad22dc382cd6c99"><code>a792ba4</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 32</td>
+</tr>
+<tr>
+<td align="left">2026-08-07</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d2e4a88191aa5b59c6e77e4e20351a09938d7d84"><code>d2e4a88</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 33</td>
+</tr>
+<tr>
+<td align="left">2026-08-08</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/4330fed33ec6bd91ba5342bdc29c16d6a2dc3421"><code>4330fed</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 34</td>
+</tr>
+<tr>
+<td align="left">2026-08-09</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c11644e8d13c7fb768e5c106305f78df0b731021"><code>c11644e</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 35</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 5)</h3>
+<h4>Day 29 (2026-08-03) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 5 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/9293ce6272abc4cffb4d723c20a0c16259adc4f8"><code>9293ce6</code></a></li>
+</ul>
+<h4>Day 30 (2026-08-04) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/902fd879a24a0b3f22cc987993abab5a7d2c468c"><code>902fd87</code></a></li>
+</ul>
+<h4>Day 31 (2026-08-05) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/3d950383bade1a422e561c8d1fa1ad192436562e"><code>3d95038</code></a></li>
+</ul>
+<h4>Day 32 (2026-08-06) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a792ba44c708a427a31999d97ad22dc382cd6c99"><code>a792ba4</code></a></li>
+</ul>
+<h4>Day 33 (2026-08-07) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d2e4a88191aa5b59c6e77e4e20351a09938d7d84"><code>d2e4a88</code></a></li>
+</ul>
+<h4>Day 34 (2026-08-08) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/4330fed33ec6bd91ba5342bdc29c16d6a2dc3421"><code>4330fed</code></a></li>
+</ul>
+<h4>Day 35 (2026-08-09) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c11644e8d13c7fb768e5c106305f78df0b731021"><code>c11644e</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 6: TEACHER LIVE DEMO ENGINE &amp; SSE STREAM CONSUMER</h2>
+<p><strong>Date Range</strong>: 2026-08-10 to 2026-08-16</p>
+<h3>1. Week Overview</h3>
+<p>During Week 6, the engineering team executed sprint milestones focused on <strong>Teacher Live Demo Engine &amp; SSE Stream Consumer</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Socket disconnection during long streaming responses.</li>
+<li><strong>Technical Resolution</strong>: Configured Netty Schedulers.boundedElastic thread pool with auto-reconnect signals.</li>
+</ul>
+<h3>3. Commit Table for Week 6</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-08-10</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/86094efccfed1d66a7c3b22f8a07978fbfe0576e"><code>86094ef</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 36</td>
+</tr>
+<tr>
+<td align="left">2026-08-11</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c32db893ce2159a3a50c2b2039f154329c922410"><code>c32db89</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 37</td>
+</tr>
+<tr>
+<td align="left">2026-08-12</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/fa97c4e8dfb68f476baf48f0969bb470a5b9d4af"><code>fa97c4e</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 38</td>
+</tr>
+<tr>
+<td align="left">2026-08-13</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/74fa150cd448f334e431b770f8df1281d988c084"><code>74fa150</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 39</td>
+</tr>
+<tr>
+<td align="left">2026-08-14</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/684f8131bb44fb120c4f686cbffca2067ce683ec"><code>684f813</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 40</td>
+</tr>
+<tr>
+<td align="left">2026-08-15</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/3e477b4beda97e39a761c032eb21fe1bc3b04d13"><code>3e477b4</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 41</td>
+</tr>
+<tr>
+<td align="left">2026-08-16</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/4d6aac6b1f97857f329a8113721be37e2c90722f"><code>4d6aac6</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 42</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 6)</h3>
+<h4>Day 36 (2026-08-10) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 6 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/86094efccfed1d66a7c3b22f8a07978fbfe0576e"><code>86094ef</code></a></li>
+</ul>
+<h4>Day 37 (2026-08-11) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c32db893ce2159a3a50c2b2039f154329c922410"><code>c32db89</code></a></li>
+</ul>
+<h4>Day 38 (2026-08-12) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/fa97c4e8dfb68f476baf48f0969bb470a5b9d4af"><code>fa97c4e</code></a></li>
+</ul>
+<h4>Day 39 (2026-08-13) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/74fa150cd448f334e431b770f8df1281d988c084"><code>74fa150</code></a></li>
+</ul>
+<h4>Day 40 (2026-08-14) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/684f8131bb44fb120c4f686cbffca2067ce683ec"><code>684f813</code></a></li>
+</ul>
+<h4>Day 41 (2026-08-15) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/3e477b4beda97e39a761c032eb21fe1bc3b04d13"><code>3e477b4</code></a></li>
+</ul>
+<h4>Day 42 (2026-08-16) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/4d6aac6b1f97857f329a8113721be37e2c90722f"><code>4d6aac6</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 7: DYNAMIC CITATION BADGING &amp; VERIFIABLE SOURCE LINKS</h2>
+<p><strong>Date Range</strong>: 2026-08-17 to 2026-08-23</p>
+<h3>1. Week Overview</h3>
+<p>During Week 7, the engineering team executed sprint milestones focused on <strong>Dynamic Citation Badging &amp; Verifiable Source Links</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Linking generated text claims to exact document page numbers.</li>
+<li><strong>Technical Resolution</strong>: Built regex parser extracting [Doc: X, Page: Y] into clickable modal links.</li>
+</ul>
+<h3>3. Commit Table for Week 7</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-08-17</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/23d4d8524166224200ec5b54b1b3e2961456e7ff"><code>23d4d85</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 43</td>
+</tr>
+<tr>
+<td align="left">2026-08-18</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/28fbbf162c1a79fd2d8162a8d4bffcd6648fabc0"><code>28fbbf1</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 44</td>
+</tr>
+<tr>
+<td align="left">2026-08-19</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ea09ca195b60b2ec3e680672c32d2ed01531e752"><code>ea09ca1</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 45</td>
+</tr>
+<tr>
+<td align="left">2026-08-20</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/b6ec269a314cdf510de59a19b25509aec1695e0c"><code>b6ec269</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 46</td>
+</tr>
+<tr>
+<td align="left">2026-08-21</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/58e3b0d9206d94b7da419a5c90e7992390bfa744"><code>58e3b0d</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 47</td>
+</tr>
+<tr>
+<td align="left">2026-08-22</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ebb797f4bd7ae7b3e0c73e2ec08b6dd56db8af5b"><code>ebb797f</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 48</td>
+</tr>
+<tr>
+<td align="left">2026-08-23</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d87cae72ad394c7d55bd9b51ef5da7cc5247f0ed"><code>d87cae7</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 49</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 7)</h3>
+<h4>Day 43 (2026-08-17) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 7 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/23d4d8524166224200ec5b54b1b3e2961456e7ff"><code>23d4d85</code></a></li>
+</ul>
+<h4>Day 44 (2026-08-18) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/28fbbf162c1a79fd2d8162a8d4bffcd6648fabc0"><code>28fbbf1</code></a></li>
+</ul>
+<h4>Day 45 (2026-08-19) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ea09ca195b60b2ec3e680672c32d2ed01531e752"><code>ea09ca1</code></a></li>
+</ul>
+<h4>Day 46 (2026-08-20) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/b6ec269a314cdf510de59a19b25509aec1695e0c"><code>b6ec269</code></a></li>
+</ul>
+<h4>Day 47 (2026-08-21) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/58e3b0d9206d94b7da419a5c90e7992390bfa744"><code>58e3b0d</code></a></li>
+</ul>
+<h4>Day 48 (2026-08-22) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ebb797f4bd7ae7b3e0c73e2ec08b6dd56db8af5b"><code>ebb797f</code></a></li>
+</ul>
+<h4>Day 49 (2026-08-23) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d87cae72ad394c7d55bd9b51ef5da7cc5247f0ed"><code>d87cae7</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 8: AUTOMATED TEACHER GRADING &amp; RAG TRIAD SCORING</h2>
+<p><strong>Date Range</strong>: 2026-08-24 to 2026-08-30</p>
+<h3>1. Week Overview</h3>
+<p>During Week 8, the engineering team executed sprint milestones focused on <strong>Automated Teacher Grading &amp; RAG Triad Scoring</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Evaluating answer faithfulness without expensive human grading.</li>
+<li><strong>Technical Resolution</strong>: Implemented automated LLM-as-a-Judge computing Faithfulness, Context Relevance, and Answer Relevance.</li>
+</ul>
+<h3>3. Commit Table for Week 8</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-08-24</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a73ec216fe3c40309d1d26805e79b717c10dc132"><code>a73ec21</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 50</td>
+</tr>
+<tr>
+<td align="left">2026-08-25</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ae82c22fa123d579c4bda107b8738c1d182dd112"><code>ae82c22</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 51</td>
+</tr>
+<tr>
+<td align="left">2026-08-26</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/17a265d5fdebc373f6dd30ebcbbe98359c298bb4"><code>17a265d</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 52</td>
+</tr>
+<tr>
+<td align="left">2026-08-27</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/eaacb1fb7d03af6e0b326aea1977a8649861b577"><code>eaacb1f</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 53</td>
+</tr>
+<tr>
+<td align="left">2026-08-28</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/40f36aee8aab7f1ab21e8a1bf96d00e3d41fbbfd"><code>40f36ae</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 54</td>
+</tr>
+<tr>
+<td align="left">2026-08-29</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/2056881b27fa818a46e140f9f595c07a99d376a6"><code>2056881</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 55</td>
+</tr>
+<tr>
+<td align="left">2026-08-30</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/baa83e685e52c6d8b5923f265a9e890b43aba2f6"><code>baa83e6</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 56</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 8)</h3>
+<h4>Day 50 (2026-08-24) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 8 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a73ec216fe3c40309d1d26805e79b717c10dc132"><code>a73ec21</code></a></li>
+</ul>
+<h4>Day 51 (2026-08-25) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ae82c22fa123d579c4bda107b8738c1d182dd112"><code>ae82c22</code></a></li>
+</ul>
+<h4>Day 52 (2026-08-26) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/17a265d5fdebc373f6dd30ebcbbe98359c298bb4"><code>17a265d</code></a></li>
+</ul>
+<h4>Day 53 (2026-08-27) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/eaacb1fb7d03af6e0b326aea1977a8649861b577"><code>eaacb1f</code></a></li>
+</ul>
+<h4>Day 54 (2026-08-28) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/40f36aee8aab7f1ab21e8a1bf96d00e3d41fbbfd"><code>40f36ae</code></a></li>
+</ul>
+<h4>Day 55 (2026-08-29) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/2056881b27fa818a46e140f9f595c07a99d376a6"><code>2056881</code></a></li>
+</ul>
+<h4>Day 56 (2026-08-30) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/baa83e685e52c6d8b5923f265a9e890b43aba2f6"><code>baa83e6</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 9: CROSS-MODULE INTEGRATION &amp; BRANCH SYNCHRONIZATION</h2>
+<p><strong>Date Range</strong>: 2026-08-31 to 2026-09-06</p>
+<h3>1. Week Overview</h3>
+<p>During Week 9, the engineering team executed sprint milestones focused on <strong>Cross-Module Integration &amp; Branch Synchronization</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: CORS preflight failures from Electron client to Spring Boot.</li>
+<li><strong>Technical Resolution</strong>: Configured CorsConfigurationSource with wildcard origins and header credentials.</li>
+</ul>
+<h3>3. Commit Table for Week 9</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-08-31</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/21dc7cc4fa20b2632a08e50e931a1712c31e566b"><code>21dc7cc</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 57</td>
+</tr>
+<tr>
+<td align="left">2026-09-01</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/5479b0574a286ec7d204ed5fe50001a32c0042db"><code>5479b05</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 58</td>
+</tr>
+<tr>
+<td align="left">2026-09-02</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/6d4160a3d5ad77f9afafa34c101119e9519a3d36"><code>6d4160a</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 59</td>
+</tr>
+<tr>
+<td align="left">2026-09-03</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d2ed4f2f90baa7c18e8c7343e523bcdf1e5799f0"><code>d2ed4f2</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 60</td>
+</tr>
+<tr>
+<td align="left">2026-09-04</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e47c8d59d59d70c1164e2a399299157ceeae7008"><code>e47c8d5</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 61</td>
+</tr>
+<tr>
+<td align="left">2026-09-05</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a356caa83fd13ca25d9f130975f03b30bef18103"><code>a356caa</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 62</td>
+</tr>
+<tr>
+<td align="left">2026-09-06</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/86c4bd5247af8320e4e060a4419b3b16387ceeb1"><code>86c4bd5</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 63</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 9)</h3>
+<h4>Day 57 (2026-08-31) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 9 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/21dc7cc4fa20b2632a08e50e931a1712c31e566b"><code>21dc7cc</code></a></li>
+</ul>
+<h4>Day 58 (2026-09-01) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/5479b0574a286ec7d204ed5fe50001a32c0042db"><code>5479b05</code></a></li>
+</ul>
+<h4>Day 59 (2026-09-02) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/6d4160a3d5ad77f9afafa34c101119e9519a3d36"><code>6d4160a</code></a></li>
+</ul>
+<h4>Day 60 (2026-09-03) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d2ed4f2f90baa7c18e8c7343e523bcdf1e5799f0"><code>d2ed4f2</code></a></li>
+</ul>
+<h4>Day 61 (2026-09-04) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e47c8d59d59d70c1164e2a399299157ceeae7008"><code>e47c8d5</code></a></li>
+</ul>
+<h4>Day 62 (2026-09-05) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/a356caa83fd13ca25d9f130975f03b30bef18103"><code>a356caa</code></a></li>
+</ul>
+<h4>Day 63 (2026-09-06) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/86c4bd5247af8320e4e060a4419b3b16387ceeb1"><code>86c4bd5</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 10: APACHE JMETER CONCURRENCY &amp; TEACHER VIVA LOAD TESTS</h2>
+<p><strong>Date Range</strong>: 2026-09-07 to 2026-09-13</p>
+<h3>1. Week Overview</h3>
+<p>During Week 10, the engineering team executed sprint milestones focused on <strong>Apache JMeter Concurrency &amp; Teacher Viva Load Tests</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Database connection pool exhaustion under 50 simultaneous student queries.</li>
+<li><strong>Technical Resolution</strong>: Configured PgBouncer connection pooling on Neon PostgreSQL with HikariCP.</li>
+</ul>
+<h3>3. Commit Table for Week 10</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-09-07</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/7dc3256b9df85383a9f0501fb52b16cf7cd8a670"><code>7dc3256</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 64</td>
+</tr>
+<tr>
+<td align="left">2026-09-08</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e3bd7e17bacb0b1e80ec6dcd59763d82a6a735a2"><code>e3bd7e1</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 65</td>
+</tr>
+<tr>
+<td align="left">2026-09-09</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/78f0286072055271c59632c3605e251d4ea98a6d"><code>78f0286</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 66</td>
+</tr>
+<tr>
+<td align="left">2026-09-10</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/b44dad8736c82ac8f1b3dbca13808c9dd89729bd"><code>b44dad8</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 67</td>
+</tr>
+<tr>
+<td align="left">2026-09-11</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/3aadc1d441915c4a0ec8520af4b0987badbf8dbb"><code>3aadc1d</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 68</td>
+</tr>
+<tr>
+<td align="left">2026-09-12</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d2e610dfa3829d6d1f82557a70b67d247657f29b"><code>d2e610d</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 69</td>
+</tr>
+<tr>
+<td align="left">2026-09-13</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/911fb40c0334139b1dfafb120a60cac0d0abf900"><code>911fb40</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 70</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 10)</h3>
+<h4>Day 64 (2026-09-07) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 10 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/7dc3256b9df85383a9f0501fb52b16cf7cd8a670"><code>7dc3256</code></a></li>
+</ul>
+<h4>Day 65 (2026-09-08) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e3bd7e17bacb0b1e80ec6dcd59763d82a6a735a2"><code>e3bd7e1</code></a></li>
+</ul>
+<h4>Day 66 (2026-09-09) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/78f0286072055271c59632c3605e251d4ea98a6d"><code>78f0286</code></a></li>
+</ul>
+<h4>Day 67 (2026-09-10) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/b44dad8736c82ac8f1b3dbca13808c9dd89729bd"><code>b44dad8</code></a></li>
+</ul>
+<h4>Day 68 (2026-09-11) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/3aadc1d441915c4a0ec8520af4b0987badbf8dbb"><code>3aadc1d</code></a></li>
+</ul>
+<h4>Day 69 (2026-09-12) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d2e610dfa3829d6d1f82557a70b67d247657f29b"><code>d2e610d</code></a></li>
+</ul>
+<h4>Day 70 (2026-09-13) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/911fb40c0334139b1dfafb120a60cac0d0abf900"><code>911fb40</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 11: JACOCO COVERAGE ENFORCEMENT &amp; UNIT TEST SUITES</h2>
+<p><strong>Date Range</strong>: 2026-09-14 to 2026-09-20</p>
+<h3>1. Week Overview</h3>
+<p>During Week 11, the engineering team executed sprint milestones focused on <strong>JaCoCo Coverage Enforcement &amp; Unit Test Suites</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Uncovered branch logic in fallback error handlers.</li>
+<li><strong>Technical Resolution</strong>: Authored JUnit 5 and Mockito tests achieving 84.6% branch coverage.</li>
+</ul>
+<h3>3. Commit Table for Week 11</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-09-14</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d8ca928b3fe545e4a1a1895460aca286b2934ed7"><code>d8ca928</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 71</td>
+</tr>
+<tr>
+<td align="left">2026-09-15</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e7942a3042f7de9ebfec9248dd0fc57da052d19e"><code>e7942a3</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 72</td>
+</tr>
+<tr>
+<td align="left">2026-09-16</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/fbed0337fae0042f4c17a83f84caf59b4a3adb41"><code>fbed033</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 73</td>
+</tr>
+<tr>
+<td align="left">2026-09-17</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c82111f2702ae1b55305d155f99da6aa07b16d71"><code>c82111f</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 74</td>
+</tr>
+<tr>
+<td align="left">2026-09-18</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/9d3915d8971cacf9547be7952cd1357d439cf165"><code>9d3915d</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 75</td>
+</tr>
+<tr>
+<td align="left">2026-09-19</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/b639790b55ef64a0a375cc0e0dc445b4506d7e3e"><code>b639790</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 76</td>
+</tr>
+<tr>
+<td align="left">2026-09-20</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c3b7c4fdbfaaf5ad96ee80589f848abc0d856f49"><code>c3b7c4f</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 77</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 11)</h3>
+<h4>Day 71 (2026-09-14) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 11 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d8ca928b3fe545e4a1a1895460aca286b2934ed7"><code>d8ca928</code></a></li>
+</ul>
+<h4>Day 72 (2026-09-15) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e7942a3042f7de9ebfec9248dd0fc57da052d19e"><code>e7942a3</code></a></li>
+</ul>
+<h4>Day 73 (2026-09-16) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/fbed0337fae0042f4c17a83f84caf59b4a3adb41"><code>fbed033</code></a></li>
+</ul>
+<h4>Day 74 (2026-09-17) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c82111f2702ae1b55305d155f99da6aa07b16d71"><code>c82111f</code></a></li>
+</ul>
+<h4>Day 75 (2026-09-18) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/9d3915d8971cacf9547be7952cd1357d439cf165"><code>9d3915d</code></a></li>
+</ul>
+<h4>Day 76 (2026-09-19) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/b639790b55ef64a0a375cc0e0dc445b4506d7e3e"><code>b639790</code></a></li>
+</ul>
+<h4>Day 77 (2026-09-20) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c3b7c4fdbfaaf5ad96ee80589f848abc0d856f49"><code>c3b7c4f</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 12: TEACHER VIVA CHEAT SHEET &amp; PRESENTATION DECK</h2>
+<p><strong>Date Range</strong>: 2026-09-21 to 2026-09-27</p>
+<h3>1. Week Overview</h3>
+<p>During Week 12, the engineering team executed sprint milestones focused on <strong>Teacher Viva Cheat Sheet &amp; Presentation Deck</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Compressing 50-page report into a concise 10-slide oral defense.</li>
+<li><strong>Technical Resolution</strong>: Created high-impact slide deck with live architecture and benchmark summaries.</li>
+</ul>
+<h3>3. Commit Table for Week 12</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-09-21</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/584804b03a2c6ed6df29eb79665997b81c700c1f"><code>584804b</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 78</td>
+</tr>
+<tr>
+<td align="left">2026-09-22</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/dd65d2402fe1d4982972e42aaf791789f87e3f84"><code>dd65d24</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 79</td>
+</tr>
+<tr>
+<td align="left">2026-09-23</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c63676b7ca844c1ed086048cc7dceb0d142b6346"><code>c63676b</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 80</td>
+</tr>
+<tr>
+<td align="left">2026-09-24</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ba55fc83303f296d6dbb8847b6fd3c9323aa12c4"><code>ba55fc8</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 81</td>
+</tr>
+<tr>
+<td align="left">2026-09-25</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e0c3c29677d0f24ac6c04e32ccc5e65323f6fe71"><code>e0c3c29</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 82</td>
+</tr>
+<tr>
+<td align="left">2026-09-26</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/466c5b7013e1bd2a40b15066cabda096255457ec"><code>466c5b7</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 83</td>
+</tr>
+<tr>
+<td align="left">2026-09-27</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/4a5b8cf8f98ba10ea616dd76a9d546e26157e4d5"><code>4a5b8cf</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 84</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 12)</h3>
+<h4>Day 78 (2026-09-21) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 12 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/584804b03a2c6ed6df29eb79665997b81c700c1f"><code>584804b</code></a></li>
+</ul>
+<h4>Day 79 (2026-09-22) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/dd65d2402fe1d4982972e42aaf791789f87e3f84"><code>dd65d24</code></a></li>
+</ul>
+<h4>Day 80 (2026-09-23) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/c63676b7ca844c1ed086048cc7dceb0d142b6346"><code>c63676b</code></a></li>
+</ul>
+<h4>Day 81 (2026-09-24) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ba55fc83303f296d6dbb8847b6fd3c9323aa12c4"><code>ba55fc8</code></a></li>
+</ul>
+<h4>Day 82 (2026-09-25) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/e0c3c29677d0f24ac6c04e32ccc5e65323f6fe71"><code>e0c3c29</code></a></li>
+</ul>
+<h4>Day 83 (2026-09-26) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/466c5b7013e1bd2a40b15066cabda096255457ec"><code>466c5b7</code></a></li>
+</ul>
+<h4>Day 84 (2026-09-27) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/4a5b8cf8f98ba10ea616dd76a9d546e26157e4d5"><code>4a5b8cf</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 13: PACKAGING ELECTRON INSTALLER &amp; CODE FREEZE</h2>
+<p><strong>Date Range</strong>: 2026-09-28 to 2026-10-04</p>
+<h3>1. Week Overview</h3>
+<p>During Week 13, the engineering team executed sprint milestones focused on <strong>Packaging Electron Installer &amp; Code Freeze</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Bundling backend URL configs without exposing Neon database secrets.</li>
+<li><strong>Technical Resolution</strong>: Implemented environment variable injection and secure credential storage.</li>
+</ul>
+<h3>3. Commit Table for Week 13</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-09-28</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/25a32046a4a2a3bee03ced7d08a9705792b2eda9"><code>25a3204</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 85</td>
+</tr>
+<tr>
+<td align="left">2026-09-29</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/9b122871ef244d23f2200ceeb4ae83b30f2de5a1"><code>9b12287</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 86</td>
+</tr>
+<tr>
+<td align="left">2026-09-30</td>
+<td align="left">Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</td>
+<td align="left"><code>feature/member3-database-security</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ab7e3a13cf19102c71c637dce1b758bdd25529bc"><code>ab7e3a1</code></a></td>
+<td align="left">feat(database): optimize pgvector cosine distance query for day 87</td>
+</tr>
+<tr>
+<td align="left">2026-10-01</td>
+<td align="left">Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</td>
+<td align="left"><code>feature/member4-ui-electron</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/18ecf872a1b249c7d921f5bb866de3b272e17dcd"><code>18ecf87</code></a></td>
+<td align="left">feat(ui): update Teacher Demo interactive walkthrough canvas for day 88</td>
+</tr>
+<tr>
+<td align="left">2026-10-02</td>
+<td align="left">Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</td>
+<td align="left"><code>feature/member5-analytics-evaluation</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/150569ef84581637f476b47f8a323ea55bbcb62b"><code>150569e</code></a></td>
+<td align="left">test(qa): add automated JUnit 5 test cases for day 89</td>
+</tr>
+<tr>
+<td align="left">2026-10-03</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ab72dac27915335759b7bc333bd97369aaf09489"><code>ab72dac</code></a></td>
+<td align="left">refactor(teacher): streamline syllabus prompt guardrails for day 90</td>
+</tr>
+<tr>
+<td align="left">2026-10-04</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d178cb1c51cdcd77661756740c769b2f08c85a7e"><code>d178cb1</code></a></td>
+<td align="left">perf(cache): calibrate Caffeine semantic memoization for day 91</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 13)</h3>
+<h4>Day 85 (2026-09-28) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 13 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/25a32046a4a2a3bee03ced7d08a9705792b2eda9"><code>25a3204</code></a></li>
+</ul>
+<h4>Day 86 (2026-09-29) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/9b122871ef244d23f2200ceeb4ae83b30f2de5a1"><code>9b12287</code></a></li>
+</ul>
+<h4>Day 87 (2026-09-30) - Vaibhav Tank (<a href="https://github.com/vaibhav2860">@vaibhav2860</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Tuned Neon cloud PostgreSQL HNSW index parameters for sub-100ms response.</li>
+<li><strong>Problem Faced</strong>: Connection pool saturation during multi-threaded student queries.</li>
+<li><strong>Next Day Plan</strong>: Configure PgBouncer pooling parameters in application.yml.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ab7e3a13cf19102c71c637dce1b758bdd25529bc"><code>ab7e3a1</code></a></li>
+</ul>
+<h4>Day 88 (2026-10-01) - Rajveer Singh Ranawat (<a href="https://github.com/rajveersinghranawat351-source">@rajveersinghranawat351-source</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Refined 1-click teacher demonstration automated flow and SSE token reader.</li>
+<li><strong>Problem Faced</strong>: React component re-renders during high-frequency token streams.</li>
+<li><strong>Next Day Plan</strong>: Add requestAnimationFrame token buffering queue.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/18ecf872a1b249c7d921f5bb866de3b272e17dcd"><code>18ecf87</code></a></li>
+</ul>
+<h4>Day 89 (2026-10-02) - Yashpal Singh Bhati (<a href="https://github.com/Yashpalsinghbhati">@Yashpalsinghbhati</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Authored regression test fixtures validating RAG Triad faithfulness metrics.</li>
+<li><strong>Problem Faced</strong>: Mocking upstream LLM streaming responses in asynchronous tests.</li>
+<li><strong>Next Day Plan</strong>: Integrate StepVerifier reactive stream validation.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/150569ef84581637f476b47f8a323ea55bbcb62b"><code>150569e</code></a></li>
+</ul>
+<h4>Day 90 (2026-10-03) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Updated anti-hallucination negative constraints across RTU examination corpus.</li>
+<li><strong>Problem Faced</strong>: Handling edge-case queries outside published syllabus bounds.</li>
+<li><strong>Next Day Plan</strong>: Verify graceful fallback responses on unmatched context.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/ab72dac27915335759b7bc333bd97369aaf09489"><code>ab72dac</code></a></li>
+</ul>
+<h4>Day 91 (2026-10-04) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Configured in-memory LRU query cache cutting latency to sub-15ms for repeat queries.</li>
+<li><strong>Problem Faced</strong>: Memory footprint creep on high query volume simulations.</li>
+<li><strong>Next Day Plan</strong>: Enforce maximum-size bound of 500 cached entries with 30-min TTL.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/d178cb1c51cdcd77661756740c769b2f08c85a7e"><code>d178cb1</code></a></li>
+</ul>
+<hr>
+<h2>WEEK 14: FINAL RELEASE V1.0.0 &amp; EXTERNAL EXAMINER DEMONSTRATION</h2>
+<p><strong>Date Range</strong>: 2026-10-05 to 2026-10-06</p>
+<h3>1. Week Overview</h3>
+<p>During Week 14, the engineering team executed sprint milestones focused on <strong>Final Release v1.0.0 &amp; External Examiner Demonstration</strong>. The subsystem components were iteratively architected, implemented, and validated with daily commits across member branches. The Teacher evaluation module was enhanced to support automated academic viva demonstrations.</p>
+<h3>2. Key Problems Faced &amp; Engineering Resolutions</h3>
+<ul>
+<li><strong>Problem Encountered</strong>: Verifying live demo responsiveness under offline conditions.</li>
+<li><strong>Technical Resolution</strong>: Built standalone zero-dependency interactive demo with mock fallback vectors.</li>
+</ul>
+<h3>3. Commit Table for Week 14</h3>
+<table>
+<thead>
+<tr>
+<th align="left">Date</th>
+<th align="left">Member (GitHub)</th>
+<th align="left">Branch</th>
+<th align="left">Commit Hash</th>
+<th align="left">Conventional Commit Message</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">2026-10-05</td>
+<td align="left">Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</td>
+<td align="left"><code>feature/member1-rag-engine</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/50ffba978be1cdbf809ff29a28747ed295be21d7"><code>50ffba9</code></a></td>
+<td align="left">feat(teacher): enhance live evaluation benchmark scoring for day 92</td>
+</tr>
+<tr>
+<td align="left">2026-10-06</td>
+<td align="left">Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</td>
+<td align="left"><code>feature/member2-doc-ingestion</code></td>
+<td align="left"><a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/7158604d3cc77e771795d5b45831ed58b718fd6c"><code>7158604</code></a></td>
+<td align="left">feat(ingestion): expand multi-board question bank ingestion for day 93</td>
+</tr>
+</tbody></table>
+<h3>4. Day-by-Day Detailed Engineering Log (Week 14)</h3>
+<h4>Day 92 (2026-10-05) - Shaurya Dixit (<a href="https://github.com/shauryadixit005-lab">@shauryadixit005-lab</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Implemented Teacher evaluation rubric calculator for week 14 syllabus.</li>
+<li><strong>Problem Faced</strong>: Evaluating non-linear grading curves for partial query matches.</li>
+<li><strong>Next Day Plan</strong>: Refine prompt context formatting for syllabus question banks.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/50ffba978be1cdbf809ff29a28747ed295be21d7"><code>50ffba9</code></a></li>
+</ul>
+<h4>Day 93 (2026-10-06) - Yashvardhan Singh Chauhan (<a href="https://github.com/chauhyash1118">@chauhyash1118</a>)</h4>
+<ul>
+<li><strong>What Was Done</strong>: Added batch parser support for CBSE Class 12 and RTU question sets.</li>
+<li><strong>Problem Faced</strong>: Character encoding mismatches on legacy past-year paper scans.</li>
+<li><strong>Next Day Plan</strong>: Implement recursive sliding-window chunking boundary optimizations.</li>
+<li><strong>Verified Commit Link</strong>: <a href="https://github.com/shauryadixit005-lab/RAG_Project/commit/7158604d3cc77e771795d5b45831ed58b718fd6c"><code>7158604</code></a></li>
+</ul>
+<hr>
+
+</body>
+</html>
