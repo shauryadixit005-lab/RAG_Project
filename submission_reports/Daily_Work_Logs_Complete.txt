@@ -1,0 +1,2027 @@
+﻿====================================================================================================
+                       ARYA COLLEGE OF ENGINEERING & I.T., JAIPUR                                  
+                 DEPARTMENT OF ARTIFICIAL INTELLIGENCE & DATA SCIENCE (AI&DS)                       
+                      B.TECH 5TH SEMESTER JAVA PROJECT BASED LEARNING (PBL)                        
+                    COMPLETE DAILY ENGINEERING LOG SHEET (420 ENTRIES / 70 DAYS)                   
+====================================================================================================
+PROJECT TITLE   : DocuQuery AI: Enterprise Retrieval-Augmented Generation System
+MENTOR / GUIDE  : Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+TOTAL ENTRIES   : 420 Verified Daily Submissions across 5 Team Members
+====================================================================================================
+
+
+====================================================================================================
+DATE: 2026-07-06
+====================================================================================================
+   1. [2026-07-06] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Finalized RAG architecture with Guide Er. Ram Babu Buri; drafted project abstract and registration.
+      ----------------------------------------------------------------------------------------------
+   2. [2026-07-06] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Researched Kaggle academic paper datasets (arXiv CS AI/ML corpus) for document extraction.
+      ----------------------------------------------------------------------------------------------
+   3. [2026-07-06] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Researched PostgreSQL pgvector extension and Neon serverless database deployment.
+      ----------------------------------------------------------------------------------------------
+   4. [2026-07-06] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Researched Electron 30 with React 18 and TypeScript for cross-platform desktop delivery.
+      ----------------------------------------------------------------------------------------------
+   5. [2026-07-06] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Researched RAG Triad evaluation metrics (Context Relevance, Faithfulness, Answer Relevance).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-07
+====================================================================================================
+   6. [2026-07-07] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Convened kickoff meeting; defined 5-module boundaries and GitHub workflow for team.
+      ----------------------------------------------------------------------------------------------
+   7. [2026-07-07] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Evaluated Apache Tika and PDFBox libraries for handling complex Kaggle research paper PDFs.
+      ----------------------------------------------------------------------------------------------
+   8. [2026-07-07] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Provisioned Neon PostgreSQL development instance and verified remote JDBC connectivity.
+      ----------------------------------------------------------------------------------------------
+   9. [2026-07-07] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Evaluated Tailwind CSS and Lucide icons for dark-mode responsive UI design.
+      ----------------------------------------------------------------------------------------------
+  10. [2026-07-07] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Evaluated JUnit 5, Mockito, and Testcontainers setup for Spring Boot automated testing.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-08
+====================================================================================================
+  11. [2026-07-08] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Established repository branching policy (minimum 3 commits/student/week) on GitHub.
+      ----------------------------------------------------------------------------------------------
+  12. [2026-07-08] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Defined Document Ingestion module boundary and input MIME format validation standards.
+      ----------------------------------------------------------------------------------------------
+  13. [2026-07-08] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Evaluated Spring Boot pgvector drivers and HNSW vector index compatibility.
+      ----------------------------------------------------------------------------------------------
+  14. [2026-07-08] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Drafted wireframe layouts for Chat Canvas, Citation Inspector, and Ingestion Panel.
+      ----------------------------------------------------------------------------------------------
+  15. [2026-07-08] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Drafted QA test coverage targets (>80%) and golden dataset validation plan.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-09
+====================================================================================================
+  16. [2026-07-09] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Drafted high-level RAG orchestration flow and context assembly specifications.
+      ----------------------------------------------------------------------------------------------
+  17. [2026-07-09] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Analyzed mathematical equations and two-column layout parsing challenges in academic papers.
+      ----------------------------------------------------------------------------------------------
+  18. [2026-07-09] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Drafted relational schemas for user authentication, roles, document metadata, and chunks.
+      ----------------------------------------------------------------------------------------------
+  19. [2026-07-09] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Researched Electron IPC security best practices (contextIsolation, sandboxed preload).
+      ----------------------------------------------------------------------------------------------
+  20. [2026-07-09] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Formulated mathematical evaluation formulas for measuring hallucination rates.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-10
+====================================================================================================
+  21. [2026-07-10] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Attended Saturday mentor review; defended architectural scope with Er. Ram Babu Buri.
+      ----------------------------------------------------------------------------------------------
+  22. [2026-07-10] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Participated in Saturday mentor review; confirmed Kaggle dataset curation parameters.
+      ----------------------------------------------------------------------------------------------
+  23. [2026-07-10] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Attended Saturday mentor review; presented database connection pooling architecture.
+      ----------------------------------------------------------------------------------------------
+  24. [2026-07-10] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Demonstrated UI wireframe concepts to mentor Er. Ram Babu Buri during Saturday review.
+      ----------------------------------------------------------------------------------------------
+  25. [2026-07-10] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Participated in Saturday mentor review; discussed evaluation criteria with mentor.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-11
+====================================================================================================
+  26. [2026-07-11] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Compiled mentor notes and aligned week 2 SRS deliverables with team.
+      ----------------------------------------------------------------------------------------------
+  27. [2026-07-11] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Documented text normalization rules and prepared next week's parser requirements.
+      ----------------------------------------------------------------------------------------------
+  28. [2026-07-11] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Documented database performance objectives and connection limits in Neon.
+      ----------------------------------------------------------------------------------------------
+  29. [2026-07-11] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Documented desktop client packaging and performance requirements.
+      ----------------------------------------------------------------------------------------------
+  30. [2026-07-11] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Established testing directory structure and test metrics documentation repository.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-13
+====================================================================================================
+  31. [2026-07-13] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Authored SRS Functional Requirements for Core RAG Service (query embedding, prompt assembly, SSE stream).
+      ----------------------------------------------------------------------------------------------
+  32. [2026-07-13] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Authored SRS Functional Requirements for Ingestion (Kaggle dataset multi-file upload, Tika extraction).
+      ----------------------------------------------------------------------------------------------
+  33. [2026-07-13] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Authored SRS Data Requirements: PostgreSQL 16 schema, pgvector vector(1536) columns.
+      ----------------------------------------------------------------------------------------------
+  34. [2026-07-13] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Authored SRS User Interface Requirements: Electron desktop shell, React responsive layout.
+      ----------------------------------------------------------------------------------------------
+  35. [2026-07-13] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Authored SRS Testing Requirements: unit test coverage (>80%), end-to-end integration tests.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-14
+====================================================================================================
+  36. [2026-07-14] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Specified non-functional performance requirements: retrieval latency <120ms, error fallback.
+      ----------------------------------------------------------------------------------------------
+  37. [2026-07-14] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Specified chunking requirements: recursive splitting, 500-token window, 50-token overlap.
+      ----------------------------------------------------------------------------------------------
+  38. [2026-07-14] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Defined Security Requirements: JWT HMAC-SHA256 tokens, BCrypt password hashing, RBAC.
+      ----------------------------------------------------------------------------------------------
+  39. [2026-07-14] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Specified real-time chat streaming UI, code block syntax highlighting, and markdown rendering.
+      ----------------------------------------------------------------------------------------------
+  40. [2026-07-14] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Specified RAG Triad evaluation metrics requirements: Context Recall, Precision, Faithfulness.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-15
+====================================================================================================
+  41. [2026-07-15] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Authored SRS Section 2: Overall System Description and Operating Environment.
+      ----------------------------------------------------------------------------------------------
+  42. [2026-07-15] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Defined error handling requirements for corrupted files, scanned PDFs, and oversized uploads.
+      ----------------------------------------------------------------------------------------------
+  43. [2026-07-15] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Documented HNSW index parameters (m=16, ef_construction=64) on Neon serverless.
+      ----------------------------------------------------------------------------------------------
+  44. [2026-07-15] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Defined desktop client offline behavior, local cached credentials, and network indicators.
+      ----------------------------------------------------------------------------------------------
+  45. [2026-07-15] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Defined compliance checklist for IEEE 830 standards across all 5 modules.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-16
+====================================================================================================
+  46. [2026-07-16] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Specified REST API contract for /api/rag/chat and Server-Sent Events streaming.
+      ----------------------------------------------------------------------------------------------
+  47. [2026-07-16] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Specified asynchronous job tracking status lifecycle (UPLOADED -> PARSING -> INDEXED).
+      ----------------------------------------------------------------------------------------------
+  48. [2026-07-16] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Specified audit logging requirements for user queries, tokens used, and upload timestamps.
+      ----------------------------------------------------------------------------------------------
+  49. [2026-07-16] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Drafted UI navigation hierarchy and screen transition specifications.
+      ----------------------------------------------------------------------------------------------
+  50. [2026-07-16] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Compiled individual module SRS sections into unified 35-page master SRS document.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-17
+====================================================================================================
+  51. [2026-07-17] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Attended Saturday mentor review; reviewed RAG functional specifications with mentor.
+      ----------------------------------------------------------------------------------------------
+  52. [2026-07-17] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Attended Saturday mentor review; defended parsing throughput and file size constraints (25MB).
+      ----------------------------------------------------------------------------------------------
+  53. [2026-07-17] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Presented database and security section to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+  54. [2026-07-17] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Reviewed UI SRS requirements with mentor; received approval on split-pane workspace layout.
+      ----------------------------------------------------------------------------------------------
+  55. [2026-07-17] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Presented quality assurance and evaluation criteria during Saturday review.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-18
+====================================================================================================
+  56. [2026-07-18] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Incorporated mentor suggestions on similarity confidence threshold filtering.
+      ----------------------------------------------------------------------------------------------
+  57. [2026-07-18] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Updated document ingestion requirements matrix in master SRS document.
+      ----------------------------------------------------------------------------------------------
+  58. [2026-07-18] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Finalized Neon database capacity planning and SSL/TLS constraints in SRS.
+      ----------------------------------------------------------------------------------------------
+  59. [2026-07-18] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Refined desktop application performance requirements (RAM consumption <150MB).
+      ----------------------------------------------------------------------------------------------
+  60. [2026-07-18] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Created SRS traceability matrix mapping requirements to development milestones.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-20
+====================================================================================================
+  61. [2026-07-20] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Drafted system-level Use Case Diagram mapping Actors (Student, Researcher, Admin) to actions.
+      ----------------------------------------------------------------------------------------------
+  62. [2026-07-20] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Designed Sequence Diagram for Kaggle Ingestion: Upload -> MIME Validator -> Parser -> Chunker.
+      ----------------------------------------------------------------------------------------------
+  63. [2026-07-20] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Designed Entity-Relationship (ER) Diagram: Users, Roles, Documents, DocumentChunks, AuditLogs.
+      ----------------------------------------------------------------------------------------------
+  64. [2026-07-20] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Designed Component Diagram showing Electron Main, Preload Bridge, React Renderer, and SSE Client.
+      ----------------------------------------------------------------------------------------------
+  65. [2026-07-20] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Designed Sequence Diagram for Automated RAG Evaluation Pipeline (Test Runner -> Triad Evaluator).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-21
+====================================================================================================
+  66. [2026-07-21] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Designed Sequence Diagram for RAG Query Processing: User -> Electron -> Spring Boot -> Neon -> LLM.
+      ----------------------------------------------------------------------------------------------
+  67. [2026-07-21] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Constructed Class Diagram for DocumentParser, TikaParserImpl, and RecursiveTextChunker.
+      ----------------------------------------------------------------------------------------------
+  68. [2026-07-21] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Constructed Class Diagram for JPA entities: User, Role, Document, DocumentChunk.
+      ----------------------------------------------------------------------------------------------
+  69. [2026-07-21] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Constructed Sequence Diagram for desktop file drag-and-drop ingestion to Spring Boot API.
+      ----------------------------------------------------------------------------------------------
+  70. [2026-07-21] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Constructed Component Diagram for Test Automation and Telemetry collector in Spring Boot.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-22
+====================================================================================================
+  71. [2026-07-22] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Constructed Class Diagram for RagOrchestrationService, PromptTemplateBuilder, and ChatClient.
+      ----------------------------------------------------------------------------------------------
+  72. [2026-07-22] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Modeled State Machine Diagram for DocumentStatus (UPLOADED -> PARSING -> CHUNKED -> INDEXED).
+      ----------------------------------------------------------------------------------------------
+  73. [2026-07-22] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Designed Sequence Diagram for User Authentication and JWT verification filter chain.
+      ----------------------------------------------------------------------------------------------
+  74. [2026-07-22] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Modeled UI State Flow Diagram: Auth Guard -> Workspace Selection -> Chat Session -> Citations.
+      ----------------------------------------------------------------------------------------------
+  75. [2026-07-22] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Created UML Traceability Matrix cross-referencing SRS functional requirements to UML classes.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-23
+====================================================================================================
+  76. [2026-07-23] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Modeled State Machine Diagram for conversational session lifecycle and context budgeting.
+      ----------------------------------------------------------------------------------------------
+  77. [2026-07-23] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Designed Activity Diagram illustrating token-aware recursive text splitting with sliding window.
+      ----------------------------------------------------------------------------------------------
+  78. [2026-07-23] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Modeled database physical deployment schema with Neon connection pooler and pgvector extension.
+      ----------------------------------------------------------------------------------------------
+  79. [2026-07-23] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Designed Class/Interface Diagram for React State Stores (useChatStore, useDocStore).
+      ----------------------------------------------------------------------------------------------
+  80. [2026-07-23] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Drafted Deployment Diagram showing Client Electron App, Cloud Spring Boot Service, and Neon DB.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-24
+====================================================================================================
+  81. [2026-07-24] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Presented RAG UML sequence and class diagrams to mentor Er. Ram Babu Buri during Saturday review.
+      ----------------------------------------------------------------------------------------------
+  82. [2026-07-24] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Reviewed Ingestion UML models with mentor; clarified multipart file streaming boundary.
+      ----------------------------------------------------------------------------------------------
+  83. [2026-07-24] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Presented ER diagram and security sequence diagrams to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+  84. [2026-07-24] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Reviewed Electron architectural component diagram with mentor; confirmed IPC security boundaries.
+      ----------------------------------------------------------------------------------------------
+  85. [2026-07-24] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Presented overall deployment architecture and evaluation UML models in Saturday mentor review.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-25
+====================================================================================================
+  86. [2026-07-25] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Refined Class Diagram methods based on mentor recommendations for loose coupling.
+      ----------------------------------------------------------------------------------------------
+  87. [2026-07-25] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Finalized document ingestion package diagram in UML specification document.
+      ----------------------------------------------------------------------------------------------
+  88. [2026-07-25] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Adjusted foreign key cascading rules (ON DELETE CASCADE) per mentor input.
+      ----------------------------------------------------------------------------------------------
+  89. [2026-07-25] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Compiled UI design artifacts and component interaction specs into UML design report.
+      ----------------------------------------------------------------------------------------------
+  90. [2026-07-25] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Assembled all UML diagrams into Chapter 3 of Project Design Documentation.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-27
+====================================================================================================
+  91. [2026-07-27] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Set up local IDE with Spring Boot 3.3, Java 21, and Spring AI milestone dependencies.
+      ----------------------------------------------------------------------------------------------
+  92. [2026-07-27] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Configured Maven dependencies for Apache Tika Core/Parsers and Apache PDFBox 3.x.
+      ----------------------------------------------------------------------------------------------
+  93. [2026-07-27] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Created Neon PostgreSQL database instance; executed 'CREATE EXTENSION IF NOT EXISTS vector;'.
+      ----------------------------------------------------------------------------------------------
+  94. [2026-07-27] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Initialized React 18 + TypeScript frontend using Vite; configured Tailwind CSS and Lucide icons.
+      ----------------------------------------------------------------------------------------------
+  95. [2026-07-27] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Configured JUnit 5, AssertJ, and Mockito testing dependencies in Maven POM.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-28
+====================================================================================================
+  96. [2026-07-28] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Created root Maven multi-module parent POM structure with defined member sub-modules.
+      ----------------------------------------------------------------------------------------------
+  97. [2026-07-28] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Downloaded sample research paper dataset from Kaggle (arXiv multi-domain corpus).
+      ----------------------------------------------------------------------------------------------
+  98. [2026-07-28] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Authored DDL migration script: created tables users, roles, documents, document_chunks.
+      ----------------------------------------------------------------------------------------------
+  99. [2026-07-28] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Set up Electron 30.x desktop scaffolding with secure contextIsolation and preload script.
+      ----------------------------------------------------------------------------------------------
+ 100. [2026-07-28] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Set up H2 in-memory test profile with pgvector mock functions for unit test runs.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-29
+====================================================================================================
+ 101. [2026-07-29] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Drafted Spring AI VectorStore interface abstraction and mock embedding generator.
+      ----------------------------------------------------------------------------------------------
+ 102. [2026-07-29] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Created Git branch 'feature/member2-doc-ingestion' and committed base document model interfaces.
+      ----------------------------------------------------------------------------------------------
+ 103. [2026-07-29] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Created HNSW index on document_chunks(embedding vector_cosine_ops) for sub-100ms similarity search.
+      ----------------------------------------------------------------------------------------------
+ 104. [2026-07-29] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Created Git branch 'feature/member4-ui-electron' and pushed base desktop client skeleton.
+      ----------------------------------------------------------------------------------------------
+ 105. [2026-07-29] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Created Git branch 'feature/member5-analytics-evaluation' and initialized test harness structure.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-30
+====================================================================================================
+ 106. [2026-07-30] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Configured application-dev.yml and environment variable templates for API keys and DB credentials.
+      ----------------------------------------------------------------------------------------------
+ 107. [2026-07-30] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Tested text boundary detection and cleaning of whitespace, headers, and footers on Kaggle papers.
+      ----------------------------------------------------------------------------------------------
+ 108. [2026-07-30] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Created Git branch 'feature/member3-database-security' and committed Flyway migration scripts.
+      ----------------------------------------------------------------------------------------------
+ 109. [2026-07-30] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Built responsive UI layout: Collapsible Sidebar, Main Chat Canvas, Source Citation Drawer.
+      ----------------------------------------------------------------------------------------------
+ 110. [2026-07-30] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Drafted automated test suites for verifying database schema integrity and constraints.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-07-31
+====================================================================================================
+ 111. [2026-07-31] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Attended Saturday mentor review; verified development toolchain and Maven build with mentor.
+      ----------------------------------------------------------------------------------------------
+ 112. [2026-07-31] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Participated in mentor review; demonstrated prototype parsing results for complex Kaggle PDFs.
+      ----------------------------------------------------------------------------------------------
+ 113. [2026-07-31] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Presented live Neon DB connection and vector table schema to mentor during review.
+      ----------------------------------------------------------------------------------------------
+ 114. [2026-07-31] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Demonstrated running Electron desktop shell to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 115. [2026-07-31] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Reviewed testing plan and Git branch workflow with mentor Er. Ram Babu Buri.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-01
+====================================================================================================
+ 116. [2026-08-01] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Created initial Git branch 'feature/member1-rag-engine' and pushed initial RAG service boilerplate.
+      ----------------------------------------------------------------------------------------------
+ 117. [2026-08-01] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Documented token count estimation utility using JTokkit (BPE tokenizer for Java).
+      ----------------------------------------------------------------------------------------------
+ 118. [2026-08-01] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Verified Neon SSL/TLS connection parameters and HikariCP connection pool settings in Spring Boot.
+      ----------------------------------------------------------------------------------------------
+ 119. [2026-08-01] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Tested Hot Module Replacement (HMR) inside Electron development environment.
+      ----------------------------------------------------------------------------------------------
+ 120. [2026-08-01] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Created GitHub Actions CI workflow draft for automated build verification on pull requests.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-03
+====================================================================================================
+ 121. [2026-08-03] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Implemented RagOrchestrationServiceImpl: handles incoming query, generates query vector, queries vector store.
+      ----------------------------------------------------------------------------------------------
+ 122. [2026-08-03] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Implemented TikaDocumentParser: extracts clean text and metadata (author, title, page count) from Kaggle PDFs.
+      ----------------------------------------------------------------------------------------------
+ 123. [2026-08-03] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Implemented Spring Security 6 security filter chain with stateless SessionCreationPolicy.STATELESS.
+      ----------------------------------------------------------------------------------------------
+ 124. [2026-08-03] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Implemented ChatMessage component in React supporting User, Assistant, and System message bubbles.
+      ----------------------------------------------------------------------------------------------
+ 125. [2026-08-03] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Implemented Unit test suite for RecursiveTextChunker (tested overlap accuracy, boundary conditions).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-04
+====================================================================================================
+ 126. [2026-08-04] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Created PromptTemplateBuilder with customizable system instructions, contextual citation constraints, and tone.
+      ----------------------------------------------------------------------------------------------
+ 127. [2026-08-04] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Implemented RecursiveTextChunker: splits text into configurable chunk sizes (500 tokens) with 50-token overlap.
+      ----------------------------------------------------------------------------------------------
+ 128. [2026-08-04] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Created JwtTokenProvider: generates and validates HMAC-SHA256 JWT tokens with role claims.
+      ----------------------------------------------------------------------------------------------
+ 129. [2026-08-04] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Added Markdown rendering using react-markdown with remark-gfm (tables, lists, inline code).
+      ----------------------------------------------------------------------------------------------
+ 130. [2026-08-04] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Implemented Unit tests for JwtTokenProvider (valid token parsing, expired token rejection, signature forgery).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-05
+====================================================================================================
+ 131. [2026-08-05] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Implemented context truncation logic to ensure retrieved passages fit within LLM context window limits.
+      ----------------------------------------------------------------------------------------------
+ 132. [2026-08-05] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Added sentence boundary preservation using Java BreakIterator to avoid mid-sentence splits.
+      ----------------------------------------------------------------------------------------------
+ 133. [2026-08-05] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Implemented JwtAuthenticationFilter: intercepts requests, extracts Bearer token, sets SecurityContext.
+      ----------------------------------------------------------------------------------------------
+ 134. [2026-08-05] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Implemented Prism.js code syntax highlighting with copy-to-clipboard button in assistant responses.
+      ----------------------------------------------------------------------------------------------
+ 135. [2026-08-05] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Created mock data generators for sample academic papers, user profiles, and test embeddings.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-06
+====================================================================================================
+ 136. [2026-08-06] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Added custom exception classes: RagException, ContextNotFoundException, EmbeddingServiceUnavailableException.
+      ----------------------------------------------------------------------------------------------
+ 137. [2026-08-06] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Created DocumentMetadata entity and assigned unique UUID chunk identifiers linked to parent document.
+      ----------------------------------------------------------------------------------------------
+ 138. [2026-08-06] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Created AuthController with /api/auth/register and /api/auth/login endpoints with BCrypt password encoding.
+      ----------------------------------------------------------------------------------------------
+ 139. [2026-08-06] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Created ChatInput component with multi-line auto-resizing textarea and submit on Enter.
+      ----------------------------------------------------------------------------------------------
+ 140. [2026-08-06] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Added Jacoco code coverage plugin to Maven build and generated initial coverage reports.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-07
+====================================================================================================
+ 141. [2026-08-07] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Attended Saturday mentor review; demonstrated prompt assembly and retrieval query pipeline in console.
+      ----------------------------------------------------------------------------------------------
+ 142. [2026-08-07] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Demonstrated multi-page document parsing and chunking output during Saturday mentor review.
+      ----------------------------------------------------------------------------------------------
+ 143. [2026-08-07] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Presented user registration and JWT authentication flow to mentor during review.
+      ----------------------------------------------------------------------------------------------
+ 144. [2026-08-07] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Demonstrated React chat interface running in Electron window during mentor review.
+      ----------------------------------------------------------------------------------------------
+ 145. [2026-08-07] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Reviewed test execution results and coverage metrics with mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-08
+====================================================================================================
+ 146. [2026-08-08] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Committed module updates to branch 'feature/member1-rag-engine' (3 commits verified this week).
+      ----------------------------------------------------------------------------------------------
+ 147. [2026-08-08] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Committed parser and chunker implementation to branch 'feature/member2-doc-ingestion' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 148. [2026-08-08] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Committed security filter chain and auth controllers to 'feature/member3-database-security' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 149. [2026-08-08] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Committed UI components and layout state to branch 'feature/member4-ui-electron' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 150. [2026-08-08] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Committed test suites to branch 'feature/member5-analytics-evaluation' (3 commits).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-10
+====================================================================================================
+ 151. [2026-08-10] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Integrated Spring AI EmbeddingModel client (configured for text-embedding-3-small / local embeddings).
+      ----------------------------------------------------------------------------------------------
+ 152. [2026-08-10] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Implemented DocumentUploadController with POST /api/documents/upload handling multipart file uploads.
+      ----------------------------------------------------------------------------------------------
+ 153. [2026-08-10] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Implemented PgVectorChunkRepository using Spring Data JPA and native SQL for vector similarity search.
+      ----------------------------------------------------------------------------------------------
+ 154. [2026-08-10] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Implemented FileUploadZone component with drag-and-drop support and file type validation badges.
+      ----------------------------------------------------------------------------------------------
+ 155. [2026-08-10] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Implemented integration tests for DocumentUploadController using Spring MockMvc.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-11
+====================================================================================================
+ 156. [2026-08-11] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Implemented EmbeddingCacheService using Spring Cache (Caffeine) to prevent re-embedding identical user queries.
+      ----------------------------------------------------------------------------------------------
+ 157. [2026-08-11] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Added MIME type validation and file size check (rejects files >25MB with HTTP 413 Payload Too Large).
+      ----------------------------------------------------------------------------------------------
+ 158. [2026-08-11] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Created native query: 'SELECT *, 1 - (embedding <=> :queryVector) AS similarity FROM document_chunks ORDER BY embedding <=> :queryVector LIMIT :topK'.
+      ----------------------------------------------------------------------------------------------
+ 159. [2026-08-11] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Built DocumentManagerDrawer displaying list of indexed documents, page counts, chunk stats, and delete action.
+      ----------------------------------------------------------------------------------------------
+ 160. [2026-08-11] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Tested file validation constraints (rejected malicious extensions, oversized files, empty files).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-12
+====================================================================================================
+ 161. [2026-08-12] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Created HybridRetriever: combines vector cosine similarity with BM25 keyword matching for improved recall.
+      ----------------------------------------------------------------------------------------------
+ 162. [2026-08-12] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Implemented async ingestion worker (@Async Spring TaskExecutor) to prevent blocking HTTP request thread.
+      ----------------------------------------------------------------------------------------------
+ 163. [2026-08-12] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Added metadata filtering support (filter by documentId, uploadDate, and user ownership).
+      ----------------------------------------------------------------------------------------------
+ 164. [2026-08-12] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Integrated Axios client with JWT interceptor: automatically attaches 'Authorization: Bearer <token>' to requests.
+      ----------------------------------------------------------------------------------------------
+ 165. [2026-08-12] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Created benchmark script testing vector insertion throughput for 100-page document (recorded ~3.2s total time).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-13
+====================================================================================================
+ 166. [2026-08-13] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Added fallback response generator when vector similarity score is below confidence threshold (0.65).
+      ----------------------------------------------------------------------------------------------
+ 167. [2026-08-13] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Added DocumentStatus update callbacks (PROCESSING -> CHUNKING -> EMBEDDING -> INDEXED).
+      ----------------------------------------------------------------------------------------------
+ 168. [2026-08-13] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Configured HikariCP connection pool settings optimized for Neon serverless idle timeout handling.
+      ----------------------------------------------------------------------------------------------
+ 169. [2026-08-13] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Added upload progress bar showing real-time upload percentage and processing spinner.
+      ----------------------------------------------------------------------------------------------
+ 170. [2026-08-13] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Added memory profiling checks using VisualVM during document chunking and embedding operations.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-14
+====================================================================================================
+ 171. [2026-08-14] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Participated in Saturday mentor review; demonstrated embedding generation and cache hits.
+      ----------------------------------------------------------------------------------------------
+ 172. [2026-08-14] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Demonstrated asynchronous file upload and processing status polling in mentor review.
+      ----------------------------------------------------------------------------------------------
+ 173. [2026-08-14] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Presented pgvector similarity search performance query plan to mentor during review.
+      ----------------------------------------------------------------------------------------------
+ 174. [2026-08-14] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Demonstrated file upload and document management UI inside Electron to mentor.
+      ----------------------------------------------------------------------------------------------
+ 175. [2026-08-14] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Reported benchmark metrics to mentor; verified memory footprint remained stable under 512MB heap.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-15
+====================================================================================================
+ 176. [2026-08-15] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Committed hybrid retrieval and caching enhancements to branch 'feature/member1-rag-engine' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 177. [2026-08-15] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Committed upload controller and async pipeline to 'feature/member2-doc-ingestion' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 178. [2026-08-15] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Committed vector repository and native query methods to 'feature/member3-database-security' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 179. [2026-08-15] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Committed document management UI components to branch 'feature/member4-ui-electron' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 180. [2026-08-15] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Committed integration test cases to branch 'feature/member5-analytics-evaluation' (3 commits).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-17
+====================================================================================================
+ 181. [2026-08-17] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Implemented StreamingChatController using Spring WebFlux SseEmitter for token-by-token streaming.
+      ----------------------------------------------------------------------------------------------
+ 182. [2026-08-17] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Implemented DocumentSummaryService: generates automatic 3-sentence executive summary upon document indexing.
+      ----------------------------------------------------------------------------------------------
+ 183. [2026-08-17] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Implemented Role-Based Access Control (RBAC): created roles ROLE_ADMIN, ROLE_RESEARCHER, ROLE_STUDENT.
+      ----------------------------------------------------------------------------------------------
+ 184. [2026-08-17] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Implemented EventSource / fetch stream consumer in React for real-time SSE token rendering.
+      ----------------------------------------------------------------------------------------------
+ 185. [2026-08-17] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Implemented automated integration tests for SSE streaming endpoint using WebTestClient.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-18
+====================================================================================================
+ 186. [2026-08-18] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Built SourceCitationInjector: appends verified chunk IDs and document metadata to the final SSE event.
+      ----------------------------------------------------------------------------------------------
+ 187. [2026-08-18] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Added document deletion and cascade purge: cleans up document metadata, raw file, and vector chunks in Neon.
+      ----------------------------------------------------------------------------------------------
+ 188. [2026-08-18] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Secured sensitive endpoints: restricted document deletion and admin metrics to ROLE_ADMIN.
+      ----------------------------------------------------------------------------------------------
+ 189. [2026-08-18] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Built SourceCitationBadge component: clicking a citation badge opens the exact source excerpt modal.
+      ----------------------------------------------------------------------------------------------
+ 190. [2026-08-18] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Created test scenario verifying rate-limiting enforcement (tested 31st request receives HTTP 429).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-19
+====================================================================================================
+ 191. [2026-08-19] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Implemented ConversationHistoryManager: maintains rolling multi-turn memory window per session.
+      ----------------------------------------------------------------------------------------------
+ 192. [2026-08-19] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Implemented chunk preview endpoint: GET /api/documents/{id}/chunks returning chunk text and token sizes.
+      ----------------------------------------------------------------------------------------------
+ 193. [2026-08-19] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Implemented RateLimitingFilter using Bucket4j (token bucket algorithm: max 30 requests/minute per IP).
+      ----------------------------------------------------------------------------------------------
+ 194. [2026-08-19] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Integrated Electron native notifications when background document indexing completes.
+      ----------------------------------------------------------------------------------------------
+ 195. [2026-08-19] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Tested RBAC enforcement: verified non-admin users cannot access administrative document delete endpoints.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-20
+====================================================================================================
+ 196. [2026-08-20] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Added token-usage tracking per query session (prompt tokens, completion tokens, latency ms).
+      ----------------------------------------------------------------------------------------------
+ 197. [2026-08-20] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Added support for plain text (.txt) and Markdown (.md) ingestion alongside PDF files.
+      ----------------------------------------------------------------------------------------------
+ 198. [2026-08-20] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Added AuditLogEntity and AuditService: logs query timestamp, user ID, tokens consumed, and execution status.
+      ----------------------------------------------------------------------------------------------
+ 199. [2026-08-20] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Added chat session persistence in LocalStorage with export chat to Markdown/PDF option.
+      ----------------------------------------------------------------------------------------------
+ 200. [2026-08-20] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Set up JaCoCo report pipeline tracking unit test coverage across all newly merged features.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-21
+====================================================================================================
+ 201. [2026-08-21] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Demonstrated real-time token streaming to mentor Er. Ram Babu Buri during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 202. [2026-08-21] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Presented document summary and preview feature during Saturday mentor review.
+      ----------------------------------------------------------------------------------------------
+ 203. [2026-08-21] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Presented security access control and rate limiter verification to mentor during review.
+      ----------------------------------------------------------------------------------------------
+ 204. [2026-08-21] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Demonstrated interactive citations and token typing animation to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 205. [2026-08-21] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Presented security and rate-limiting test audit to mentor during Saturday meeting.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-22
+====================================================================================================
+ 206. [2026-08-22] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Committed streaming controller and citation builder to 'feature/member1-rag-engine' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 207. [2026-08-22] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Committed summary service and document lifecycle endpoints to 'feature/member2-doc-ingestion' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 208. [2026-08-22] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Committed security annotations and audit service to 'feature/member3-database-security' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 209. [2026-08-22] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Committed streaming UI hook and citation modal to 'feature/member4-ui-electron' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 210. [2026-08-22] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Committed security test suites to 'feature/member5-analytics-evaluation' (3 commits).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-24
+====================================================================================================
+ 211. [2026-08-24] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Added Temperature and Top-P runtime tuning parameters to ChatRequest DTO for experimental variability.
+      ----------------------------------------------------------------------------------------------
+ 212. [2026-08-24] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Optimized Apache Tika memory usage during large document parsing by streaming parser buffers.
+      ----------------------------------------------------------------------------------------------
+ 213. [2026-08-24] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Created AdminAnalyticsRepository with custom JPA aggregation queries for query volume and average latency.
+      ----------------------------------------------------------------------------------------------
+ 214. [2026-08-24] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Built AdminDashboard component with Recharts: Query Volume over time, Latency histogram, Token cost chart.
+      ----------------------------------------------------------------------------------------------
+ 215. [2026-08-24] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Implemented RagEvaluationService: computes Context Precision, Groundedness/Faithfulness, and Answer Relevance.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-25
+====================================================================================================
+ 216. [2026-08-25] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Implemented re-ranking module prototype: scores top-10 retrieved chunks and selects top-4 for prompt context.
+      ----------------------------------------------------------------------------------------------
+ 217. [2026-08-25] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Implemented batch document re-indexing endpoint for administrative knowledge base maintenance.
+      ----------------------------------------------------------------------------------------------
+ 218. [2026-08-25] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Implemented GET /api/admin/metrics returning total queries, active users, vector chunks count, and storage used.
+      ----------------------------------------------------------------------------------------------
+ 219. [2026-08-25] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Implemented SystemSettings panel allowing configuration of Backend API URL, LLM model choice, and dark/light theme.
+      ----------------------------------------------------------------------------------------------
+ 220. [2026-08-25] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Created automated evaluation test runner with a golden dataset of 50 ground-truth Q&A pairs from Kaggle.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-26
+====================================================================================================
+ 221. [2026-08-26] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Refactored PromptTemplateBuilder to inject explicit negative constraints ('Answer only from context, else state unknown').
+      ----------------------------------------------------------------------------------------------
+ 222. [2026-08-26] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Added support for extracting and indexing image captions and metadata from PDF files.
+      ----------------------------------------------------------------------------------------------
+ 223. [2026-08-26] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Created database backup and restore script for Neon PostgreSQL vector tables using pg_dump/pg_restore.
+      ----------------------------------------------------------------------------------------------
+ 224. [2026-08-26] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Created desktop application title bar with native minimize, maximize, and close controls in Electron.
+      ----------------------------------------------------------------------------------------------
+ 225. [2026-08-26] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Recorded baseline scores: Context Relevance = 0.88, Faithfulness = 0.92, Answer Relevance = 0.90.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-27
+====================================================================================================
+ 226. [2026-08-27] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Added structured JSON output mode for programmatic Q&A extraction.
+      ----------------------------------------------------------------------------------------------
+ 227. [2026-08-27] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Curated Kaggle dataset benchmark of 25 technical research papers and textbook chapters for system benchmark.
+      ----------------------------------------------------------------------------------------------
+ 228. [2026-08-27] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Optimized SQL query performance by adding composite index on document_chunks(document_id, chunk_index).
+      ----------------------------------------------------------------------------------------------
+ 229. [2026-08-27] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Polished responsive UI typography, scrollbars, and tooltips across the desktop application.
+      ----------------------------------------------------------------------------------------------
+ 230. [2026-08-27] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Built REST endpoint GET /api/admin/evaluation returning historical evaluation scores and hallucination rates.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-28
+====================================================================================================
+ 231. [2026-08-28] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Reviewed re-ranking quality improvements with mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 232. [2026-08-28] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Demonstrated batch re-indexing and document benchmark corpus to mentor.
+      ----------------------------------------------------------------------------------------------
+ 233. [2026-08-28] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Demonstrated database analytics queries and Neon storage telemetry to mentor.
+      ----------------------------------------------------------------------------------------------
+ 234. [2026-08-28] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Demonstrated full Admin Dashboard and desktop customizations to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 235. [2026-08-28] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Presented evaluation methodology and live benchmark score report to mentor Er. Ram Babu Buri.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-29
+====================================================================================================
+ 236. [2026-08-29] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Committed re-ranking and prompt refinement to 'feature/member1-rag-engine' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 237. [2026-08-29] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Committed parser optimizations and test dataset to 'feature/member2-doc-ingestion' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 238. [2026-08-29] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Committed analytics endpoints and database indexes to 'feature/member3-database-security' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 239. [2026-08-29] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Committed admin dashboard UI and custom window controls to 'feature/member4-ui-electron' (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 240. [2026-08-29] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Committed evaluation service and golden dataset runner to 'feature/member5-analytics-evaluation' (3 commits).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-08-31
+====================================================================================================
+ 241. [2026-08-31] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Created 'develop' branch; orchestrated Pull Requests from all 5 feature branches and resolved merge conflicts.
+      ----------------------------------------------------------------------------------------------
+ 242. [2026-08-31] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Tested end-to-end document upload pipeline using 10 different Kaggle PDF documents via Electron UI.
+      ----------------------------------------------------------------------------------------------
+ 243. [2026-08-31] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Configured production-grade CORS configuration in Spring Security allowing electron:// and localhost origins.
+      ----------------------------------------------------------------------------------------------
+ 244. [2026-08-31] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Configured Electron IPC handlers for file opening, external link navigation, and system notifications.
+      ----------------------------------------------------------------------------------------------
+ 245. [2026-08-31] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Executed end-to-end test suite covering full user journey: Register -> Login -> Upload Doc -> Query -> View Citations.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-01
+====================================================================================================
+ 246. [2026-09-01] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Verified end-to-end RAG query flow from React chat input through Spring Boot to Neon pgvector and LLM.
+      ----------------------------------------------------------------------------------------------
+ 247. [2026-09-01] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Fixed bug where documents with special characters in filename failed during Neon metadata insertion.
+      ----------------------------------------------------------------------------------------------
+ 248. [2026-09-01] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Resolved JWT expiration handling: implemented refresh token rotation and 401 automatic redirect.
+      ----------------------------------------------------------------------------------------------
+ 249. [2026-09-01] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Packaged React frontend into production build; verified static asset serving inside Electron shell.
+      ----------------------------------------------------------------------------------------------
+ 250. [2026-09-01] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Identified and logged 6 integration defects in issue tracker; verified fixes across all team modules.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-02
+====================================================================================================
+ 251. [2026-09-02] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Conducted team code review session; standardized log formats, API error responses, and HTTP status codes.
+      ----------------------------------------------------------------------------------------------
+ 252. [2026-09-02] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Verified async processing notifications pop up correctly on desktop client upon indexing completion.
+      ----------------------------------------------------------------------------------------------
+ 253. [2026-09-02] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Verified Neon SSL connection resilience under transient cloud network reconnects.
+      ----------------------------------------------------------------------------------------------
+ 254. [2026-09-02] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Fixed chat auto-scroll glitch when streaming long multi-paragraph responses.
+      ----------------------------------------------------------------------------------------------
+ 255. [2026-09-02] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Conducted regression testing across all 15 functional requirements specified in SRS.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-03
+====================================================================================================
+ 256. [2026-09-03] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Profiled end-to-end query latency: average 850ms for first token arrival over local network.
+      ----------------------------------------------------------------------------------------------
+ 257. [2026-09-03] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Added automatic cleanup of temporary files in local server uploads directory.
+      ----------------------------------------------------------------------------------------------
+ 258. [2026-09-03] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Audited database connection leaks using HikariCP leakDetectionThreshold = 2000ms.
+      ----------------------------------------------------------------------------------------------
+ 259. [2026-09-03] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Added network connectivity banner that alerts user when Spring Boot backend is unreachable.
+      ----------------------------------------------------------------------------------------------
+ 260. [2026-09-03] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Measured overall test coverage: achieved 84.6% branch coverage across backend Java codebase.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-04
+====================================================================================================
+ 261. [2026-09-04] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Demonstrated integrated end-to-end system live to mentor Er. Ram Babu Buri during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 262. [2026-09-04] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Reviewed document upload stability and multi-file processing during mentor review.
+      ----------------------------------------------------------------------------------------------
+ 263. [2026-09-04] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Presented security and database stability validation to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 264. [2026-09-04] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Demonstrated production Electron build installer to mentor during review.
+      ----------------------------------------------------------------------------------------------
+ 265. [2026-09-04] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Presented comprehensive test execution report to mentor during Saturday meeting.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-05
+====================================================================================================
+ 266. [2026-09-05] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Committed integration bugfixes to 'develop' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 267. [2026-09-05] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Committed file handling fixes to 'develop' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 268. [2026-09-05] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Committed CORS and JWT refresh enhancements to 'develop' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 269. [2026-09-05] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Committed desktop client integration fixes to 'develop' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 270. [2026-09-05] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Committed end-to-end test scripts and regression reports to 'develop' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-07
+====================================================================================================
+ 271. [2026-09-07] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Benchmarked Spring AI prompt throughput under concurrent load; optimized prompt string concatenation.
+      ----------------------------------------------------------------------------------------------
+ 272. [2026-09-07] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Benchmarked document parsing throughput under simultaneous multi-document uploads from Kaggle dataset.
+      ----------------------------------------------------------------------------------------------
+ 273. [2026-09-07] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Configured Neon PgBouncer connection pooler in transaction mode for high concurrency support.
+      ----------------------------------------------------------------------------------------------
+ 274. [2026-09-07] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Optimized React bundle size using Vite code-splitting and dynamic imports for Admin Dashboard and Settings.
+      ----------------------------------------------------------------------------------------------
+ 275. [2026-09-07] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Configured Apache JMeter test plan: 50 virtual users, 10-minute duration, ramp-up period 30 seconds.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-08
+====================================================================================================
+ 276. [2026-09-08] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Implemented parallel retrieval execution using Java CompletableFuture for hybrid search.
+      ----------------------------------------------------------------------------------------------
+ 277. [2026-09-08] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Optimized Apache PDFBox memory allocation using MemoryUsageSetting.setupTempFileOnly().
+      ----------------------------------------------------------------------------------------------
+ 278. [2026-09-08] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Tuned PostgreSQL configuration parameters: work_mem, maintenance_work_mem, and max_connections.
+      ----------------------------------------------------------------------------------------------
+ 279. [2026-09-08] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Reduced Electron application initial load time from 2.4s to 1.1s.
+      ----------------------------------------------------------------------------------------------
+ 280. [2026-09-08] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Recorded key metrics: 99th percentile latency = 1.4s, error rate = 0.0%, average throughput = 42 req/sec.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-09
+====================================================================================================
+ 281. [2026-09-09] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Reduced query embedding generation latency by 35% using local embedding cache.
+      ----------------------------------------------------------------------------------------------
+ 282. [2026-09-09] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Prevented OutOfMemoryError when parsing 100MB+ documents by streaming page extraction.
+      ----------------------------------------------------------------------------------------------
+ 283. [2026-09-09] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Analyzed slow query logs; optimized pgvector similarity search query execution plan.
+      ----------------------------------------------------------------------------------------------
+ 284. [2026-09-09] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Implemented virtualized list rendering in Document Manager to handle 500+ document chunks smoothly.
+      ----------------------------------------------------------------------------------------------
+ 285. [2026-09-09] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Tested system stability under memory stress (heap usage leveled off gracefully under garbage collection).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-10
+====================================================================================================
+ 286. [2026-09-10] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Hardened exception handlers with user-friendly error messages when upstream LLM rate limits hit.
+      ----------------------------------------------------------------------------------------------
+ 287. [2026-09-10] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Added queue limit for background indexing tasks (max 10 queued files, surplus queued with status WAITING).
+      ----------------------------------------------------------------------------------------------
+ 288. [2026-09-10] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Conducted database failover and auto-reconnect test during simulated network drops.
+      ----------------------------------------------------------------------------------------------
+ 289. [2026-09-10] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Eliminated unnecessary React re-renders in ChatMessageList using React.memo and useCallback hooks.
+      ----------------------------------------------------------------------------------------------
+ 290. [2026-09-10] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Generated load test performance summary report with charts and response time distributions.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-11
+====================================================================================================
+ 291. [2026-09-11] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Presented load testing results and latency improvements to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 292. [2026-09-11] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Reviewed ingestion scalability and memory profiling graphs with mentor.
+      ----------------------------------------------------------------------------------------------
+ 293. [2026-09-11] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Demonstrated database stress testing metrics to mentor Er. Ram Babu Buri.
+      ----------------------------------------------------------------------------------------------
+ 294. [2026-09-11] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Demonstrated UI performance gains and low RAM footprint to mentor during review.
+      ----------------------------------------------------------------------------------------------
+ 295. [2026-09-11] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Presented JMeter performance report to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-12
+====================================================================================================
+ 296. [2026-09-12] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Committed performance optimizations to 'develop' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 297. [2026-09-12] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Committed ingestion memory optimizations to 'develop' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 298. [2026-09-12] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Committed database connection pooling tuning to 'develop' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 299. [2026-09-12] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Committed frontend performance optimizations to 'develop' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 300. [2026-09-12] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Committed JMeter test scripts and results to 'develop' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-14
+====================================================================================================
+ 301. [2026-09-14] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Authored Project Report Chapter 1: Introduction, Problem Statement, Objectives, and Scope of RAG.
+      ----------------------------------------------------------------------------------------------
+ 302. [2026-09-14] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Authored Project Report Chapter 3: Data Ingestion Architecture, Kaggle Dataset Extraction, and Chunking Algorithms.
+      ----------------------------------------------------------------------------------------------
+ 303. [2026-09-14] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Authored Project Report Chapter 2: Literature Review, Theoretical Background on Vector Databases & pgvector.
+      ----------------------------------------------------------------------------------------------
+ 304. [2026-09-14] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Captured high-resolution application screenshots of Electron UI (Chat, Document Manager, Citations, Admin).
+      ----------------------------------------------------------------------------------------------
+ 305. [2026-09-14] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Authored Project Report Chapter 7: Testing Methodologies, Evaluation Results, and Performance Benchmarks.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-15
+====================================================================================================
+ 306. [2026-09-15] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Authored Chapter 4: System Implementation details for Core RAG Engine, Prompt Engineering, and Spring AI.
+      ----------------------------------------------------------------------------------------------
+ 307. [2026-09-15] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Created high-resolution data flow diagrams illustrating recursive sliding-window chunking.
+      ----------------------------------------------------------------------------------------------
+ 308. [2026-09-15] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Authored Chapter 5: Database Schema Design, Neon Cloud Deployment, and Security Architecture.
+      ----------------------------------------------------------------------------------------------
+ 309. [2026-09-15] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Authored Project Report Chapter 6: User Interface Design, Electron Desktop Architecture, and User Experience.
+      ----------------------------------------------------------------------------------------------
+ 310. [2026-09-15] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Authored Chapter 8: Conclusion, Limitations, and Future Work (multi-modal RAG, graph-based RAG).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-16
+====================================================================================================
+ 311. [2026-09-16] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Drafted Research Paper Section III: System Architecture and RAG Orchestration Methodology.
+      ----------------------------------------------------------------------------------------------
+ 312. [2026-09-16] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Drafted Research Paper Section IV: Document Processing and Chunk Boundary Optimization.
+      ----------------------------------------------------------------------------------------------
+ 313. [2026-09-16] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Drafted Research Paper Section V: Vector Indexing Performance (HNSW vs IVFFlat) and Latency Analysis.
+      ----------------------------------------------------------------------------------------------
+ 314. [2026-09-16] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Designed UI walkthrough figures and state machine diagrams for inclusion in documentation.
+      ----------------------------------------------------------------------------------------------
+ 315. [2026-09-16] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Drafted Research Paper Section VI: Experimental Results, RAG Triad Evaluation, and Conclusion.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-17
+====================================================================================================
+ 316. [2026-09-17] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Verified code snippets, algorithmic pseudocode, and mathematical formulation of cosine similarity in paper.
+      ----------------------------------------------------------------------------------------------
+ 317. [2026-09-17] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Compiled table of supported MIME formats, parsing benchmarks, and tokenization accuracy.
+      ----------------------------------------------------------------------------------------------
+ 318. [2026-09-17] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Documented database backup protocols, encryption at rest, and JWT authentication flows.
+      ----------------------------------------------------------------------------------------------
+ 319. [2026-09-17] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Drafted user manual and quick-start guide for running the Electron desktop app.
+      ----------------------------------------------------------------------------------------------
+ 320. [2026-09-17] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Ran plagiarism check across all compiled chapters (achieved 8.4% plagiarism, well below 20% limit).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-18
+====================================================================================================
+ 321. [2026-09-18] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Reviewed Project Report Chapters 1 & 4 with mentor Er. Ram Babu Buri during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 322. [2026-09-18] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Presented Chapter 3 draft to mentor during Saturday review meeting.
+      ----------------------------------------------------------------------------------------------
+ 323. [2026-09-18] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Presented Chapters 2 & 5 and research paper data to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 324. [2026-09-18] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Presented UI chapters and user manual to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 325. [2026-09-18] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Presented testing chapter and plagiarism verification report to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-19
+====================================================================================================
+ 326. [2026-09-19] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Updated repository documentation and README.md with detailed setup and execution instructions (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 327. [2026-09-19] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Committed documentation assets and diagrams to repository (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 328. [2026-09-19] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Committed SQL schemas, migration scripts, and architecture docs to repository (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 329. [2026-09-19] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Committed application screenshots and user guides to repository (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 330. [2026-09-19] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Compiled all chapters into unified master Project Report document (3 commits).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-21
+====================================================================================================
+ 331. [2026-09-21] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Designed PPT Master Deck Slides 1-3 (Title, Problem Statement, System Architecture, RAG Pipeline).
+      ----------------------------------------------------------------------------------------------
+ 332. [2026-09-21] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Designed PPT Slide 4 (Document Ingestion Engine, Recursive Chunking & Apache Tika Pipeline).
+      ----------------------------------------------------------------------------------------------
+ 333. [2026-09-21] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Designed PPT Slide 5 (Neon Cloud Database, pgvector HNSW Indexing, Spring Security & JWT).
+      ----------------------------------------------------------------------------------------------
+ 334. [2026-09-21] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Designed PPT Slide 6 (React UI Design, Electron Desktop Integration & Streaming User Experience).
+      ----------------------------------------------------------------------------------------------
+ 335. [2026-09-21] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Designed PPT Slides 7-10 (Testing, JMeter Benchmarks, RAG Triad Evaluation Metrics & Future Roadmap).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-22
+====================================================================================================
+ 336. [2026-09-22] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Drafted 10-minute Demo Video script outlining speaking parts and feature demos for all 5 members.
+      ----------------------------------------------------------------------------------------------
+ 337. [2026-09-22] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Recorded screen capture segment demonstrating multi-format document upload from Kaggle and real-time chunking.
+      ----------------------------------------------------------------------------------------------
+ 338. [2026-09-22] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Recorded screen capture segment showing live Neon PostgreSQL console, pgvector queries, and JWT auth flow.
+      ----------------------------------------------------------------------------------------------
+ 339. [2026-09-22] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Recorded screen capture segment showing Electron desktop app, real-time token streaming, and source citation preview.
+      ----------------------------------------------------------------------------------------------
+ 340. [2026-09-22] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Recorded screen capture segment showing Admin Analytics Dashboard and automated Ragas evaluation runner.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-23
+====================================================================================================
+ 341. [2026-09-23] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Prepared Core RAG Engine viva voce answers (Spring AI, cosine distance math, context window budgeting).
+      ----------------------------------------------------------------------------------------------
+ 342. [2026-09-23] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Prepared viva voce answers on text parsing, tokenization algorithms, and handling unstructured data.
+      ----------------------------------------------------------------------------------------------
+ 343. [2026-09-23] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Prepared viva voce answers on vector indexing, cosine similarity vs Euclidean distance, and database scalability.
+      ----------------------------------------------------------------------------------------------
+ 344. [2026-09-23] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Prepared viva voce answers on Electron security model, IPC bridge, React state management, and SSE.
+      ----------------------------------------------------------------------------------------------
+ 345. [2026-09-23] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Prepared viva voce answers on RAG Triad (Context Precision, Faithfulness, Relevance) and testing methodologies.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-24
+====================================================================================================
+ 346. [2026-09-24] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Conducted mock viva with team members; reviewed potential cross-questioning from external examiner.
+      ----------------------------------------------------------------------------------------------
+ 347. [2026-09-24] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Participated in mock viva session; explained chunking overlap rationale.
+      ----------------------------------------------------------------------------------------------
+ 348. [2026-09-24] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Participated in mock viva; demonstrated live SQL queries in psql terminal.
+      ----------------------------------------------------------------------------------------------
+ 349. [2026-09-24] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Participated in mock viva; demonstrated Electron desktop app features.
+      ----------------------------------------------------------------------------------------------
+ 350. [2026-09-24] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Participated in mock viva; explained JMeter stress test graphs and error rates.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-25
+====================================================================================================
+ 351. [2026-09-25] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Presented PPT deck to mentor Er. Ram Babu Buri during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 352. [2026-09-25] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Reviewed ingestion demo clip and slides with mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 353. [2026-09-25] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Reviewed database demo clip and slides with mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 354. [2026-09-25] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Reviewed UI demo video clip with mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 355. [2026-09-25] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Reviewed evaluation demo clip and final PPT deck with mentor Er. Ram Babu Buri.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-26
+====================================================================================================
+ 356. [2026-09-26] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Committed final PPT and video script to repository docs folder (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 357. [2026-09-26] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Committed presentation slides and video assets to repository (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 358. [2026-09-26] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Committed presentation slides and SQL demonstration scripts to repository (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 359. [2026-09-26] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Committed presentation slides and UI demo assets to repository (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 360. [2026-09-26] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Committed final compiled presentation slides and demo links to repository (3 commits).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-28
+====================================================================================================
+ 361. [2026-09-28] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Conducted final repository audit; verified all 5 member branches are merged cleanly into 'main'.
+      ----------------------------------------------------------------------------------------------
+ 362. [2026-09-28] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Verified all document parsing dependencies are shaded into the runnable Spring Boot JAR.
+      ----------------------------------------------------------------------------------------------
+ 363. [2026-09-28] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Verified Neon PostgreSQL database production schema, connection quotas, and automated cloud backups.
+      ----------------------------------------------------------------------------------------------
+ 364. [2026-09-28] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Built Electron Windows installer using electron-builder.
+      ----------------------------------------------------------------------------------------------
+ 365. [2026-09-28] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Conducted final regression testing on release v1.0.0 installer and backend JAR.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-29
+====================================================================================================
+ 366. [2026-09-29] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Created GitHub Release v1.0.0 with release notes, binary links, and documentation links.
+      ----------------------------------------------------------------------------------------------
+ 367. [2026-09-29] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Tested standalone file ingestion on clean Windows environment without development tools.
+      ----------------------------------------------------------------------------------------------
+ 368. [2026-09-29] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Exported final database schema DDL and sanitized sample vector data script for submission archive.
+      ----------------------------------------------------------------------------------------------
+ 369. [2026-09-29] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Tested installer execution on clean Windows 11 machine; verified desktop shortcut and uninstall routine.
+      ----------------------------------------------------------------------------------------------
+ 370. [2026-09-29] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Ran automated RAG Triad evaluation on production release: confirmed 92.4% aggregate faithfulness score.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-09-30
+====================================================================================================
+ 371. [2026-09-30] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Verified runnable Spring Boot executable JAR: 'java -jar rag-backend-1.0.0.jar' boots cleanly in 4.2 seconds.
+      ----------------------------------------------------------------------------------------------
+ 372. [2026-09-30] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Double-checked that no proprietary API keys or credentials exist in source code or sample files.
+      ----------------------------------------------------------------------------------------------
+ 373. [2026-09-30] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Configured environment variable documentation for database credentials and JWT secret keys.
+      ----------------------------------------------------------------------------------------------
+ 374. [2026-09-30] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Verified production build connects seamlessly to deployed backend and handles offline network states gracefully.
+      ----------------------------------------------------------------------------------------------
+ 375. [2026-09-30] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Compiled final testing verification certificate and code quality metric report.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-10-01
+====================================================================================================
+ 376. [2026-10-01] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Reviewed all repository branches to confirm minimum 3 commits/student per week requirement is satisfied.
+      ----------------------------------------------------------------------------------------------
+ 377. [2026-10-01] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Updated repository troubleshooting guide for PDF extraction on Windows paths.
+      ----------------------------------------------------------------------------------------------
+ 378. [2026-10-01] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Ran final database security and vulnerability scan (0 critical vulnerabilities found).
+      ----------------------------------------------------------------------------------------------
+ 379. [2026-10-01] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Created software user installation guide with step-by-step screenshots.
+      ----------------------------------------------------------------------------------------------
+ 380. [2026-10-01] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Organized submission archive containing Report, SRS, UML, PPT, Research Paper, and Video Link.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-10-02
+====================================================================================================
+ 381. [2026-10-02] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Presented packaged release v1.0.0 to mentor Er. Ram Babu Buri during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 382. [2026-10-02] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Presented standalone document ingestion test to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 383. [2026-10-02] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Presented database production readiness to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+ 384. [2026-10-02] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Demonstrated one-click installer to mentor Er. Ram Babu Buri during review.
+      ----------------------------------------------------------------------------------------------
+ 385. [2026-10-02] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Presented final testing certificate to mentor during Saturday review.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-10-03
+====================================================================================================
+ 386. [2026-10-03] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Pushed final signed release commit to 'main' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 387. [2026-10-03] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Committed documentation updates to 'main' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 388. [2026-10-03] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Committed sanitized database seed scripts to 'main' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 389. [2026-10-03] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Committed Electron build configuration and installer assets to 'main' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+ 390. [2026-10-03] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Committed final test verification summary to 'main' branch (3 commits).
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-10-05
+====================================================================================================
+ 391. [2026-10-05] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Verified complete submission archive: Project Report PDF, SRS PDF, UML Diagrams, PPT, Research Paper, Video Link.
+      ----------------------------------------------------------------------------------------------
+ 392. [2026-10-05] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Verified and submitted all daily work log entries for Module 2 on the college portal.
+      ----------------------------------------------------------------------------------------------
+ 393. [2026-10-05] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Verified and submitted all daily work log entries for Module 3 on the college portal.
+      ----------------------------------------------------------------------------------------------
+ 394. [2026-10-05] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Verified and submitted all daily work log entries for Module 4 on the college portal.
+      ----------------------------------------------------------------------------------------------
+ 395. [2026-10-05] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Verified and submitted all daily work log entries for Module 5 on the college portal.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-10-06
+====================================================================================================
+ 396. [2026-10-06] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Compiled day-by-day work log for Team Leader and verified alignment with project milestones.
+      ----------------------------------------------------------------------------------------------
+ 397. [2026-10-06] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Prepared printed copy of Document Ingestion and Parsing documentation for viva panel.
+      ----------------------------------------------------------------------------------------------
+ 398. [2026-10-06] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Prepared printed copy of Database ER diagrams, pgvector schema, and security specifications.
+      ----------------------------------------------------------------------------------------------
+ 399. [2026-10-06] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Prepared printed copy of UI wireframes, Electron architecture diagrams, and user manual.
+      ----------------------------------------------------------------------------------------------
+ 400. [2026-10-06] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Prepared printed copy of Testing reports, JMeter performance graphs, and Research Paper.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-10-07
+====================================================================================================
+ 401. [2026-10-07] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Logged Week 14 final submission details on college Netlify portal under Team Leader account.
+      ----------------------------------------------------------------------------------------------
+ 402. [2026-10-07] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Verified all GitHub commits on 'feature/member2-doc-ingestion' and PR merge records.
+      ----------------------------------------------------------------------------------------------
+ 403. [2026-10-07] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Verified all GitHub commits on 'feature/member3-database-security' and PR merge records.
+      ----------------------------------------------------------------------------------------------
+ 404. [2026-10-07] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Verified all GitHub commits on 'feature/member4-ui-electron' and PR merge records.
+      ----------------------------------------------------------------------------------------------
+ 405. [2026-10-07] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Verified all GitHub commits on 'feature/member5-analytics-evaluation' and PR merge records.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-10-08
+====================================================================================================
+ 406. [2026-10-08] Shaurya Dixit             | Hours: 1.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Conducted final team briefing for external viva; rehearsed slide transitions and live demo sequence.
+      ----------------------------------------------------------------------------------------------
+ 407. [2026-10-08] Yashvardhan Singh Chauhan | Hours: 1.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Reviewed viva questions on text chunking algorithms and edge-case handling.
+      ----------------------------------------------------------------------------------------------
+ 408. [2026-10-08] Vaibhav Tank              | Hours: 1.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Reviewed viva questions on vector search mathematics, indexing techniques, and JWT security.
+      ----------------------------------------------------------------------------------------------
+ 409. [2026-10-08] Rajveer Singh Ranawat     | Hours: 1.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Reviewed viva questions on Electron IPC security, React state management, and SSE streaming.
+      ----------------------------------------------------------------------------------------------
+ 410. [2026-10-08] Yashpal Singh Bhati       | Hours: 1.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Reviewed viva questions on RAG Triad evaluation metrics, hallucination detection, and load testing.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-10-09
+====================================================================================================
+ 411. [2026-10-09] Shaurya Dixit             | Hours: 2 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Attended final sign-off meeting with mentor Er. Ram Babu Buri; obtained mentor recommendation sign-off.
+      ----------------------------------------------------------------------------------------------
+ 412. [2026-10-09] Yashvardhan Singh Chauhan | Hours: 2 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Participated in final mentor sign-off review with mentor Er. Ram Babu Buri.
+      ----------------------------------------------------------------------------------------------
+ 413. [2026-10-09] Vaibhav Tank              | Hours: 2 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Participated in final mentor sign-off review with mentor Er. Ram Babu Buri.
+      ----------------------------------------------------------------------------------------------
+ 414. [2026-10-09] Rajveer Singh Ranawat     | Hours: 2 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Participated in final mentor sign-off review with mentor Er. Ram Babu Buri.
+      ----------------------------------------------------------------------------------------------
+ 415. [2026-10-09] Yashpal Singh Bhati       | Hours: 2 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Participated in final mentor sign-off review with mentor Er. Ram Babu Buri.
+      ----------------------------------------------------------------------------------------------
+
+====================================================================================================
+DATE: 2026-10-10
+====================================================================================================
+ 416. [2026-10-10] Shaurya Dixit             | Hours: 2.5 | Status: Completed
+      Module: Module 1: Core RAG Engine & LLM Orchestration
+      Task  : Submitted final project repository URL and verified public accessibility for external evaluation.
+      ----------------------------------------------------------------------------------------------
+ 417. [2026-10-10] Yashvardhan Singh Chauhan | Hours: 2.5 | Status: Completed
+      Module: Module 2: Document Ingestion, Parsing & Chunking (Kaggle Dataset)
+      Task  : Archived final module code and test logs in team submission drive.
+      ----------------------------------------------------------------------------------------------
+ 418. [2026-10-10] Vaibhav Tank              | Hours: 2.5 | Status: Completed
+      Module: Module 3: Neon PostgreSQL Vector Store & Spring Security
+      Task  : Archived database DDL scripts and connection configuration guides.
+      ----------------------------------------------------------------------------------------------
+ 419. [2026-10-10] Rajveer Singh Ranawat     | Hours: 2.5 | Status: Completed
+      Module: Module 4: React TypeScript UI & Electron Desktop Integration
+      Task  : Archived Electron installer build and frontend source assets.
+      ----------------------------------------------------------------------------------------------
+ 420. [2026-10-10] Yashpal Singh Bhati       | Hours: 2.5 | Status: Completed
+      Module: Module 5: RAG Triad Evaluation, Performance Analytics & Testing
+      Task  : Completed master compilation of all submission artifacts and portal submission verifications.
+      ----------------------------------------------------------------------------------------------

@@ -2,7 +2,7 @@
 ## DocuQuery AI: Enterprise Retrieval-Augmented Generation Platform
 
 **Course:** Java Project Based Learning (PBL) — 5th Semester  
-**Institution:** Arya College of Engineering & I.T., Jaipur (Dept. of CSE)  
+**Institution:** Arya College of Engineering & I.T., Jaipur (Dept. of AI&DS - Artificial Intelligence & Data Science)  
 **Mentor:** Er. Ram Babu Buri  
 **Team Members:** Shaurya Dixit, Yashvardhan Singh Chauhan, Vaibhav Tank, Rajveer Singh Ranawat, Yashpal Singh Bhati  
 **Data Corpus:** Kaggle Academic Research Paper Corpus  

@@ -2,7 +2,7 @@
 ## DocuQuery AI: Enterprise Retrieval-Augmented Generation Platform
 
 **Course:** Java Project Based Learning (PBL) — 5th Semester  
-**Institution:** Arya College of Engineering & I.T., Jaipur (Dept. of CSE)  
+**Institution:** Arya College of Engineering & I.T., Jaipur (Dept. of AI&DS - Artificial Intelligence & Data Science)  
 **Mentor:** Er. Ram Babu Buri  
 
 ---
@@ -20,7 +20,7 @@
 **Speaker:** Shaurya Dixit (Team Leader)  
 **Visual on Screen:** Title Slide / DocuQuery AI desktop landing screen.  
 **Spoken Script:**
-> *"Good morning respected evaluators, external examiner, and our project guide, Er. Ram Babu Buri sir. I am Shaurya Dixit, Team Leader for Project DocuQuery AI, along with my team members Yashvardhan, Vaibhav, Rajveer, and Yashpal from 5th Semester Computer Science and Engineering at Arya College of Engineering & I.T., Jaipur.*  
+> *"Good morning respected evaluators, external examiner, and our project guide, Er. Ram Babu Buri sir. I am Shaurya Dixit, Team Leader for Project DocuQuery AI, along with my team members Yashvardhan, Vaibhav, Rajveer, and Yashpal from 5th Semester Artificial Intelligence & Data Science at Arya College of Engineering & I.T., Jaipur.*  
 >  
 > *When organizations use standard AI models like ChatGPT on private research papers or university syllabi, the models hallucinate—inventing facts and fabricating citations. To solve this, we built **DocuQuery AI**, an enterprise Retrieval-Augmented Generation platform built entirely on a **Java 21 Spring Boot 3** backend, **Neon Serverless PostgreSQL with pgvector**, and an **Electron cross-platform desktop frontend**, evaluating on the **Kaggle Academic Research Paper Corpus**.*  
 >  

@@ -1,0 +1,310 @@
+﻿====================================================================================================
+                       ARYA COLLEGE OF ENGINEERING & I.T., JAIPUR                                  
+                 DEPARTMENT OF ARTIFICIAL INTELLIGENCE & DATA SCIENCE (AI&DS)                       
+                      B.TECH 5TH SEMESTER JAVA PROJECT BASED LEARNING (PBL)                        
+                    COMPLETE WEEKLY PROJECT REPORTS (WEEKS 1 TO 14)                                
+====================================================================================================
+PROJECT TITLE   : DocuQuery AI: Enterprise Retrieval-Augmented Generation System
+MENTOR / GUIDE  : Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+TEAM MEMBERS    : 1. Shaurya Dixit (22EAIDS042) - Team Leader & Core RAG Architect
+                  2. Yashvardhan Singh Chauhan (22EAIDS048) - Data Pipeline & Kaggle Lead
+                  3. Vaibhav Tank (22EAIDS052) - Database & Security Architect
+                  4. Rajveer Singh Ranawat (22EAIDS038) - Frontend & Desktop Lead
+                  5. Yashpal Singh Bhati (22EAIDS061) - QA & Evaluation Lead
+ACADEMIC PERIOD : July 2026 - October 2026 (14 Weeks)
+====================================================================================================
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 1
+DURATION         : 2026-07-06 to 2026-07-11
+SUBMITTED BY     : Shaurya Dixit
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Formed 5-member team with guide Er. Ram Babu Buri. Finalized topic: 'DocuQuery AI: Enterprise RAG using Spring Boot, Neon pgvector, Electron, and Kaggle Research Corpus'. Partitioned into 5 distinct modules. Prepared project abstract.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Evaluating Kaggle multi-domain research paper dataset vs arXiv corpus for token size and formatting compatibility.
+
+3. PLAN FOR NEXT WEEK:
+   Formulate IEEE 830 Software Requirements Specification (SRS) for all 5 modules.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 2
+DURATION         : 2026-07-13 to 2026-07-18
+SUBMITTED BY     : Vaibhav Tank
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Compiled complete IEEE 830 SRS document. Defined functional requirements FR1-FR15 (Kaggle dataset upload, chunking, pgvector search, JWT, SSE streaming) and non-functional requirements (latency, security, memory).
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Defining latency constraints for 1536-dim vector searches over cloud Neon DB under 100ms.
+
+3. PLAN FOR NEXT WEEK:
+   Design UML diagrams (Use Case, Class, Sequence, Component, ER) for all modules.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 3
+DURATION         : 2026-07-20 to 2026-07-25
+SUBMITTED BY     : Shaurya Dixit
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Designed complete UML models: System Use Case Diagram, Class Diagram for Spring Boot entities and services, Sequence Diagrams for RAG Query and Kaggle Ingestion, Activity Diagram for chunking, and Component/ER models.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Modeling asynchronous streaming response between Spring Boot WebFlux and Electron IPC renderer.
+
+3. PLAN FOR NEXT WEEK:
+   Execute database DDL migrations on Neon PostgreSQL, setup HNSW index, initialize React+Vite project.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 4
+DURATION         : 2026-07-27 to 2026-08-01
+SUBMITTED BY     : Rajveer Singh Ranawat
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Configured Neon PostgreSQL cloud database, executed DDL migration scripts with HNSW index. Initialized React 18 + TypeScript + Vite frontend with Electron desktop shell. Downloaded Kaggle academic test corpus.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Tuning HNSW vector index parameters (m=16, ef_construction=64) on Neon for optimal lookup speed.
+
+3. PLAN FOR NEXT WEEK:
+   Begin Module Coding Phase 1: Initialize Spring Boot project, configure build dependencies, push initial commits.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 5
+DURATION         : 2026-08-03 to 2026-08-08
+SUBMITTED BY     : Shaurya Dixit
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Implemented core RAG prompt formatting and query processing pipeline. Completed document parsing and recursive sliding-window chunking in Java. Implemented Spring Security JWT authentication and role-based filters. Built React chat message component.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Handling UTF-8 character encoding and ligatures in scanned PDF documents from Kaggle.
+
+3. PLAN FOR NEXT WEEK:
+   Implement vector embedding generation, store chunks in Neon pgvector, connect Electron frontend to Spring Boot.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 6
+DURATION         : 2026-08-10 to 2026-08-15
+SUBMITTED BY     : Yashvardhan Singh Chauhan
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Connected Kaggle document chunking pipeline to embedding generation service. Implemented batch insertion into Neon PostgreSQL using pgvector JDBC prepared statements. Built multipart file upload controller in Spring Boot and drag-and-drop file uploader in React.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Batch inserting large vectors caused memory spikes; resolved by implementing batched paging of 50 chunks.
+
+3. PLAN FOR NEXT WEEK:
+   Implement Server-Sent Events (SSE) streaming chat API and connect Electron frontend to streaming endpoint.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 7
+DURATION         : 2026-08-17 to 2026-08-22
+SUBMITTED BY     : Vaibhav Tank
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Implemented Server-Sent Events (SSE) streaming API (/api/rag/chat/stream) delivering token-by-token LLM responses. Implemented dynamic source citation referencing linking generated statements to exact Kaggle paper excerpts. Integrated desktop native notifications in Electron.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Handling client disconnection mid-stream and ensuring LLM stream cancels promptly to conserve compute tokens.
+
+3. PLAN FOR NEXT WEEK:
+   Implement RAG Triad evaluation metrics (Faithfulness, Relevance, Groundedness) and build Admin Analytics dashboard.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 8
+DURATION         : 2026-08-24 to 2026-08-29
+SUBMITTED BY     : Yashpal Singh Bhati
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Built automated RAG Triad evaluation service measuring Context Relevance, Faithfulness, and Answer Relevance against Kaggle ground-truth questions. Created Admin Analytics Dashboard in React displaying real-time query latency and token usage graphs.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Formulating a cost-effective evaluation metric that calculates faithfulness without incurring high extra LLM API latency.
+
+3. PLAN FOR NEXT WEEK:
+   Perform system-wide integration, end-to-end testing between Electron desktop application, Spring Boot, and Neon PostgreSQL.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 9
+DURATION         : 2026-08-31 to 2026-09-05
+SUBMITTED BY     : Shaurya Dixit
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Merged 5 feature branches into 'develop' integration branch. Conducted end-to-end data flow testing from Electron Desktop App -> Spring Boot Backend -> Neon Cloud PostgreSQL -> Vector Search -> Streaming Response. Resolved CORS, token expiration, and payload size issues.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Electron client encountered CORS errors when sending preflight OPTIONS requests to Spring Boot; resolved by configuring explicit CorsConfigurationSource in SecurityFilterChain.
+
+3. PLAN FOR NEXT WEEK:
+   Execute load testing, stress testing, edge-case validation, and security penetration review.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 10
+DURATION         : 2026-09-07 to 2026-09-12
+SUBMITTED BY     : Vaibhav Tank
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Conducted load testing using Apache JMeter simulating 50 concurrent users querying the RAG system. Optimized Neon pgvector HNSW query performance, tuned HikariCP connection pool, reduced React bundle size, and verified memory stability.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Under 50 concurrent users, Neon PostgreSQL connection pool was exhausted; resolved by configuring PgBouncer connection pooling and tuning Spring Boot max-pool-size.
+
+3. PLAN FOR NEXT WEEK:
+   Prepare Project Report draft, generate UML diagrams for final submission, draft Research Paper on RAG optimization.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 11
+DURATION         : 2026-09-14 to 2026-09-19
+SUBMITTED BY     : Yashvardhan Singh Chauhan
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Compiled comprehensive Project Report following Arya College formatting guidelines. Drafted IEEE format Research Paper titled 'Optimizing Enterprise Retrieval-Augmented Generation using Hybrid Search and pgvector in Cloud-Native Architecture'. Generated finalized UML diagrams and architectural blueprints.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Ensuring college plagiarism limit (<20%) is strictly respected across all chapters of the project report and research paper draft.
+
+3. PLAN FOR NEXT WEEK:
+   Design PowerPoint presentation (PPT) master slides, record comprehensive application demo video, prepare viva voce answers.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 12
+DURATION         : 2026-09-21 to 2026-09-26
+SUBMITTED BY     : Shaurya Dixit
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Created 10-slide PowerPoint (PPT) presentation deck. Recorded 10-minute HD demo video showcasing live system architecture, Kaggle document upload, pgvector similarity search, token-by-token streaming, source citations, and admin analytics. Conducted mock viva voce sessions.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Recording demo video with clean audio and demonstrating both local Electron desktop window and Neon cloud database queries simultaneously.
+
+3. PLAN FOR NEXT WEEK:
+   Final branch merge into 'main', tag release v1.0.0, print project reports, submit all deliverables to college portal.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 13
+DURATION         : 2026-09-28 to 2026-10-03
+SUBMITTED BY     : Yashpal Singh Bhati
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Completed final code freeze, merged all tested branches into 'main', tagged GitHub release v1.0.0. Packaged runnable Electron installer (.exe) and runnable Spring Boot JAR. Verified cross-platform execution on clean test machine.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Packaging Electron installer with bundled backend URL configuration without exposing cloud database credentials.
+
+3. PLAN FOR NEXT WEEK:
+   Submit all final documents, project report, research paper, PPT, video link, and daily/weekly logs to college portal.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+
+----------------------------------------------------------------------------------------------------
+WEEK NUMBER      : Week 14
+DURATION         : 2026-10-05 to 2026-10-10
+SUBMITTED BY     : Shaurya Dixit
+REPOSITORY LINK  : https://github.com/shauryadixit/docuquery-rag/tree/main
+----------------------------------------------------------------------------------------------------
+1. WORK COMPLETED THIS WEEK:
+   Completed all final submissions on college portal (javapbl5thsem.netlify.app). Uploaded Project Report, SRS, PPT, Research Paper, GitHub repo link, and Demo video URL. Completed all daily work logs and weekly report submissions for all 5 team members. Ready for Final External Viva.
+
+2. PROBLEMS FACED & ENGINEERING RESOLUTIONS:
+   Ensuring portal daily work logs and weekly summaries align perfectly with commit timestamps and deliverables.
+
+3. PLAN FOR NEXT WEEK:
+   Attend Final PBL External Viva Examination, deliver stellar project demonstration, and secure maximum marks.
+
+4. FACULTY MENTOR REVIEW:
+   Evaluator: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS)
+   Assessment: Satisfactory progress. Code committed on assigned feature branch.
+   Signature: _______________________
+----------------------------------------------------------------------------------------------------
+

@@ -3,7 +3,7 @@
 
 **Document Version:** 1.0.0  
 **Date:** October 2026  
-**Course:** Java Project Based Learning (PBL) — 5th Semester, Dept. of CSE  
+**Course:** Java Project Based Learning (PBL) — 5th Semester, Dept. of AI&DS (Artificial Intelligence & Data Science)  
 **Institution:** Arya College of Engineering & I.T., Jaipur  
 **Mentor:** Er. Ram Babu Buri (Assistant Professor)  
 **Team Members:**  

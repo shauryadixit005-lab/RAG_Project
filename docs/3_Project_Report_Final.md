@@ -2,38 +2,38 @@
 # DOCUQUERY AI: ENTERPRISE RETRIEVAL-AUGMENTED GENERATION PLATFORM
 
 **Submitted in partial fulfillment of the requirements for the degree of**  
-**Bachelor of Technology in Computer Science & Engineering**  
+**Bachelor of Technology in Artificial Intelligence & Data Science (AI&DS)**  
 **Academic Year: 2026–2027 (5th Semester)**  
 
 ---
 
 ### ARYA COLLEGE OF ENGINEERING & I.T., JAIPUR
 *(Approved by AICTE, Affiliated to Rajasthan Technical University, Kota)*  
-*Department of Computer Science & Engineering*
+*Department of Artificial Intelligence & Data Science (AI&DS)*
 
 **Project Guide / Mentor:**  
 **Er. Ram Babu Buri**  
-*Assistant Professor, Department of Computer Science & Engineering*
+*Assistant Professor, Department of Artificial Intelligence & Data Science*
 
 **Submitted by (Team of 5):**
-1. **Shaurya Dixit** (Team Leader & Core RAG Architect)
-2. **Yashvardhan Singh Chauhan** (Data Pipeline Engineer & Kaggle Ingestion Lead)
-3. **Vaibhav Tank** (Database & Security Architect)
-4. **Rajveer Singh Ranawat** (Frontend & Desktop Lead)
-5. **Yashpal Singh Bhati** (QA & Evaluation Lead)
+1. **Shaurya Dixit** (Team Leader & Core RAG Architect) — *Roll No: 22EAIDS042*
+2. **Yashvardhan Singh Chauhan** (Data Pipeline Engineer & Kaggle Ingestion Lead) — *Roll No: 22EAIDS048*
+3. **Vaibhav Tank** (Database & Security Architect) — *Roll No: 22EAIDS052*
+4. **Rajveer Singh Ranawat** (Frontend & Desktop Lead) — *Roll No: 22EAIDS038*
+5. **Yashpal Singh Bhati** (QA & Evaluation Lead) — *Roll No: 22EAIDS061*
 
 ---
 
 ## CERTIFICATE
 
-This is to certify that the project entitled **"DocuQuery AI: Enterprise Retrieval-Augmented Generation Platform"** is a bonafide record of work carried out by **Shaurya Dixit, Yashvardhan Singh Chauhan, Vaibhav Tank, Rajveer Singh Ranawat, and Yashpal Singh Bhati** in partial fulfillment of the requirements for the award of the degree of **Bachelor of Technology in Computer Science & Engineering** from **Arya College of Engineering & I.T., Jaipur** affiliated to Rajasthan Technical University, Kota during the academic year 2026–2027.
+This is to certify that the project entitled **"DocuQuery AI: Enterprise Retrieval-Augmented Generation Platform"** is a bonafide record of work carried out by **Shaurya Dixit, Yashvardhan Singh Chauhan, Vaibhav Tank, Rajveer Singh Ranawat, and Yashpal Singh Bhati** in partial fulfillment of the requirements for the award of the degree of **Bachelor of Technology in Artificial Intelligence & Data Science** from **Arya College of Engineering & I.T., Jaipur** affiliated to Rajasthan Technical University, Kota during the academic year 2026–2027.
 
 The project work has been completed under my supervision and guidance and meets the standard requirements for 5th Semester Java Project Based Learning (PBL).
 
 <br><br>
 **Er. Ram Babu Buri**  
 *Project Guide / Mentor*  
-*Assistant Professor, Dept. of CSE*  
+*Assistant Professor, Dept. of AI&DS*  
 *Arya College of Engineering & I.T.*
 
 ---
