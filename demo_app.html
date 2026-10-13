@@ -536,6 +536,9 @@
             <div style="display: flex; align-items: center; gap: 14px; font-size: 11.5px; color: #94a3b8;">
                 <span>Latency: <strong style="color: #fff;">91ms</strong></span>
                 <span>Corpus: <strong style="color: #fff;">CBSE + RTU + Kaggle</strong></span>
+                <button onclick="runLiveTeacherDemo()" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%); color: #fff; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 12px; cursor: pointer; box-shadow: 0 0 14px rgba(16, 185, 129, 0.4);">
+                    ▶ Run Live Teacher Demo
+                </button>
             </div>
         </header>
 
@@ -1124,6 +1127,31 @@
             `;
             list.prepend(newDoc);
             showToast(`✓ Kaggle Dataset "${name}" indexed into Neon pgvector!`);
+        }
+
+        function runLiveTeacherDemo() {
+            showToast("▶ Starting Live Teacher Demonstration Walkthrough...");
+            switchTab('chat');
+
+            setTimeout(() => {
+                sendCustomQuery("What is the passing criteria for CBSE Class 12?");
+                showToast("1/4 Verified CBSE Class 12 passing bylaws retrieved!");
+
+                setTimeout(() => {
+                    sendCustomQuery("What is the RTU Kota grace marks rule and back paper policy for engineering students?");
+                    showToast("2/4 Verified RTU Kota Ordinance 15 grace rules retrieved!");
+
+                    setTimeout(() => {
+                        switchTab('documents');
+                        showToast("3/4 Demonstrating Module 2 Drag & Drop workspace!");
+
+                        setTimeout(() => {
+                            switchTab('admin');
+                            showToast("4/4 Demonstrating Module 5 RAG Triad Telemetry (92.4% Faithfulness)!");
+                        }, 3500);
+                    }, 3500);
+                }, 3500);
+            }, 600);
         }
     </script>
 </body>

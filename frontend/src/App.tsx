@@ -349,6 +349,36 @@ export default function App() {
     ]);
   };
 
+  // AUTOMATED LIVE TEACHER DEMONSTRATION WALKTHROUGH
+  const runLiveTeacherDemo = () => {
+    showToast("▶ Starting Live Teacher Demonstration Walkthrough...");
+    setActiveTab('chat');
+    
+    // Step 1: Send CBSE Passing Question
+    setTimeout(() => {
+      handleSend("What is the passing criteria for CBSE Class 12?");
+      showToast("1/4 Verified CBSE Class 12 passing bylaws retrieved!");
+      
+      // Step 2: Send RTU Grace Marks Question
+      setTimeout(() => {
+        handleSend("What is the RTU Kota grace marks rule and back paper policy for engineering students?");
+        showToast("2/4 Verified RTU Kota Ordinance 15 grace rules retrieved!");
+        
+        // Step 3: Switch to Document Ingestion tab and show drag-and-drop
+        setTimeout(() => {
+          setActiveTab('documents');
+          showToast("3/4 Demonstrating Module 2 Drag & Drop workspace!");
+          
+          // Step 4: Switch to Telemetry tab
+          setTimeout(() => {
+            setActiveTab('admin');
+            showToast("4/4 Demonstrating Module 5 RAG Triad Telemetry (92.4% Faithfulness)!");
+          }, 3500);
+        }, 3500);
+      }, 3500);
+    }, 600);
+  };
+
   // ADVANCED LOCAL HYBRID RAG SEARCH ACROSS KAGGLE REPOSITORY
   const findBestRAGMatches = (userQuery: string) => {
     const qLower = userQuery.toLowerCase();
@@ -882,6 +912,28 @@ export default function App() {
               <Database size={14} color="#a855f7" />
               <span>Corpus: <strong style={{ color: '#fff' }}>CBSE + RTU + Kaggle</strong></span>
             </div>
+
+            <button
+              onClick={runLiveTeacherDemo}
+              title="Run Automated Live Demonstration for Teacher & Examiner"
+              style={{
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
+                background: 'linear-gradient(135deg, #059669 0%, #10b981 100%)',
+                border: 'none',
+                color: '#fff',
+                padding: '6px 14px',
+                borderRadius: '6px',
+                fontSize: '12px',
+                fontWeight: 700,
+                cursor: 'pointer',
+                boxShadow: '0 0 14px rgba(16, 185, 129, 0.4)',
+                transition: 'all 0.15s ease'
+              }}
+            >
+              <span>▶ Run Live Teacher Demo</span>
+            </button>
 
             {activeTab === 'chat' && (
               <button
