@@ -12,18 +12,24 @@ import {
   Sparkles,
   ShieldCheck,
   Layers,
-  ExternalLink,
   Copy,
   Check,
   Trash2,
   Activity,
   Cpu,
-  BookOpen,
   GraduationCap,
   School,
-  FileSpreadsheet,
-  ArrowRight,
-  FolderPlus
+  FolderPlus,
+  Lock,
+  Mail,
+  User,
+  LogIn,
+  UserPlus,
+  LogOut,
+  Key,
+  Eye,
+  EyeOff,
+  ArrowRight
 } from 'lucide-react';
 
 interface Citation {
@@ -65,6 +71,15 @@ interface KnowledgeEntry {
   question: string;
   answer: string;
   snippet: string;
+}
+
+interface AuthUser {
+  name: string;
+  email: string;
+  role: string;
+  studentId: string;
+  department: string;
+  avatarText: string;
 }
 
 // COMPREHENSIVE KAGGLE CBSE & RTU KNOWLEDGE REPOSITORY
@@ -210,15 +225,16 @@ const KAGGLE_KNOWLEDGE_BASE: KnowledgeEntry[] = [
   {
     id: 'rtu-002',
     board: 'RTU',
-    category: '5th Sem Java PBL Guidelines (Arya College)',
+    category: '5th Sem Java PBL Guidelines (Arya AI&DS)',
     document: 'RTU_Java_PBL_Syllabus_2026.docx',
     page: 2,
     similarity: 0.98,
-    keywords: ['java pbl', 'pbl', '5th sem', '5th semester', 'arya college', 'ram babu buri', 'commits', 'branches', 'shaurya', 'yashvardhan', 'vaibhav', 'rajveer', 'yashpal'],
-    question: 'What are the RTU 5th Semester Java Project Based Learning (PBL) guidelines at Arya College?',
-    answer: `RTU 5th Semester Java PBL (Dept. of CSE, Arya College of Engineering & I.T., Jaipur):\n\n` +
+    keywords: ['java pbl', 'pbl', '5th sem', '5th semester', 'arya aids', 'arya ai&ds', 'ram babu buri', 'commits', 'branches', 'shaurya', 'yashvardhan', 'vaibhav', 'rajveer', 'yashpal'],
+    question: 'What are the RTU 5th Semester Java Project Based Learning (PBL) guidelines at Arya College Dept. of AI&DS?',
+    answer: `RTU 5th Semester Java PBL (Dept. of AI&DS, Arya College of Engineering & I.T., Jaipur):\n\n` +
       `1. Academic Governance:\n` +
-      `   • Course Mentor: Er. Ram Babu Buri (Assistant Professor, Dept. of CSE).\n` +
+      `   • Department: Artificial Intelligence & Data Science (ARYA AI&DS).\n` +
+      `   • Course Mentor: Er. Ram Babu Buri (Assistant Professor, Dept. of AI&DS).\n` +
       `   • Team Structure: Exactly 5 students per team with dedicated module ownership.\n` +
       `   • Student Roles: Shaurya Dixit (Team Lead / RAG Engine), Yashvardhan Singh Chauhan (Data Pipeline / Kaggle), Vaibhav Tank (Database / Security), Rajveer Singh Ranawat (Frontend / Electron), Yashpal Singh Bhati (QA / Evaluation).\n\n` +
       `2. Architecture & Tech Stack Mandate:\n` +
@@ -229,7 +245,7 @@ const KAGGLE_KNOWLEDGE_BASE: KnowledgeEntry[] = [
       `   • 5 Dedicated Feature Branches (feature/member1-... through feature/member5-...).\n` +
       `   • Minimum 3 commits per student per project week across 14 project weeks.\n` +
       `   • Daily work logs and weekly report submissions verified against javapbl5thsem.netlify.app.`,
-    snippet: 'Arya College Java PBL guidelines mandate 5 members, 5 feature branches, 3 commits/student/week, and full 14-week daily logs matching the departmental portal under Er. Ram Babu Buri.'
+    snippet: 'Arya College Dept. of AI&DS Java PBL guidelines mandate 5 members, 5 feature branches, 3 commits/student/week, and full 14-week daily logs matching the departmental portal under Er. Ram Babu Buri.'
   },
   {
     id: 'rtu-003',
@@ -255,24 +271,19 @@ const KAGGLE_KNOWLEDGE_BASE: KnowledgeEntry[] = [
   {
     id: 'rtu-004',
     board: 'RTU',
-    category: '5th Sem CSE Core Subjects Syllabus',
+    category: '5th Sem AI&DS / CSE Core Subjects Syllabus',
     document: 'RTU_BTech_CSE_Curriculum_2026.pdf',
     page: 8,
     similarity: 0.94,
     keywords: ['compiler design', 'operating systems', 'dbms', 'daa', 'algorithms', '5cs4-01', '5cs4-02', '5cs4-03', '5cs4-04', '5th sem subjects'],
-    question: 'What are the core theory subjects and syllabus outline for RTU B.Tech CSE 5th Semester?',
-    answer: `RTU B.Tech 5th Semester Computer Science curriculum consists of 5 core theory subjects:\n\n` +
-      `1. 5CS4-01: Compiler Design:\n` +
-      `   • Lexical analysis (Regular Expressions, DFA), Parsing techniques (LL(1) top-down, LR(0), SLR(1), LALR(1), CLR(1) bottom-up), Syntax Directed Translation, Three Address Code (TAC), and Code Optimization.\n\n` +
-      `2. 5CS4-02: Operating Systems:\n` +
-      `   • Process Scheduling (FCFS, SJF, Round Robin), Synchronization (Semaphores, Mutex, Dining Philosophers), Deadlocks (Banker's Avoidance Algorithm, Coffman conditions), Virtual Memory, Paging, and Segmentation.\n\n` +
-      `3. 5CS4-03: Database Management Systems:\n` +
-      `   • Relational model, Normalization (1NF, 2NF, 3NF, BCNF), Transaction Processing, ACID properties, Concurrency Control (2-Phase Locking protocol), and B+ Tree indexing.\n\n` +
-      `4. 5CS4-04: Analysis & Design of Algorithms (DAA):\n` +
-      `   • Asymptotic notations (O, Ω, Θ), Divide & Conquer (MergeSort, QuickSort), Dynamic Programming (0/1 Knapsack, LCS, Matrix Chain), Greedy (Huffman, Prim, Kruskal), Graph Algorithms (Dijkstra, Bellman-Ford).\n\n` +
-      `5. 5CS4-05: Software Engineering & Java PBL:\n` +
-      `   • Agile methodology, SRS IEEE Std 830, UML diagrams, and Enterprise Java project design.`,
-    snippet: 'RTU Semester V CSE theory curriculum comprises 5CS4-01 Compiler Design, 5CS4-02 Operating Systems, 5CS4-03 Database Management Systems, 5CS4-04 Analysis of Algorithms, and Java PBL.'
+    question: 'What are the core theory subjects and syllabus outline for RTU B.Tech 5th Semester in AI&DS / CSE?',
+    answer: `RTU B.Tech 5th Semester curriculum for AI&DS / CSE consists of 5 core theory subjects:\n\n` +
+      `1. Compiler Design & Language Processors: Lexical analysis (DFA), Parsing techniques (LL(1), LR(0), SLR, LALR, CLR), Three Address Code (TAC), and Code Optimization.\n` +
+      `2. Operating Systems: Process Scheduling, Synchronization (Semaphores, Mutex), Deadlocks (Banker's Avoidance Algorithm, Coffman conditions), Virtual Memory, Paging, and Segmentation.\n` +
+      `3. Database Management Systems: Relational model, Normalization (1NF to BCNF), Transaction Processing, ACID properties, and Concurrency Control (2PL).\n` +
+      `4. Analysis & Design of Algorithms (DAA): Asymptotic notations (O, Ω, Θ), Dynamic Programming (0/1 Knapsack, LCS), Greedy, and Graph Algorithms (Dijkstra, Bellman-Ford).\n` +
+      `5. Software Engineering & Java PBL: Agile methodology, SRS IEEE Std 830, UML diagrams, and Enterprise Java project design.`,
+    snippet: 'RTU Semester V AI&DS curriculum comprises Compiler Design, Operating Systems, Database Management Systems, Analysis of Algorithms, and Java PBL.'
   },
   {
     id: 'rtu-005',
@@ -295,6 +306,21 @@ const KAGGLE_KNOWLEDGE_BASE: KnowledgeEntry[] = [
 ];
 
 export default function App() {
+  // AUTHENTICATION STATE (Initial state: null so login page displays first)
+  const [currentUser, setCurrentUser] = useState<AuthUser | null>(null);
+  const [authMode, setAuthMode] = useState<'login' | 'signup'>('login');
+  const [loginEmail, setLoginEmail] = useState('');
+  const [loginPassword, setLoginPassword] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+
+  // SIGNUP FORM STATE
+  const [signupName, setSignupName] = useState('');
+  const [signupEmail, setSignupEmail] = useState('');
+  const [signupRoll, setSignupRoll] = useState('');
+  const [signupDept, setSignupDept] = useState('Artificial Intelligence & Data Science (ARYA AI&DS)');
+  const [signupPassword, setSignupPassword] = useState('');
+
+  // MAIN APPLICATION STATE
   const [activeTab, setActiveTab] = useState<'chat' | 'documents' | 'admin' | 'team'>('chat');
   const [boardFilter, setBoardFilter] = useState<'ALL' | 'CBSE' | 'RTU' | 'KAGGLE'>('ALL');
   const [query, setQuery] = useState('');
@@ -314,16 +340,16 @@ export default function App() {
     { id: '1', name: 'CBSE_Exam_Bylaws_2026.pdf', chunks: 48, status: 'INDEXED', pages: 18, size: '2.1 MB', corpus: 'CBSE Board Official Bylaws' },
     { id: '2', name: 'CBSE_Class12_Computer_Science_Curriculum.pdf', chunks: 32, status: 'INDEXED', pages: 12, size: '1.4 MB', corpus: 'CBSE Board Question Bank' },
     { id: '3', name: 'RTU_BTech_CSE_Curriculum_2026.pdf', chunks: 64, status: 'INDEXED', pages: 24, size: '3.2 MB', corpus: 'RTU Kota Engineering Syllabus' },
-    { id: '4', name: 'RTU_Java_PBL_Syllabus_2026.docx', chunks: 22, status: 'INDEXED', pages: 6, size: '540 KB', corpus: 'Arya College Courseware' },
+    { id: '4', name: 'RTU_Java_PBL_Syllabus_2026.docx', chunks: 22, status: 'INDEXED', pages: 6, size: '540 KB', corpus: 'Arya AI&DS Courseware' },
     { id: '5', name: 'Kaggle_CBSE_RTU_Exam_Dataset.json', chunks: 90, status: 'INDEXED', pages: 30, size: '4.8 MB', corpus: 'Kaggle Academic Corpus' }
   ]);
 
   const [messages, setMessages] = useState<Message[]>([
     {
       role: 'assistant',
-      content: 'Welcome to DocuQuery AI! I am enhanced with comprehensive knowledge for both CBSE Board (Class 10/12 syllabus, passing criteria, bylaws, Python, Physics, Math) and RTU Kota Board (B.Tech CSE 5th sem syllabus, Java PBL guidelines, CBCS credit formulas, grace marks & back rules).\n\nAsk me any question or drop your documents to query!',
+      content: 'Welcome to DocuQuery AI! I am enhanced for Arya College of Engineering & I.T. (Dept. of AI&DS), with comprehensive knowledge for CBSE Board and RTU Kota.\n\nAsk me any question or drop your documents to query!',
       timestamp: 'Just now',
-      boardBadge: 'CBSE & RTU Enhanced'
+      boardBadge: 'ARYA AI&DS • Ready'
     }
   ]);
 
@@ -347,6 +373,75 @@ export default function App() {
         boardBadge: 'Ready'
       }
     ]);
+  };
+
+  // ONE-CLICK DEMO LOGIN HANDLERS
+  const handleDemoLogin = (persona: 'student' | 'mentor' | 'examiner' | 'instant') => {
+    if (persona === 'student' || persona === 'instant') {
+      setCurrentUser({
+        name: 'Shaurya Dixit',
+        email: 'shaurya.aids@arya.ac.in',
+        role: 'AI&DS Team Leader',
+        studentId: '22EAIDS042',
+        department: 'Artificial Intelligence & Data Science (ARYA AI&DS)',
+        avatarText: 'SD'
+      });
+      showToast('⚡ Logged in as Demo Student: Shaurya Dixit (ARYA AI&DS)');
+    } else if (persona === 'mentor') {
+      setCurrentUser({
+        name: 'Er. Ram Babu Buri',
+        email: 'rambabu.buri@arya.ac.in',
+        role: 'Project Guide & Asst. Professor',
+        studentId: 'FACULTY-AIDS-07',
+        department: 'Dept. of AI&DS, Arya College Jaipur',
+        avatarText: 'RB'
+      });
+      showToast('👨‍🏫 Logged in as Faculty Guide: Er. Ram Babu Buri (Dept. of AI&DS)');
+    } else if (persona === 'examiner') {
+      setCurrentUser({
+        name: 'Dr. RTU Kota Evaluator',
+        email: 'evaluator@rtu.ac.in',
+        role: 'External Board Examiner',
+        studentId: 'RTU-EXAM-2026',
+        department: 'Rajasthan Technical University, Kota',
+        avatarText: 'RT'
+      });
+      showToast('📋 Logged in as RTU External Examiner');
+    }
+  };
+
+  const handleManualLogin = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!loginEmail.trim()) {
+      showToast('Please enter your email or Student ID');
+      return;
+    }
+    setCurrentUser({
+      name: loginEmail.split('@')[0].toUpperCase(),
+      email: loginEmail,
+      role: 'AI&DS Student Member',
+      studentId: '22EAIDS099',
+      department: 'Artificial Intelligence & Data Science (ARYA AI&DS)',
+      avatarText: loginEmail.substring(0, 2).toUpperCase()
+    });
+    showToast(`✓ Welcome to DocuQuery AI, ${loginEmail.split('@')[0]}!`);
+  };
+
+  const handleManualSignup = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!signupName.trim() || !signupEmail.trim()) {
+      showToast('Please fill in all mandatory fields');
+      return;
+    }
+    setCurrentUser({
+      name: signupName,
+      email: signupEmail,
+      role: 'AI&DS Registered Student',
+      studentId: signupRoll || '22EAIDS100',
+      department: signupDept,
+      avatarText: signupName.substring(0, 2).toUpperCase()
+    });
+    showToast(`✓ Account created successfully for ${signupName} (ARYA AI&DS)!`);
   };
 
   // AUTOMATED LIVE TEACHER DEMONSTRATION WALKTHROUGH
@@ -386,24 +481,20 @@ export default function App() {
 
     const scored = KAGGLE_KNOWLEDGE_BASE.map(item => {
       let score = 0;
-      // Exact question match
       if (item.question.toLowerCase().includes(qLower) || qLower.includes(item.question.toLowerCase())) {
         score += 10;
       }
-      // Board mention match
       if (item.board === 'CBSE' && (qLower.includes('cbse') || qLower.includes('class 12') || qLower.includes('class 10'))) {
         score += 4;
       }
       if (item.board === 'RTU' && (qLower.includes('rtu') || qLower.includes('rajasthan technical university') || qLower.includes('btech') || qLower.includes('b.tech') || qLower.includes('kota') || qLower.includes('arya'))) {
         score += 4;
       }
-      // Keyword matching
       for (const kw of item.keywords) {
         if (qLower.includes(kw.toLowerCase())) {
           score += 2.5;
         }
       }
-      // Token overlap
       for (const token of queryTokens) {
         if (item.answer.toLowerCase().includes(token)) score += 0.5;
         if (item.question.toLowerCase().includes(token)) score += 1.2;
@@ -438,14 +529,13 @@ export default function App() {
         timestamp: 'Just now'
       }]);
     } catch {
-      // Local High-Fidelity RAG Search Simulation grounded in Kaggle Datasets
       setTimeout(() => {
         const matches = findBestRAGMatches(textToSend);
         const topMatch = matches[0];
 
         let answerContent = '';
         let citations: Citation[] = [];
-        let detectedBoard = 'CBSE & RTU RAG';
+        let detectedBoard = 'ARYA AI&DS RAG';
 
         if (topMatch && topMatch.score > 2) {
           const item = topMatch.item;
@@ -460,7 +550,6 @@ export default function App() {
             snippet: item.snippet
           });
 
-          // Include secondary citation if available
           if (matches.length > 1 && matches[1].score > 1.5) {
             const sec = matches[1].item;
             citations.push({
@@ -473,11 +562,10 @@ export default function App() {
             });
           }
         } else {
-          // Contextual synthesis if generic question
-          answerContent = `Grounded synthesis for: "${textToSend}" across CBSE & RTU Kaggle Knowledge Repository:\n\n` +
+          answerContent = `Grounded synthesis for: "${textToSend}" across CBSE & RTU Kaggle Knowledge Repository (Arya AI&DS):\n\n` +
             `• Retrieval Context: Neon pgvector cosine lookup retrieved ${topK} most relevant chunks from verified board documents.\n` +
             `• CBSE Bylaws Reference: Class 10 & 12 examinations mandate minimum 33% passing marks and strict 75% attendance criteria (Rule 13).\n` +
-            `• RTU Kota Reference: B.Tech CSE requires 160 total CBCS credits, 36% minimum in external end-term exams, and max 1% grace marks across up to 2 subjects.\n` +
+            `• RTU Kota Reference: B.Tech AI&DS requires 160 total CBCS credits, 36% minimum in external end-term exams, and max 1% grace marks across up to 2 subjects.\n` +
             `• Grounding: Retrieved passages show deterministic alignment with zero speculative hallucination.`;
 
           citations = [
@@ -568,7 +656,6 @@ export default function App() {
     }, 220);
   };
 
-  // Quick Ingestion of Pre-Curated Kaggle Datasets
   const ingestPresetDataset = (presetType: 'CBSE' | 'RTU' | 'RESEARCH') => {
     if (isUploading) return;
     setIsUploading(true);
@@ -628,7 +715,6 @@ export default function App() {
     }, 200);
   };
 
-  // Drag and Drop event handlers
   const handleDragOver = (e: React.DragEvent) => {
     e.preventDefault();
     e.stopPropagation();
@@ -656,7 +742,6 @@ export default function App() {
     }
   };
 
-  // Filter starter queries based on selected board
   const starterCategories = [
     {
       category: 'CBSE',
@@ -671,13 +756,13 @@ export default function App() {
     },
     {
       category: 'RTU',
-      title: 'RTU Kota B.Tech & Arya College Java PBL',
+      title: 'RTU Kota B.Tech & Arya AI&DS Java PBL',
       icon: <School size={16} color="#34d399" />,
       queries: [
         { title: 'CBCS Passing & Credits', query: 'What is the Choice Based Credit System (CBCS) and passing criteria in RTU Kota B.Tech?' },
-        { title: 'RTU Java PBL Guidelines', query: 'What are the RTU 5th Semester Java Project Based Learning (PBL) guidelines at Arya College?' },
+        { title: 'Arya AI&DS PBL Guidelines', query: 'What are the RTU 5th Semester Java Project Based Learning (PBL) guidelines at Arya College Dept. of AI&DS?' },
         { title: 'Grace Marks & Back Paper', query: 'What is the RTU Kota grace marks rule and back paper policy for engineering students?' },
-        { title: '5th Sem CSE Core Syllabus', query: 'What are the core theory subjects and syllabus outline for RTU B.Tech CSE 5th Semester?' }
+        { title: '5th Sem Core Syllabus', query: 'What are the core theory subjects and syllabus outline for RTU B.Tech 5th Semester in AI&DS / CSE?' }
       ]
     },
     {
@@ -695,8 +780,547 @@ export default function App() {
     ? starterCategories
     : starterCategories.filter(c => c.category === boardFilter);
 
+  // ==========================================
+  // IF NOT AUTHENTICATED: SHOW LOGIN / SIGNUP VIEW
+  // ==========================================
+  if (!currentUser) {
+    return (
+      <div style={{
+        minHeight: '100vh',
+        width: '100vw',
+        backgroundColor: '#060913',
+        backgroundImage: `
+          radial-gradient(circle at 20% 20%, rgba(14, 165, 233, 0.14) 0%, transparent 45%),
+          radial-gradient(circle at 80% 80%, rgba(168, 85, 247, 0.12) 0%, transparent 45%),
+          radial-gradient(circle at 50% 50%, rgba(16, 185, 129, 0.08) 0%, transparent 55%)
+        `,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        padding: '24px',
+        color: '#f8fafc',
+        fontFamily: "'Plus Jakarta Sans', sans-serif"
+      }}>
+        {/* Floating Toast Notification */}
+        {notification && (
+          <div style={{
+            position: 'fixed',
+            top: '20px',
+            right: '24px',
+            backgroundColor: '#0f172a',
+            border: '1px solid #38bdf8',
+            boxShadow: '0 10px 30px rgba(56, 189, 248, 0.3)',
+            color: '#f8fafc',
+            padding: '12px 20px',
+            borderRadius: '10px',
+            zIndex: 9999,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '10px',
+            fontSize: '13px',
+            fontWeight: 600
+          }}>
+            <CheckCircle2 size={18} color="#38bdf8" />
+            <span>{notification}</span>
+          </div>
+        )}
+
+        <div style={{
+          width: '100%',
+          maxWidth: '520px',
+          backgroundColor: 'rgba(12, 18, 32, 0.88)',
+          border: '1px solid rgba(56, 189, 248, 0.25)',
+          borderRadius: '20px',
+          padding: '36px',
+          boxShadow: '0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 35px rgba(14, 165, 233, 0.15)',
+          backdropFilter: 'blur(20px)'
+        }}>
+          {/* Header Brand */}
+          <div style={{ textAlign: 'center', marginBottom: '28px' }}>
+            <div style={{
+              width: '56px',
+              height: '56px',
+              borderRadius: '14px',
+              background: 'linear-gradient(135deg, #0284c7 0%, #38bdf8 50%, #818cf8 100%)',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              margin: '0 auto 14px',
+              boxShadow: '0 0 24px rgba(56, 189, 248, 0.45)'
+            }}>
+              <Sparkles size={30} color="#070b14" strokeWidth={2.5} />
+            </div>
+            
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '8px' }}>
+              <h1 style={{ fontSize: '24px', fontWeight: 800, margin: 0, letterSpacing: '-0.02em', color: '#fff' }}>DocuQuery AI</h1>
+              <span style={{ fontSize: '11px', padding: '2px 8px', borderRadius: '4px', backgroundColor: 'rgba(56, 189, 248, 0.15)', color: '#38bdf8', fontWeight: 700 }}>v1.0</span>
+            </div>
+
+            <p style={{ fontSize: '12.5px', color: '#94a3b8', margin: '6px 0 0 0' }}>
+              Arya College of Engineering & I.T. • <strong style={{ color: '#38bdf8' }}>Dept. of AI&DS</strong>
+            </p>
+            <div style={{ fontSize: '11px', color: '#64748b', marginTop: '2px' }}>
+              Java PBL (5th Sem) • Guide: Er. Ram Babu Buri
+            </div>
+          </div>
+
+          {/* Toggle between Login and Signup */}
+          <div style={{
+            display: 'flex',
+            backgroundColor: 'rgba(7, 11, 20, 0.7)',
+            padding: '4px',
+            borderRadius: '10px',
+            border: '1px solid rgba(255, 255, 255, 0.08)',
+            marginBottom: '24px'
+          }}>
+            <button
+              onClick={() => setAuthMode('login')}
+              style={{
+                flex: 1,
+                padding: '10px',
+                borderRadius: '7px',
+                border: 'none',
+                backgroundColor: authMode === 'login' ? 'rgba(14, 165, 233, 0.2)' : 'transparent',
+                color: authMode === 'login' ? '#38bdf8' : '#94a3b8',
+                fontWeight: 700,
+                fontSize: '13px',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '6px',
+                transition: 'all 0.15s'
+              }}
+            >
+              <LogIn size={15} />
+              <span>Log In</span>
+            </button>
+
+            <button
+              onClick={() => setAuthMode('signup')}
+              style={{
+                flex: 1,
+                padding: '10px',
+                borderRadius: '7px',
+                border: 'none',
+                backgroundColor: authMode === 'signup' ? 'rgba(14, 165, 233, 0.2)' : 'transparent',
+                color: authMode === 'signup' ? '#38bdf8' : '#94a3b8',
+                fontWeight: 700,
+                fontSize: '13px',
+                cursor: 'pointer',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '6px',
+                transition: 'all 0.15s'
+              }}
+            >
+              <UserPlus size={15} />
+              <span>Sign Up (AI&DS)</span>
+            </button>
+          </div>
+
+          {/* FORM 1: LOGIN VIEW */}
+          {authMode === 'login' ? (
+            <div>
+              <form onSubmit={handleManualLogin} style={{ display: 'flex', flexDirection: 'column', gap: '14px' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#cbd5e1', marginBottom: '6px' }}>
+                    College Email / Roll No.
+                  </label>
+                  <div style={{ position: 'relative' }}>
+                    <Mail size={16} color="#64748b" style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }} />
+                    <input
+                      type="text"
+                      value={loginEmail}
+                      onChange={e => setLoginEmail(e.target.value)}
+                      placeholder="e.g. shaurya.aids@arya.ac.in or 22EAIDS042"
+                      style={{
+                        width: '100%',
+                        backgroundColor: '#070b14',
+                        border: '1px solid rgba(56, 189, 248, 0.2)',
+                        borderRadius: '9px',
+                        padding: '12px 14px 12px 40px',
+                        color: '#fff',
+                        fontSize: '13.5px',
+                        outline: 'none',
+                        boxSizing: 'border-box'
+                      }}
+                      onFocus={e => e.currentTarget.style.borderColor = '#38bdf8'}
+                      onBlur={e => e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.2)'}
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '6px' }}>
+                    <label style={{ fontSize: '12px', fontWeight: 700, color: '#cbd5e1' }}>Password</label>
+                    <span style={{ fontSize: '11px', color: '#38bdf8', cursor: 'pointer' }} onClick={() => showToast('Demo credentials require no password!')}>Forgot password?</span>
+                  </div>
+                  <div style={{ position: 'relative' }}>
+                    <Lock size={16} color="#64748b" style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }} />
+                    <input
+                      type={showPassword ? 'text' : 'password'}
+                      value={loginPassword}
+                      onChange={e => setLoginPassword(e.target.value)}
+                      placeholder="••••••••••••"
+                      style={{
+                        width: '100%',
+                        backgroundColor: '#070b14',
+                        border: '1px solid rgba(56, 189, 248, 0.2)',
+                        borderRadius: '9px',
+                        padding: '12px 40px 12px 40px',
+                        color: '#fff',
+                        fontSize: '13.5px',
+                        outline: 'none',
+                        boxSizing: 'border-box'
+                      }}
+                      onFocus={e => e.currentTarget.style.borderColor = '#38bdf8'}
+                      onBlur={e => e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.2)'}
+                    />
+                    <div
+                      onClick={() => setShowPassword(!showPassword)}
+                      style={{ position: 'absolute', right: '14px', top: '50%', transform: 'translateY(-50%)', cursor: 'pointer', color: '#94a3b8' }}
+                    >
+                      {showPassword ? <EyeOff size={16} /> : <Eye size={16} />}
+                    </div>
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  style={{
+                    marginTop: '6px',
+                    background: 'linear-gradient(135deg, #0284c7 0%, #38bdf8 100%)',
+                    color: '#070b14',
+                    border: 'none',
+                    padding: '13px',
+                    borderRadius: '10px',
+                    fontWeight: 800,
+                    fontSize: '14px',
+                    cursor: 'pointer',
+                    boxShadow: '0 0 16px rgba(56, 189, 248, 0.3)',
+                    transition: 'all 0.15s'
+                  }}
+                >
+                  Sign In to DocuQuery AI
+                </button>
+              </form>
+
+              {/* DEMO SIGNUP & LOGIN SECTION UNDER LOGIN FORM */}
+              <div style={{
+                marginTop: '24px',
+                paddingTop: '20px',
+                borderTop: '1px solid rgba(255, 255, 255, 0.08)'
+              }}>
+                <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '12px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+                    <Key size={14} color="#38bdf8" />
+                    <span style={{ fontSize: '12px', fontWeight: 800, color: '#e2e8f0', textTransform: 'uppercase', letterSpacing: '0.04em' }}>
+                      ⚡ Instant Demo Access
+                    </span>
+                  </div>
+                  <span style={{ fontSize: '10.5px', color: '#34d399', fontWeight: 700, padding: '2px 6px', borderRadius: '4px', backgroundColor: 'rgba(52, 211, 153, 0.15)' }}>
+                    No Password Required
+                  </span>
+                </div>
+
+                <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                  <button
+                    onClick={() => handleDemoLogin('student')}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '10px 14px',
+                      borderRadius: '8px',
+                      backgroundColor: 'rgba(15, 23, 42, 0.8)',
+                      border: '1px solid rgba(56, 189, 248, 0.25)',
+                      color: '#fff',
+                      cursor: 'pointer',
+                      transition: 'all 0.15s',
+                      textAlign: 'left'
+                    }}
+                    onMouseEnter={e => e.currentTarget.style.borderColor = '#38bdf8'}
+                    onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(56, 189, 248, 0.25)'}
+                  >
+                    <div>
+                      <div style={{ fontSize: '12.5px', fontWeight: 700, color: '#38bdf8' }}>🎓 Demo Student (AI&DS Lead)</div>
+                      <div style={{ fontSize: '11px', color: '#94a3b8' }}>Shaurya Dixit • shaurya.aids@arya.ac.in</div>
+                    </div>
+                    <ArrowRight size={14} color="#38bdf8" />
+                  </button>
+
+                  <button
+                    onClick={() => handleDemoLogin('mentor')}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '10px 14px',
+                      borderRadius: '8px',
+                      backgroundColor: 'rgba(15, 23, 42, 0.8)',
+                      border: '1px solid rgba(52, 211, 153, 0.25)',
+                      color: '#fff',
+                      cursor: 'pointer',
+                      transition: 'all 0.15s',
+                      textAlign: 'left'
+                    }}
+                    onMouseEnter={e => e.currentTarget.style.borderColor = '#34d399'}
+                    onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(52, 211, 153, 0.25)'}
+                  >
+                    <div>
+                      <div style={{ fontSize: '12.5px', fontWeight: 700, color: '#34d399' }}>👨‍🏫 Demo Faculty Guide</div>
+                      <div style={{ fontSize: '11px', color: '#94a3b8' }}>Er. Ram Babu Buri • Dept. of AI&DS</div>
+                    </div>
+                    <ArrowRight size={14} color="#34d399" />
+                  </button>
+
+                  <button
+                    onClick={() => handleDemoLogin('examiner')}
+                    style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'space-between',
+                      padding: '10px 14px',
+                      borderRadius: '8px',
+                      backgroundColor: 'rgba(15, 23, 42, 0.8)',
+                      border: '1px solid rgba(168, 85, 247, 0.25)',
+                      color: '#fff',
+                      cursor: 'pointer',
+                      transition: 'all 0.15s',
+                      textAlign: 'left'
+                    }}
+                    onMouseEnter={e => e.currentTarget.style.borderColor = '#c084fc'}
+                    onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(168, 85, 247, 0.25)'}
+                  >
+                    <div>
+                      <div style={{ fontSize: '12.5px', fontWeight: 700, color: '#c084fc' }}>📋 Demo RTU External Examiner</div>
+                      <div style={{ fontSize: '11px', color: '#94a3b8' }}>Dr. Evaluator • evaluator@rtu.ac.in</div>
+                    </div>
+                    <ArrowRight size={14} color="#c084fc" />
+                  </button>
+                </div>
+
+                {/* Instant 1-Click bypass button */}
+                <button
+                  onClick={() => handleDemoLogin('instant')}
+                  style={{
+                    width: '100%',
+                    marginTop: '12px',
+                    padding: '11px',
+                    borderRadius: '8px',
+                    background: 'linear-gradient(135deg, #059669 0%, #10b981 100%)',
+                    border: 'none',
+                    color: '#fff',
+                    fontWeight: 800,
+                    fontSize: '12.5px',
+                    cursor: 'pointer',
+                    boxShadow: '0 0 16px rgba(16, 185, 129, 0.3)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    gap: '6px'
+                  }}
+                >
+                  <Sparkles size={15} />
+                  <span>⚡ 1-Click Instant Demo Login (Open Dashboard)</span>
+                </button>
+              </div>
+            </div>
+          ) : (
+            /* FORM 2: SIGNUP VIEW */
+            <div>
+              <form onSubmit={handleManualSignup} style={{ display: 'flex', flexDirection: 'column', gap: '12px' }}>
+                <div>
+                  <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#cbd5e1', marginBottom: '4px' }}>
+                    Full Name
+                  </label>
+                  <div style={{ position: 'relative' }}>
+                    <User size={16} color="#64748b" style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }} />
+                    <input
+                      type="text"
+                      value={signupName}
+                      onChange={e => setSignupName(e.target.value)}
+                      placeholder="e.g. Shaurya Dixit"
+                      required
+                      style={{
+                        width: '100%',
+                        backgroundColor: '#070b14',
+                        border: '1px solid rgba(56, 189, 248, 0.2)',
+                        borderRadius: '9px',
+                        padding: '11px 14px 11px 40px',
+                        color: '#fff',
+                        fontSize: '13px',
+                        outline: 'none',
+                        boxSizing: 'border-box'
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#cbd5e1', marginBottom: '4px' }}>
+                    College Email
+                  </label>
+                  <div style={{ position: 'relative' }}>
+                    <Mail size={16} color="#64748b" style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }} />
+                    <input
+                      type="email"
+                      value={signupEmail}
+                      onChange={e => setSignupEmail(e.target.value)}
+                      placeholder="name.aids@arya.ac.in"
+                      required
+                      style={{
+                        width: '100%',
+                        backgroundColor: '#070b14',
+                        border: '1px solid rgba(56, 189, 248, 0.2)',
+                        borderRadius: '9px',
+                        padding: '11px 14px 11px 40px',
+                        color: '#fff',
+                        fontSize: '13px',
+                        outline: 'none',
+                        boxSizing: 'border-box'
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '10px' }}>
+                  <div>
+                    <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#cbd5e1', marginBottom: '4px' }}>
+                      Roll / Student ID
+                    </label>
+                    <input
+                      type="text"
+                      value={signupRoll}
+                      onChange={e => setSignupRoll(e.target.value)}
+                      placeholder="22EAIDS042"
+                      style={{
+                        width: '100%',
+                        backgroundColor: '#070b14',
+                        border: '1px solid rgba(56, 189, 248, 0.2)',
+                        borderRadius: '9px',
+                        padding: '11px 14px',
+                        color: '#fff',
+                        fontSize: '13px',
+                        outline: 'none',
+                        boxSizing: 'border-box'
+                      }}
+                    />
+                  </div>
+
+                  <div>
+                    <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#cbd5e1', marginBottom: '4px' }}>
+                      Semester
+                    </label>
+                    <input
+                      type="text"
+                      value="5th Semester (Java PBL)"
+                      disabled
+                      style={{
+                        width: '100%',
+                        backgroundColor: 'rgba(15, 23, 42, 0.8)',
+                        border: '1px solid rgba(255, 255, 255, 0.08)',
+                        borderRadius: '9px',
+                        padding: '11px 14px',
+                        color: '#38bdf8',
+                        fontSize: '12.5px',
+                        fontWeight: 600,
+                        outline: 'none',
+                        boxSizing: 'border-box'
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#cbd5e1', marginBottom: '4px' }}>
+                    Department
+                  </label>
+                  <select
+                    value={signupDept}
+                    onChange={e => setSignupDept(e.target.value)}
+                    style={{
+                      width: '100%',
+                      backgroundColor: '#070b14',
+                      border: '1px solid rgba(56, 189, 248, 0.3)',
+                      borderRadius: '9px',
+                      padding: '11px 14px',
+                      color: '#38bdf8',
+                      fontSize: '13px',
+                      fontWeight: 600,
+                      outline: 'none',
+                      boxSizing: 'border-box'
+                    }}
+                  >
+                    <option value="Artificial Intelligence & Data Science (ARYA AI&DS)">Artificial Intelligence & Data Science (ARYA AI&DS)</option>
+                    <option value="Computer Science & Engineering (Arya CSE)">Computer Science & Engineering (Arya CSE)</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label style={{ display: 'block', fontSize: '12px', fontWeight: 700, color: '#cbd5e1', marginBottom: '4px' }}>
+                    Password
+                  </label>
+                  <div style={{ position: 'relative' }}>
+                    <Lock size={16} color="#64748b" style={{ position: 'absolute', left: '14px', top: '50%', transform: 'translateY(-50%)' }} />
+                    <input
+                      type="password"
+                      value={signupPassword}
+                      onChange={e => setSignupPassword(e.target.value)}
+                      placeholder="Create secure password"
+                      required
+                      style={{
+                        width: '100%',
+                        backgroundColor: '#070b14',
+                        border: '1px solid rgba(56, 189, 248, 0.2)',
+                        borderRadius: '9px',
+                        padding: '11px 14px 11px 40px',
+                        color: '#fff',
+                        fontSize: '13px',
+                        outline: 'none',
+                        boxSizing: 'border-box'
+                      }}
+                    />
+                  </div>
+                </div>
+
+                <button
+                  type="submit"
+                  style={{
+                    marginTop: '8px',
+                    background: 'linear-gradient(135deg, #0284c7 0%, #38bdf8 100%)',
+                    color: '#070b14',
+                    border: 'none',
+                    padding: '13px',
+                    borderRadius: '10px',
+                    fontWeight: 800,
+                    fontSize: '14px',
+                    cursor: 'pointer',
+                    boxShadow: '0 0 16px rgba(56, 189, 248, 0.3)',
+                    transition: 'all 0.15s'
+                  }}
+                >
+                  Create ARYA AI&DS Account
+                </button>
+              </form>
+
+              <div style={{ textAlign: 'center', marginTop: '16px', fontSize: '12px', color: '#94a3b8' }}>
+                Already registered? <span style={{ color: '#38bdf8', fontWeight: 700, cursor: 'pointer' }} onClick={() => setAuthMode('login')}>Sign in here</span>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+    );
+  }
+
+  // ==========================================
+  // AUTHENTICATED MAIN APPLICATION VIEW
+  // ==========================================
   return (
-    <div style={{ display: 'flex', height: '100vh', width: '100vw', overflow: 'hidden', backgroundColor: '#070b14', color: '#f1f5f9' }}>
+    <div style={{ display: 'flex', height: '100vh', width: '100vw', overflow: 'hidden', backgroundColor: '#060913', color: '#f1f5f9' }}>
       
       {/* HIDDEN FILE INPUT FOR NATIVE FILE SELECTION */}
       <input
@@ -738,7 +1362,7 @@ export default function App() {
       )}
 
       {/* LEFT SIDEBAR */}
-      <aside style={{ width: '280px', backgroundColor: '#0c1220', borderRight: '1px solid rgba(56, 189, 248, 0.12)', display: 'flex', flexDirection: 'column', flexShrink: 0 }}>
+      <aside style={{ width: '280px', backgroundColor: '#090e1a', borderRight: '1px solid rgba(56, 189, 248, 0.14)', display: 'flex', flexDirection: 'column', flexShrink: 0 }}>
         
         {/* Brand Header */}
         <div style={{ padding: '20px 22px', borderBottom: '1px solid rgba(255, 255, 255, 0.06)', display: 'flex', alignItems: 'center', gap: '12px' }}>
@@ -750,7 +1374,7 @@ export default function App() {
               <h1 style={{ fontSize: '18px', fontWeight: 800, letterSpacing: '-0.02em', color: '#fff', margin: 0 }}>DocuQuery AI</h1>
               <span style={{ fontSize: '10px', padding: '2px 6px', borderRadius: '4px', backgroundColor: 'rgba(56, 189, 248, 0.15)', color: '#38bdf8', fontWeight: 700 }}>v1.0</span>
             </div>
-            <p style={{ fontSize: '11px', color: '#94a3b8', margin: 0, marginTop: '2px' }}>CBSE • RTU Kota • Neon pgvector</p>
+            <p style={{ fontSize: '11px', color: '#94a3b8', margin: 0, marginTop: '2px' }}>CBSE • RTU Kota • ARYA AI&DS</p>
           </div>
         </div>
 
@@ -855,8 +1479,9 @@ export default function App() {
               <Users size={17} color={activeTab === 'team' ? '#38bdf8' : '#94a3b8'} />
               <span>5-Member PBL Team</span>
             </div>
-            <span style={{ fontSize: '11px', padding: '2px 7px', borderRadius: '9999px', backgroundColor: 'rgba(251, 191, 36, 0.15)', color: '#fbbf24' }}>
-              Arya CSE
+            {/* UPDATED BADGE: ARYA AI&DS */}
+            <span style={{ fontSize: '11px', padding: '2px 7px', borderRadius: '9999px', backgroundColor: 'rgba(56, 189, 248, 0.2)', color: '#38bdf8', fontWeight: 700, border: '1px solid rgba(56, 189, 248, 0.3)' }}>
+              ARYA AI&DS
             </span>
           </button>
 
@@ -877,24 +1502,24 @@ export default function App() {
         </nav>
 
         {/* College & Mentor Info */}
-        <div style={{ padding: '14px 18px', borderTop: '1px solid rgba(255, 255, 255, 0.06)', backgroundColor: '#090e1a' }}>
+        <div style={{ padding: '14px 18px', borderTop: '1px solid rgba(255, 255, 255, 0.06)', backgroundColor: '#070b14' }}>
           <div style={{ fontSize: '11px', fontWeight: 700, color: '#e2e8f0', marginBottom: '2px' }}>Arya College of Engg. & I.T.</div>
-          <div style={{ fontSize: '10.5px', color: '#94a3b8' }}>Java PBL (5th Sem) • Dept. of CSE</div>
-          <div style={{ fontSize: '10px', color: '#38bdf8', marginTop: '4px' }}>Guide: Er. Ram Babu Buri</div>
+          <div style={{ fontSize: '10.5px', color: '#38bdf8', fontWeight: 600 }}>Java PBL (5th Sem) • Dept. of AI&DS</div>
+          <div style={{ fontSize: '10px', color: '#94a3b8', marginTop: '4px' }}>Guide: Er. Ram Babu Buri</div>
         </div>
       </aside>
 
       {/* MAIN CONTENT AREA */}
-      <main style={{ flex: 1, display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden', backgroundColor: '#070b14' }}>
+      <main style={{ flex: 1, display: 'flex', flexDirection: 'column', height: '100vh', overflow: 'hidden', backgroundColor: '#060913' }}>
         
         {/* TOP STATUS BAR */}
-        <header style={{ height: '56px', borderBottom: '1px solid rgba(255, 255, 255, 0.06)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 24px', backgroundColor: 'rgba(12, 18, 32, 0.8)', backdropFilter: 'blur(12px)' }}>
+        <header style={{ height: '56px', borderBottom: '1px solid rgba(255, 255, 255, 0.06)', display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '0 24px', backgroundColor: 'rgba(9, 14, 26, 0.85)', backdropFilter: 'blur(12px)' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <span style={{ fontSize: '13px', color: '#cbd5e1', fontWeight: 600 }}>
               {activeTab === 'chat' && 'RAG Chat: CBSE & RTU Board Knowledge Engine'}
               {activeTab === 'documents' && 'Module 2: Drag & Drop Ingestion Pipeline'}
               {activeTab === 'admin' && 'Module 5: RAG Triad Telemetry & Health'}
-              {activeTab === 'team' && 'Arya College PBL Team & Module Mapping'}
+              {activeTab === 'team' && 'Arya AI&DS PBL Team & Module Mapping'}
             </span>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', padding: '3px 8px', borderRadius: '6px', backgroundColor: 'rgba(52, 211, 153, 0.1)', border: '1px solid rgba(52, 211, 153, 0.2)' }}>
               <div style={{ width: '6px', height: '6px', borderRadius: '50%', backgroundColor: '#34d399', boxShadow: '0 0 8px #34d399' }}></div>
@@ -902,15 +1527,10 @@ export default function App() {
             </div>
           </div>
 
-          <div style={{ display: 'flex', alignItems: 'center', gap: '14px' }}>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
             <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', color: '#94a3b8' }}>
               <Activity size={14} color="#38bdf8" />
               <span>Latency: <strong style={{ color: '#fff' }}>91ms</strong></span>
-            </div>
-
-            <div style={{ display: 'flex', alignItems: 'center', gap: '6px', fontSize: '11.5px', color: '#94a3b8' }}>
-              <Database size={14} color="#a855f7" />
-              <span>Corpus: <strong style={{ color: '#fff' }}>CBSE + RTU + Kaggle</strong></span>
             </div>
 
             <button
@@ -935,7 +1555,81 @@ export default function App() {
               <span>▶ Run Live Teacher Demo</span>
             </button>
 
-            {activeTab === 'chat' && (
+            {/* Authenticated User Chip & Logout */}
+            <div style={{
+              display: 'flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '4px 8px 4px 10px',
+              borderRadius: '8px',
+              backgroundColor: 'rgba(15, 23, 42, 0.8)',
+              border: '1px solid rgba(56, 189, 248, 0.25)'
+            }}>
+              <div style={{ width: '24px', height: '24px', borderRadius: '50%', background: 'linear-gradient(135deg, #0284c7, #38bdf8)', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '11px', fontWeight: 800, color: '#070b14' }}>
+                {currentUser.avatarText}
+              </div>
+              <div style={{ display: 'flex', flexDirection: 'column' }}>
+                <span style={{ fontSize: '11.5px', fontWeight: 700, color: '#fff', lineHeight: 1.2 }}>{currentUser.name}</span>
+                <span style={{ fontSize: '9.5px', color: '#38bdf8', lineHeight: 1 }}>ARYA AI&DS</span>
+              </div>
+              <button
+                onClick={() => {
+                  setCurrentUser(null);
+                  showToast('Logged out successfully. Displaying Login & Sign Up screen.');
+                }}
+                title="Log Out / Switch Account"
+                style={{
+                  background: 'transparent',
+                  border: 'none',
+                  color: '#94a3b8',
+                  cursor: 'pointer',
+                  padding: '4px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  marginLeft: '4px'
+                }}
+                onMouseEnter={e => (e.currentTarget.style.color = '#ef4444')}
+                onMouseLeave={e => (e.currentTarget.style.color = '#94a3b8')}
+              >
+                <LogOut size={14} />
+              </button>
+            </div>
+          </div>
+        </header>
+
+        {/* TAB 1: CHAT CANVAS */}
+        {activeTab === 'chat' && (
+          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', height: 'calc(100vh - 56px)', overflow: 'hidden' }}>
+            
+            {/* Filter Tabs for Boards */}
+            <div style={{ padding: '10px 24px', backgroundColor: 'rgba(9, 14, 26, 0.65)', borderBottom: '1px solid rgba(255, 255, 255, 0.04)', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                <span style={{ fontSize: '11.5px', color: '#94a3b8', fontWeight: 600, marginRight: '4px' }}>Filter Topics:</span>
+                {[
+                  { id: 'ALL', label: 'All Knowledge' },
+                  { id: 'CBSE', label: 'CBSE Board (Class 10 & 12)' },
+                  { id: 'RTU', label: 'RTU Kota (B.Tech & Java PBL)' },
+                  { id: 'KAGGLE', label: 'Kaggle CS AI Research' }
+                ].map(f => (
+                  <button
+                    key={f.id}
+                    onClick={() => setBoardFilter(f.id as any)}
+                    style={{
+                      padding: '4px 10px',
+                      borderRadius: '6px',
+                      fontSize: '11px',
+                      fontWeight: 600,
+                      cursor: 'pointer',
+                      border: boardFilter === f.id ? '1px solid #38bdf8' : '1px solid rgba(255, 255, 255, 0.08)',
+                      backgroundColor: boardFilter === f.id ? 'rgba(56, 189, 248, 0.15)' : 'transparent',
+                      color: boardFilter === f.id ? '#38bdf8' : '#94a3b8'
+                    }}
+                  >
+                    {f.label}
+                  </button>
+                ))}
+              </div>
+
               <button
                 onClick={clearChat}
                 title="Clear Chat History"
@@ -946,50 +1640,16 @@ export default function App() {
                   backgroundColor: 'rgba(255, 255, 255, 0.05)',
                   border: '1px solid rgba(255, 255, 255, 0.1)',
                   color: '#cbd5e1',
-                  padding: '6px 12px',
+                  padding: '5px 10px',
                   borderRadius: '6px',
-                  fontSize: '11.5px',
+                  fontSize: '11px',
                   cursor: 'pointer',
                   fontWeight: 600
                 }}
               >
-                <Trash2 size={13} />
+                <Trash2 size={12} />
                 <span>Clear Chat</span>
               </button>
-            )}
-          </div>
-        </header>
-
-        {/* TAB 1: CHAT CANVAS */}
-        {activeTab === 'chat' && (
-          <div style={{ flex: 1, display: 'flex', flexDirection: 'column', height: 'calc(100vh - 56px)', overflow: 'hidden' }}>
-            
-            {/* Filter Tabs for Boards */}
-            <div style={{ padding: '10px 24px', backgroundColor: 'rgba(12, 18, 32, 0.6)', borderBottom: '1px solid rgba(255, 255, 255, 0.04)', display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <span style={{ fontSize: '11.5px', color: '#94a3b8', fontWeight: 600, marginRight: '4px' }}>Filter Topics:</span>
-              {[
-                { id: 'ALL', label: 'All Knowledge' },
-                { id: 'CBSE', label: 'CBSE Board (Class 10 & 12)' },
-                { id: 'RTU', label: 'RTU Kota (B.Tech & Java PBL)' },
-                { id: 'KAGGLE', label: 'Kaggle CS AI Research' }
-              ].map(f => (
-                <button
-                  key={f.id}
-                  onClick={() => setBoardFilter(f.id as any)}
-                  style={{
-                    padding: '4px 10px',
-                    borderRadius: '6px',
-                    fontSize: '11px',
-                    fontWeight: 600,
-                    cursor: 'pointer',
-                    border: boardFilter === f.id ? '1px solid #38bdf8' : '1px solid rgba(255, 255, 255, 0.08)',
-                    backgroundColor: boardFilter === f.id ? 'rgba(56, 189, 248, 0.15)' : 'transparent',
-                    color: boardFilter === f.id ? '#38bdf8' : '#94a3b8'
-                  }}
-                >
-                  {f.label}
-                </button>
-              ))}
             </div>
 
             {/* Messages Scroll Area */}
@@ -1002,7 +1662,7 @@ export default function App() {
                     <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
                       <Sparkles size={20} color="#38bdf8" />
                       <h2 style={{ fontSize: '16px', fontWeight: 700, color: '#fff', margin: 0 }}>
-                        CBSE & RTU Board Enhanced Knowledge Engine
+                        CBSE & RTU Board Enhanced Knowledge Engine • Dept. of AI&DS
                       </h2>
                     </div>
                     <span style={{ fontSize: '11px', color: '#38bdf8', padding: '3px 8px', borderRadius: '4px', backgroundColor: 'rgba(56, 189, 248, 0.1)' }}>
@@ -1079,7 +1739,7 @@ export default function App() {
                         </div>
                       ) : null}
                       <span style={{ fontSize: '11px', color: m.role === 'user' ? '#bae6fd' : '#38bdf8', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.04em' }}>
-                        {m.role === 'user' ? 'You' : 'DocuQuery AI Assistant'}
+                        {m.role === 'user' ? (currentUser ? currentUser.name : 'You') : 'DocuQuery AI Assistant'}
                       </span>
                       {m.boardBadge && (
                         <span style={{ fontSize: '10px', padding: '1px 6px', borderRadius: '4px', backgroundColor: 'rgba(56, 189, 248, 0.15)', color: '#38bdf8', fontWeight: 700 }}>
@@ -1168,7 +1828,7 @@ export default function App() {
             </div>
 
             {/* Input Bar */}
-            <div style={{ padding: '16px 24px', backgroundColor: 'rgba(12, 18, 32, 0.9)', borderTop: '1px solid rgba(255, 255, 255, 0.08)', backdropFilter: 'blur(16px)' }}>
+            <div style={{ padding: '16px 24px', backgroundColor: 'rgba(9, 14, 26, 0.95)', borderTop: '1px solid rgba(255, 255, 255, 0.08)', backdropFilter: 'blur(16px)' }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '8px', fontSize: '11.5px', color: '#94a3b8' }}>
                 <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
                   <Layers size={13} color="#38bdf8" />
@@ -1255,7 +1915,7 @@ export default function App() {
                 <div>
                   <h2 style={{ fontSize: '22px', fontWeight: 800, color: '#fff', margin: 0 }}>Module 2: Document Ingestion & Chunking Pipeline</h2>
                   <p style={{ fontSize: '13px', color: '#94a3b8', margin: '4px 0 0 0' }}>
-                    Active drag-and-drop workspace. Files are parsed via Apache Tika 2.9, partitioned into 500-token chunks, and indexed into Neon PostgreSQL pgvector.
+                    Active drag-and-drop workspace for Dept. of AI&DS. Files are parsed via Apache Tika 2.9, partitioned into 500-token chunks, and indexed into Neon PostgreSQL pgvector.
                   </p>
                 </div>
                 
@@ -1329,7 +1989,7 @@ export default function App() {
                     onMouseLeave={e => e.currentTarget.style.borderColor = 'rgba(52, 211, 153, 0.25)'}
                   >
                     <div style={{ fontSize: '12px', fontWeight: 700, color: '#34d399' }}>📥 Load Kaggle RTU Bank</div>
-                    <div style={{ fontSize: '11px', color: '#94a3b8', marginTop: '2px' }}>B.Tech CSE & Java PBL Rules</div>
+                    <div style={{ fontSize: '11px', color: '#94a3b8', marginTop: '2px' }}>B.Tech AI&DS & Java PBL Rules</div>
                   </button>
 
                   <button
@@ -1470,7 +2130,7 @@ export default function App() {
               <div style={{ marginBottom: '24px' }}>
                 <h2 style={{ fontSize: '22px', fontWeight: 800, color: '#fff', margin: 0 }}>Module 5: RAG Triad Evaluation & System Telemetry</h2>
                 <p style={{ fontSize: '13px', color: '#94a3b8', margin: '4px 0 0 0' }}>
-                  Automated scoring against the 50-pair golden benchmark dataset verifying hallucination elimination across CBSE and RTU corpora.
+                  Automated scoring against the 50-pair golden benchmark dataset verifying hallucination elimination across CBSE and RTU corpora for ARYA AI&DS.
                 </p>
               </div>
 
@@ -1544,9 +2204,14 @@ export default function App() {
           <div style={{ flex: 1, overflowY: 'auto', padding: '32px' }}>
             <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
               <div style={{ marginBottom: '24px' }}>
-                <h2 style={{ fontSize: '22px', fontWeight: 800, color: '#fff', margin: 0 }}>Arya College Java PBL (5th Sem) — 5-Member Team</h2>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '4px' }}>
+                  <h2 style={{ fontSize: '22px', fontWeight: 800, color: '#fff', margin: 0 }}>Arya College Java PBL (5th Sem) — 5-Member Team</h2>
+                  <span style={{ fontSize: '12px', fontWeight: 800, padding: '3px 8px', borderRadius: '6px', backgroundColor: 'rgba(56, 189, 248, 0.2)', color: '#38bdf8' }}>
+                    ARYA AI&DS
+                  </span>
+                </div>
                 <p style={{ fontSize: '13px', color: '#94a3b8', margin: '4px 0 0 0' }}>
-                  Project Guide / Mentor: <strong>Er. Ram Babu Buri</strong> (Assistant Professor, Dept. of CSE)
+                  Department: <strong>Artificial Intelligence & Data Science (AI&DS)</strong> • Guide / Mentor: <strong>Er. Ram Babu Buri</strong> (Assistant Professor)
                 </p>
               </div>
 

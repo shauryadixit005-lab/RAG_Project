@@ -497,7 +497,7 @@
             </button>
             <button class="nav-btn" onclick="switchTab('team')">
                 <span>👥 5-Member PBL Team</span>
-                <span class="nav-badge" style="color: #fbbf24;">Arya CSE</span>
+                <span class="nav-badge" style="color: #38bdf8; background: rgba(56, 189, 248, 0.2); font-weight: 700;">ARYA AI&DS</span>
             </button>
 
             <div class="capacity-card">
@@ -517,9 +517,9 @@
 
         <div class="college-tag">
             <strong>Arya College of Engineering & I.T.</strong><br>
-            Java PBL — 5th Semester (CSE)<br>
+            <span style="color: #38bdf8; font-weight: 600;">Java PBL (5th Sem) • Dept. of AI&DS</span><br>
             Mentor: Er. Ram Babu Buri<br>
-            <span style="color: #38bdf8;">Team: Shaurya, Yashvardhan, Vaibhav, Rajveer, Yashpal</span>
+            <span style="color: #94a3b8;">Team: Shaurya, Yashvardhan, Vaibhav, Rajveer, Yashpal</span>
         </div>
     </aside>
 
@@ -533,12 +533,18 @@
                 </div>
             </div>
 
-            <div style="display: flex; align-items: center; gap: 14px; font-size: 11.5px; color: #94a3b8;">
+            <div style="display: flex; align-items: center; gap: 12px; font-size: 11.5px; color: #94a3b8;">
                 <span>Latency: <strong style="color: #fff;">91ms</strong></span>
-                <span>Corpus: <strong style="color: #fff;">CBSE + RTU + Kaggle</strong></span>
                 <button onclick="runLiveTeacherDemo()" style="background: linear-gradient(135deg, #059669 0%, #10b981 100%); color: #fff; border: none; padding: 6px 14px; border-radius: 6px; font-weight: 700; font-size: 12px; cursor: pointer; box-shadow: 0 0 14px rgba(16, 185, 129, 0.4);">
                     ▶ Run Live Teacher Demo
                 </button>
+                <div id="user-chip" onclick="openAuthModal()" style="display: flex; align-items: center; gap: 8px; padding: 4px 10px; border-radius: 8px; background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(56, 189, 248, 0.25); cursor: pointer;" title="Click to Switch User / Sign In">
+                    <div style="width: 24px; height: 24px; border-radius: 50%; background: linear-gradient(135deg, #0284c7, #38bdf8); display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 800; color: #070b14;">SD</div>
+                    <div style="display: flex; flex-direction: column;">
+                        <span id="user-display-name" style="font-size: 11.5px; font-weight: 700; color: #fff; line-height: 1.2;">Shaurya Dixit</span>
+                        <span style="font-size: 9.5px; color: #38bdf8; line-height: 1;">ARYA AI&DS</span>
+                    </div>
+                </div>
             </div>
         </header>
 
@@ -787,8 +793,11 @@
         <!-- Tab 4: Team -->
         <div id="tab-team" class="tab-content">
             <div class="page-container">
-                <h2 style="font-size: 22px; font-weight: 800; color: #fff;">Arya College Java PBL (5th Sem) — 5-Member Team</h2>
-                <p style="color: #94a3b8; margin-top: 4px; font-size: 13px;">Project Guide / Mentor: <strong>Er. Ram Babu Buri</strong> (Assistant Professor, Dept. of CSE)</p>
+                <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 4px;">
+                    <h2 style="font-size: 22px; font-weight: 800; color: #fff; margin: 0;">Arya College Java PBL (5th Sem) — 5-Member Team</h2>
+                    <span style="font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 4px; background: rgba(56, 189, 248, 0.2); color: #38bdf8;">ARYA AI&DS</span>
+                </div>
+                <p style="color: #94a3b8; margin-top: 4px; font-size: 13px;">Department: <strong>Artificial Intelligence & Data Science (AI&DS)</strong> • Mentor: <strong>Er. Ram Babu Buri</strong> (Assistant Professor)</p>
                 
                 <div style="display: flex; flex-direction: column; gap: 14px; margin-top: 20px;">
                     <div class="doc-item">
@@ -857,6 +866,120 @@
             <p id="modal-meta" style="font-size: 12.5px; color: #94a3b8; margin-bottom: 14px;"></p>
             <div id="modal-text" style="background-color: #070b14; padding: 16px; border-radius: 10px; font-style: italic; color: #cbd5e1; line-height: 1.6; font-size: 13px; border-left: 3px solid #38bdf8;"></div>
             <button onclick="closeModal()" style="margin-top: 18px; background-color: #38bdf8; color: #070b14; border: none; padding: 9px 18px; border-radius: 8px; font-weight: 800; cursor: pointer; float: right;">Close Inspector</button>
+        </div>
+    </div>
+
+    <!-- Auth Modal (Login & Signup with Demo Credentials) -->
+    <div id="auth-modal" style="display: none; position: fixed; inset: 0; background-color: rgba(0, 0, 0, 0.8); backdrop-filter: blur(10px); align-items: center; justify-content: center; z-index: 2000;">
+        <div class="modal-body" style="width: 520px; padding: 32px; background: rgba(12, 18, 32, 0.95); border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 20px; box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.8);">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <div style="width: 44px; height: 44px; border-radius: 12px; background: linear-gradient(135deg, #0284c7, #38bdf8); display: flex; align-items: center; justify-content: center; margin: 0 auto 10px; font-size: 22px;">⚡</div>
+                <h2 style="font-size: 20px; font-weight: 800; color: #fff; margin: 0;">DocuQuery AI Access Portal</h2>
+                <p style="font-size: 12px; color: #94a3b8; margin: 4px 0 0 0;">Arya College of Engg. & I.T. • <strong style="color: #38bdf8;">Dept. of AI&DS</strong></p>
+            </div>
+
+            <!-- Tabs -->
+            <div style="display: flex; background: rgba(7, 11, 20, 0.8); padding: 4px; border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.08); margin-bottom: 20px;">
+                <button id="tab-btn-login" onclick="toggleAuthTab('login')" style="flex: 1; padding: 9px; border-radius: 7px; border: none; background: rgba(14, 165, 233, 0.2); color: #38bdf8; font-weight: 700; font-size: 13px; cursor: pointer;">
+                    Log In
+                </button>
+                <button id="tab-btn-signup" onclick="toggleAuthTab('signup')" style="flex: 1; padding: 9px; border-radius: 7px; border: none; background: transparent; color: #94a3b8; font-weight: 700; font-size: 13px; cursor: pointer;">
+                    Sign Up (AI&DS)
+                </button>
+            </div>
+
+            <!-- Login Form -->
+            <div id="auth-login-box">
+                <form onsubmit="handleAuthLogin(event)" style="display: flex; flexDirection: column; gap: 12px;">
+                    <div>
+                        <label style="display: block; font-size: 12px; font-weight: 700; color: #cbd5e1; margin-bottom: 4px;">College Email / Roll No.</label>
+                        <input type="text" id="login-email-input" placeholder="e.g. shaurya.aids@arya.ac.in or 22EAIDS042" style="width: 100%; background: #070b14; border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 8px; padding: 11px 14px; color: #fff; font-size: 13px; outline: none;">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 12px; font-weight: 700; color: #cbd5e1; margin-bottom: 4px;">Password</label>
+                        <input type="password" id="login-pass-input" placeholder="••••••••••••" style="width: 100%; background: #070b14; border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 8px; padding: 11px 14px; color: #fff; font-size: 13px; outline: none;">
+                    </div>
+                    <button type="submit" style="width: 100%; margin-top: 6px; background: linear-gradient(135deg, #0284c7, #38bdf8); color: #070b14; border: none; padding: 12px; border-radius: 8px; font-weight: 800; font-size: 13.5px; cursor: pointer;">
+                        Sign In to DocuQuery AI
+                    </button>
+                </form>
+
+                <!-- DEMO CREDENTIALS CARD UNDER LOGIN -->
+                <div style="margin-top: 18px; padding-top: 16px; border-top: 1px solid rgba(255, 255, 255, 0.08);">
+                    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 10px;">
+                        <span style="font-size: 11px; font-weight: 800; color: #38bdf8; text-transform: uppercase;">⚡ Instant Demo Credentials</span>
+                        <span style="font-size: 10px; color: #34d399; font-weight: 700; padding: 2px 6px; border-radius: 4px; background: rgba(52, 211, 153, 0.15);">No Password Required</span>
+                    </div>
+
+                    <div style="display: flex; flex-direction: column; gap: 6px;">
+                        <div onclick="demoLoginPreset('student')" style="padding: 9px 12px; border-radius: 7px; background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(56, 189, 248, 0.2); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong style="font-size: 12px; color: #38bdf8;">🎓 Demo Student (AI&DS Lead)</strong>
+                                <div style="font-size: 10.5px; color: #94a3b8;">Shaurya Dixit • shaurya.aids@arya.ac.in</div>
+                            </div>
+                            <span style="color: #38bdf8; font-weight: 800; font-size: 12px;">→</span>
+                        </div>
+
+                        <div onclick="demoLoginPreset('mentor')" style="padding: 9px 12px; border-radius: 7px; background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(52, 211, 153, 0.2); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong style="font-size: 12px; color: #34d399;">👨‍🏫 Demo Faculty Guide</strong>
+                                <div style="font-size: 10.5px; color: #94a3b8;">Er. Ram Babu Buri • Dept. of AI&DS</div>
+                            </div>
+                            <span style="color: #34d399; font-weight: 800; font-size: 12px;">→</span>
+                        </div>
+
+                        <div onclick="demoLoginPreset('examiner')" style="padding: 9px 12px; border-radius: 7px; background: rgba(15, 23, 42, 0.85); border: 1px solid rgba(168, 85, 247, 0.2); cursor: pointer; display: flex; justify-content: space-between; align-items: center;">
+                            <div>
+                                <strong style="font-size: 12px; color: #c084fc;">📋 Demo RTU External Examiner</strong>
+                                <div style="font-size: 10.5px; color: #94a3b8;">Dr. Evaluator • evaluator@rtu.ac.in</div>
+                            </div>
+                            <span style="color: #c084fc; font-weight: 800; font-size: 12px;">→</span>
+                        </div>
+                    </div>
+
+                    <button onclick="demoLoginPreset('instant')" style="width: 100%; margin-top: 10px; padding: 10px; border-radius: 8px; background: linear-gradient(135deg, #059669, #10b981); border: none; color: #fff; font-weight: 800; font-size: 12px; cursor: pointer;">
+                        ⚡ 1-Click Instant Demo Login (Open Dashboard)
+                    </button>
+                </div>
+            </div>
+
+            <!-- Signup Form -->
+            <div id="auth-signup-box" style="display: none;">
+                <form onsubmit="handleAuthSignup(event)" style="display: flex; flex-direction: column; gap: 10px;">
+                    <div>
+                        <label style="display: block; font-size: 11.5px; font-weight: 700; color: #cbd5e1; margin-bottom: 3px;">Full Name</label>
+                        <input type="text" id="signup-name-input" placeholder="e.g. Shaurya Dixit" required style="width: 100%; background: #070b14; border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 8px; padding: 10px 12px; color: #fff; font-size: 12.5px; outline: none;">
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 11.5px; font-weight: 700; color: #cbd5e1; margin-bottom: 3px;">College Email</label>
+                        <input type="email" id="signup-email-input" placeholder="name.aids@arya.ac.in" required style="width: 100%; background: #070b14; border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 8px; padding: 10px 12px; color: #fff; font-size: 12.5px; outline: none;">
+                    </div>
+                    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 8px;">
+                        <div>
+                            <label style="display: block; font-size: 11.5px; font-weight: 700; color: #cbd5e1; margin-bottom: 3px;">Roll / Student ID</label>
+                            <input type="text" id="signup-roll-input" placeholder="22EAIDS042" style="width: 100%; background: #070b14; border: 1px solid rgba(56, 189, 248, 0.2); border-radius: 8px; padding: 10px 12px; color: #fff; font-size: 12.5px; outline: none;">
+                        </div>
+                        <div>
+                            <label style="display: block; font-size: 11.5px; font-weight: 700; color: #cbd5e1; margin-bottom: 3px;">Semester</label>
+                            <input type="text" value="5th Sem (Java PBL)" disabled style="width: 100%; background: rgba(15, 23, 42, 0.8); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 8px; padding: 10px 12px; color: #38bdf8; font-weight: 600; font-size: 12px; outline: none;">
+                        </div>
+                    </div>
+                    <div>
+                        <label style="display: block; font-size: 11.5px; font-weight: 700; color: #cbd5e1; margin-bottom: 3px;">Department</label>
+                        <select id="signup-dept-select" style="width: 100%; background: #070b14; border: 1px solid rgba(56, 189, 248, 0.3); border-radius: 8px; padding: 10px 12px; color: #38bdf8; font-weight: 600; font-size: 12.5px; outline: none;">
+                            <option value="Artificial Intelligence & Data Science (ARYA AI&DS)">Artificial Intelligence & Data Science (ARYA AI&DS)</option>
+                            <option value="Computer Science & Engineering">Computer Science & Engineering</option>
+                        </select>
+                    </div>
+                    <button type="submit" style="width: 100%; margin-top: 6px; background: linear-gradient(135deg, #0284c7, #38bdf8); color: #070b14; border: none; padding: 12px; border-radius: 8px; font-weight: 800; font-size: 13.5px; cursor: pointer;">
+                        Create ARYA AI&DS Account
+                    </button>
+                </form>
+            </div>
+
+            <button onclick="closeAuthModal()" style="margin-top: 14px; background: transparent; border: 1px solid rgba(255, 255, 255, 0.1); color: #94a3b8; padding: 7px 16px; border-radius: 6px; font-size: 12px; cursor: pointer; width: 100%;">
+                Close Dialog
+            </button>
         </div>
     </div>
 
@@ -1152,6 +1275,62 @@
                     }, 3500);
                 }, 3500);
             }, 600);
+        }
+
+        function openAuthModal() {
+            document.getElementById('auth-modal').style.display = 'flex';
+        }
+
+        function closeAuthModal() {
+            document.getElementById('auth-modal').style.display = 'none';
+        }
+
+        function toggleAuthTab(tab) {
+            if (tab === 'login') {
+                document.getElementById('auth-login-box').style.display = 'block';
+                document.getElementById('auth-signup-box').style.display = 'none';
+                document.getElementById('tab-btn-login').style.background = 'rgba(14, 165, 233, 0.2)';
+                document.getElementById('tab-btn-login').style.color = '#38bdf8';
+                document.getElementById('tab-btn-signup').style.background = 'transparent';
+                document.getElementById('tab-btn-signup').style.color = '#94a3b8';
+            } else {
+                document.getElementById('auth-login-box').style.display = 'none';
+                document.getElementById('auth-signup-box').style.display = 'block';
+                document.getElementById('tab-btn-signup').style.background = 'rgba(14, 165, 233, 0.2)';
+                document.getElementById('tab-btn-signup').style.color = '#38bdf8';
+                document.getElementById('tab-btn-login').style.background = 'transparent';
+                document.getElementById('tab-btn-login').style.color = '#94a3b8';
+            }
+        }
+
+        function handleAuthLogin(e) {
+            e.preventDefault();
+            const email = document.getElementById('login-email-input').value.trim() || 'Shaurya Dixit';
+            document.getElementById('user-display-name').innerText = email.split('@')[0];
+            showToast('✓ Welcome back, ' + email.split('@')[0] + ' (ARYA AI&DS)!');
+            closeAuthModal();
+        }
+
+        function handleAuthSignup(e) {
+            e.preventDefault();
+            const name = document.getElementById('signup-name-input').value.trim();
+            document.getElementById('user-display-name').innerText = name;
+            showToast('✓ Registered & logged in as ' + name + ' (ARYA AI&DS)!');
+            closeAuthModal();
+        }
+
+        function demoLoginPreset(role) {
+            if (role === 'student' || role === 'instant') {
+                document.getElementById('user-display-name').innerText = 'Shaurya Dixit';
+                showToast('⚡ Logged in as Demo Student: Shaurya Dixit (ARYA AI&DS)');
+            } else if (role === 'mentor') {
+                document.getElementById('user-display-name').innerText = 'Er. Ram Babu Buri';
+                showToast('👨‍🏫 Logged in as Faculty Guide: Er. Ram Babu Buri (Dept. of AI&DS)');
+            } else if (role === 'examiner') {
+                document.getElementById('user-display-name').innerText = 'Dr. RTU Evaluator';
+                showToast('📋 Logged in as RTU External Examiner');
+            }
+            closeAuthModal();
         }
     </script>
 </body>
