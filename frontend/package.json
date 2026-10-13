@@ -1,0 +1,21 @@
+{
+  "name": "docuquery-electron-ui",
+  "version": "1.0.0",
+  "description": "DocuQuery AI - Enterprise RAG Desktop and Web Client",
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "electron:start": "electron ."
+  },
+  "dependencies": {
+    "lucide-react": "^0.344.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "electron": "^30.0.0",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.4"
+  }
+}
